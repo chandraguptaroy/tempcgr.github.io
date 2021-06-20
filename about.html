@@ -1,59 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styleabout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body {
+
+            background-color: rgb(255, 255, 255);
+            font-family: "Raleway", sans-serif;
+
+            text-align: center;
+            font-size: larger;
+
+        }
+
+        h3 {
+            font-size: xx-large;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+
+
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        .blogcontainer {
+            background-color: white;
+            border: black;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 10px;
+        }
+
+        .asopacity {
+            opacity: 0.75;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo"><a href="index.html"><img class="cgrword" src="images/cover2.png" width="30%"></a></label>
-            <ul>
-              <li><a href="#" >Blog</a></li>
-              <li><a href="work.html" >Work</a></li>
-              <li><a href="about.html" >About</a></li>
-            </ul>
-          </nav>
-    </header>
-    <main>
-    <section>
-        <div class="start">
-            <img src="images/chandu.png" width="200px">
-            <h3>Hey I'm CGR</h3>
-            <h4>Chandra Gupta Roy</h4>
+
+
+    <div class="row">
+
+        <div class="col-12 col-s-12 ">
+            <div >
+                <img src="./images/Cover.jpg" width="100%" alt="">
+                <hr>
+                <H1 style="font-size: 300%; font-family: fantasy;">ABOUT ME</H1>
+                <hr>
+            </div>
         </div>
-        <div class="Q1">
-        <p>
-            First, I would like to answer this question:<br>
-            What do I want to become?<br> <br>
-            Become? My true-self and keep growing and be a happy fulfilled human, who will remain fit to his 100’s, who keeps learning, who takes care of himself & his loved ones, one who spreads positivity in the world and one who has an amazing yielding career that pushes humanity forward and gives him a truly wonderful quality of life. 
-            <br><br>In short, I don’t want to be a job but an extraordinary person. 
-            Can I?<br>
-            Yes, because no one can fucking stop me.
-            <br><br>
-            <i>On our path we need mentors who guide us and with whom we could check in when we seem lost, with the Internet we could make anyone our mentor. Listen to their videos and follow through.</i>
-            </p>
-            <h3>My Mentors:</h3>
-            <ul>
-                <li>Vishen Lakhiani</li>
-                <li>Elon Musk</li>
-                <li>Sandeep Maheshwari</li>
-                <li>Aman Dhattarwal</li>
-            </ul>
+        <div class="col-6 col-s-12 ">
+            <div class="blogcontainer">
+                <img src="./images/why it.jpg" width="100%" alt="">
+            </div>
         </div>
-        <div class="mentor2">
+
+
+
+        <!-- personal information -->
+        <div class="col-6 col-s-12">
+            <div class="blogcontainer">
+                <p>
+                    First, I would like to answer this question:<br>
+                    What do I want to become?<br> <br>
+                    Become? My true-self and keep growing and be a happy fulfilled human, who will remain fit to his
+                    100’s, who keeps learning, who takes care of himself & his loved ones, one who spreads positivity in
+                    the world and one who has an amazing yielding career that pushes humanity forward and gives him a
+                    truly wonderful quality of life.
+                    <br><br>In short, I don’t want to be a job but an extraordinary person.
+                    Can I?<br>
+                    Yes, because no one can fucking stop me.
+                    <br><br>
+                    <i>On our path we need mentors who guide us and with whom we could check in when we seem lost, with
+                        the Internet we could make anyone our mentor. Listen to their videos and follow through.</i>
+                </p>
+                <h3>My Mentors:</h3>
+                <ul>
+                    <li>Vishen Lakhiani</li>
+                    <li>Elon Musk</li>
+                    <li>Sandeep Maheshwari</li>
+                    <li>Aman Dhattarwal</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-6 col-s-12 ">
+        <div class="blogcontainer">
             <p>Have i even met them?-No,<br>
                 I follow them, I listen to them, I search for advice on Google from them.<br>
                 They are the people whom I want to like someday, not people around me, The normal bs society.
             </p>
-        </div>
-        <div class="Q1">
+
             <h3>Industries I want to change:</h3>
             <ul>
                 <li>Education</li>
@@ -66,16 +229,26 @@
                 <li>Flimmaking</li>
             </ul>
         </div>
-        <div class="mystory">
+        <div class="blogcontainer">
+            <img src="./images/eduv.jpg" alt="" width="100%">
+        </div>
+    </div>
+
+    <div class="col-6 col-s-12 ">
+        <div class="blogcontainer">
             <h3>My Story:</h3>
             <p><i>Updated (06-2021)</i>
                 <br><br>
-                Now how did I get started in all these things I am doing today? – 
-                Animation, Graphic Designing, Website development, Writing, Marketing for my YouTube channels, social media, my Personal development-fitness, transformation and thinking about starting a few companies.
-                So, there will be million different variables that brought me here today to writing this ‘About page’, but one prominent one that I would love to tell you about is my wish to improve the way education is delivered, I just wished that someone made a great quality video on our syllabus eg. If the stories were like movies, It would be easier to learn and remember.
+                Now how did I get started in all these things I am doing today? –
+                Animation, Graphic Designing, Website development, Writing, Marketing for my YouTube channels, social
+                media, my Personal development-fitness, transformation and thinking about starting a few companies.
+                So, there will be million different variables that brought me here today to writing this ‘About page’,
+                but one prominent one that I would love to tell you about is my wish to improve the way education is
+                delivered, I just wished that someone made a great quality video on our syllabus eg. If the stories were
+                like movies, It would be easier to learn and remember.
                 <br><br>
                 But I knew someone wasn't coming to save us.
-            
+
                 <br><br>
                 ——————
                 <br><br>
@@ -83,50 +256,80 @@
                 <br><br>
                 ——————
                 <br><br>
-                Someone tomorrow, from among us will rise up and bring this change –Make our education system more efficient and engaging.
+                Someone tomorrow, from among us will rise up and bring this change –Make our education system more
+                efficient and engaging.
                 Should I wait for them? Why not me?
                 <br><br>
-                This led me to a path that has just started, but I see now that I have grown so much, I started by making my YouTube channel so that I can start educating people with what I know.
+                This led me to a path that has just started, but I see now that I have grown so much, I started by
+                making my YouTube channel so that I can start educating people with what I know.
                 <br><br>
                 Since I had no money, I had to start by learning what it would take to do what I wish.
-                I started learning editing, then animation. 
+                I started learning editing, then animation.
                 <br><br>
                 I later realized that people want to look at something that looks cool.
                 But I had no money to hire a designer,
                 So, I started learning illustrator and Photoshop to make cool thumbnails and cover images.
                 <br><br>
-                Then I realized that you also need to rank on pages, and again I had no money to hire a marketing agency,
-                So I started learning SEO and stuff. 
+                Then I realized that you also need to rank on pages, and again I had no money to hire a marketing
+                agency,
+                So I started learning SEO and stuff.
                 <br><br>
-                But when I used to watch other videos where only screen recording was present, that lacked some human touch. So, for recording myself,  I needed to lose weight, build muscles and make a studio.
+                But when I used to watch other videos where only screen recording was present, that lacked some human
+                touch. So, for recording myself, I needed to lose weight, build muscles and make a studio.
                 I have lost weight and I am building muscles and of course, no money for a studio.
                 <br><br>
-                If  you have checked out my latest work, (if you haven’t checked it out here- (_blank) )
-                I am going good, but yet not monetized, as I don’t know how to. I don’t  want to work as a freelancer just for money but to give time to my dreams and do something with it.
+                If you have checked out my latest work, (if you haven’t checked it out here- (_blank) )
+                I am going good, but yet not monetized, as I don’t know how to. I don’t want to work as a freelancer
+                just for money but to give time to my dreams and do something with it.
                 <br><br>
-                In this process, I stumbleupon things that I like, work that I can do for hours. When society around me was telling me that I was not intelligent and that I have no focus (just because I didn’t like studies), I could easily work on animations and graphics, without knowing hours have flown by, which helped me understand myself better.❤
+                In this process, I stumbleupon things that I like, work that I can do for hours. When society around me
+                was telling me that I was not intelligent and that I have no focus (just because I didn’t like studies),
+                I could easily work on animations and graphics, without knowing hours have flown by, which helped me
+                understand myself better.❤
                 <br><br>
-                I am almost 19 and I just took a loan of Rs. 500 from my brother who is 6 years younger than me and bought this domain, and again since I don’t have money, I am building this site with a friend.
+                I am almost 19 and I just took a loan of Rs. 500 from my brother who is 6 years younger than me and
+                bought this domain, and again since I don’t have money, I am building this site with a friend.
                 <br><br>
-                I think it would help me as a portfolio and publishing my writings which I discovered I like to do (on keyboard, only).
+                I think it would help me as a portfolio and publishing my writings which I discovered I like to do (on
+                keyboard, only).
                 <br><br>
-                Now, as I was doing all these I also had my studies and all other areas of my life, so I figured out that I need productivity.
-                So, my dear search engines led me to @mindvalley, from here it started my personal growth journey and they are just amazing.
+                Now, as I was doing all these I also had my studies and all other areas of my life, so I figured out
+                that I need productivity.
+                So, my dear search engines led me to @mindvalley, from here it started my personal growth journey and
+                they are just amazing.
                 <br><br>
-                I don’t know where I would have been today if I didn’t have that wish to improve education. Maybe or maybe not I would have been typing this ‘My story’ with 55+ wpm (typing speed).
-                But today I can say that, Yes! Holy Shit. I am a much better person, I ever thought I would be. 
+                I don’t know where I would have been today if I didn’t have that wish to improve education. Maybe or
+                maybe not I would have been typing this ‘My story’ with 55+ wpm (typing speed).
+                But today I can say that, Yes! Holy Shit. I am a much better person, I ever thought I would be.
                 <br><br>
-                Yeah! There’s so much more to grow –I have to start earning, I haven’t had a gf yet, so work on my social skills and of course build that dream platform.
+                Yeah! There’s so much more to grow –I have to start earning, I haven’t had a gf yet, so work on my
+                social skills and of course build that dream platform.
                 <br><br>
-                But Vishen (my virtual mentor) told me yesterday that we must look at our lives in a ‘Reverse gap’ of 5 to 10 years, and see how much we have grown.
-                And then make End Goals - in Experiences, Growth and Contribution.     3 IQ's That’s the way even I guess is to live life.
+                But Vishen (my virtual mentor) told me yesterday that we must look at our lives in a ‘Reverse gap’ of 5
+                to 10 years, and see how much we have grown.
+                And then make End Goals - in Experiences, Growth and Contribution. 3 IQ's That’s the way even I guess is
+                to live life.
                 <br><br>
-                I have a long road ahead of me and there are a million things to learn and do. 
+                I have a long road ahead of me and there are a million things to learn and do.
                 <br><br>
                 What I have today is Courage to say that —I CAN DO IT.
             </p>
         </div>
-    </section>
-</main>
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
 </body>
+
 </html>

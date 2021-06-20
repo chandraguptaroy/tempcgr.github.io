@@ -30,7 +30,36 @@
       font-size: xx-large;
 
     }
-
+    ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: -webkit-sticky; /* Safari */
+          position: sticky;
+          top: 0;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #4CAF50;
+        }
 
 
     /* For mobile phones: */
@@ -145,7 +174,7 @@
     .blogcontainer {
       background-color: white;
       border: black;
-      box-shadow: rgb(143, 143, 143);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       padding: 10px;
     }
 
@@ -170,7 +199,13 @@
 
 <body>
   
-
+  
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  
     <div class="header">
       <h1>MY Blog</h1>
       <h3>welcome to myblog</h3>
@@ -198,6 +233,7 @@
           </div>
         </div>
       </div>
+      
       <hr>
 
 <!-- personal information -->

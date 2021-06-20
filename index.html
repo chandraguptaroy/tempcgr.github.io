@@ -6,6 +6,7 @@
   <title>CGR</title>
   <link rel="shortcut icon" type="image/png" href="images/chandu.png">
   <link rel="stylesheet" href="stylehome.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   <style>
     p{
@@ -22,13 +23,16 @@
 </head>
 <body>
     <header>
-          <nav>
+      <nav id="Nav">
+          
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
               <i class="fas fa-bars"></i>
             </label>
             <label class="logo"><a href="index.html"><img class="cgrword" src="images/cover2.png" width="20%"></a></label>
-            <ul>
+            <ul style="position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;">
               <li><a class ="ani" href="#" >Blog</a></li>
               <li><a class ="ani"  href="work.html" >Work</a></li>
               <li><a class ="ani"  href="about.html" >About</a></li>
@@ -44,6 +48,7 @@
           <li><a href="https://facebook.com/chandraguptaroy" target="_blank"><i class="fab fa-facebook"></i> </a>  </li>
         </ul>
       </div>
+      
       <section>
         <div class="about">
           <h2><br>My Story<br>————</h2>
@@ -129,5 +134,8 @@
         </div> 
       </section>
     </main>
+    <script>
+      
+    </script>
 </body>
 </html>
