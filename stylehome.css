@@ -213,8 +213,12 @@ section h5 {
     border-radius: 50% ;
   }
 .sub:hover {background: #ff6700;}
-
-.creator_of {border-radius: 50%;}
+.creator_of{background-image: url(images/bg\ main.jpg);
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size:cover;}
+.creator_of img {border-radius: 50%;}
 .about p{padding-left: 25%;
     padding-right:25%;}
 button{
