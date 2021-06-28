@@ -38,9 +38,9 @@ h2 {
     padding: 20px;
 }
 header {
-    background-image: url(images/Cover.jpg);
+  background-image: url(images/cover.jpg);
     background-repeat: no-repeat;
-
+    background-size: cover;
     background-position: center;
     padding-bottom: 30%;
 }
