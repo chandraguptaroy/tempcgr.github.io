@@ -37,17 +37,20 @@ header h3 {
     font-size: 30px;
     color: white;
 }
-h2 {
-    padding: 20px;
-}
-header {
-  background-image: url(images/cover.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 30%;
+h1,h2,h3 {
+  color: black;
 }
 
+header {
+    height: 600px;
+    width: 100%;
+    z-index: 12;
+    background-image: url(images/main/Cover\ big\ web\ 50\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
 main {
     background-color: white;
     text-align: center;}
@@ -220,22 +223,22 @@ button{
       }
         /* responsive end */
 
-        .mystory{
-          background-color: rgb(255, 255, 255);
-          margin: 30%;
-        }
-        .btn1{
-          background-color: #343434;
-                /* Green */
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
+.mystory{
+  background-color: rgb(255, 255, 255);
+  margin: 30%;
+}
+.btn1{
+  background-color: #343434;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
         }
   .Quote{
     background-image:url(images/bg/yellow_grunge01.png);

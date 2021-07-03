@@ -58,7 +58,7 @@ a.ani:hover{
 }
 #check{
     display: none;
-}
+}/*
 @media (max-width: 952px){
     label.logo{
         font-size: 30px;
@@ -79,7 +79,7 @@ nav a.ani:active{
             display: block;        
         }
             
-        nav{background-color: #eee;}
+        
         ul{
                 position: fixed;
                 width: 100%;
@@ -107,4 +107,4 @@ nav a.ani:active{
             }
             
             
-        }
+        }*/

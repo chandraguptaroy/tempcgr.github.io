@@ -13,13 +13,6 @@ Never done it professionally.
 
 Found on a website on how to include header and footer on all pages.
 
-
-<body>
-  
-  <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-  
-  Content.
-  
-  <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-  
-</body>
+G-Drive import image template: 
+<a href="https://drive.google.com/uc?export=view&id=xxxxxxxxxxxxxxx">
+<img src="https://drive.google.com/uc?export=view&id=xxxxxxxxxxxxxx"
