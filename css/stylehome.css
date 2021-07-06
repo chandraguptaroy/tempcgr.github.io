@@ -1,0 +1,146 @@
+section{padding: 50px;}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+    background-color: rgb(255, 255, 255);
+}
+
+.font{
+  font-size: 300%;
+
+}
+.Youtube {
+  text-align: left;
+}
+
+body {
+    margin: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('images/bg\ main.jpg');
+}
+header h1 {
+    text-align: left;
+    font-size: 80px;
+    color: white;
+    font-family:sifi;
+    word-spacing: 20%;
+    
+}
+header h3 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+h1,h2,h3 {
+  color: black;
+}
+
+header {
+    height: 600px;
+    width: 100%;
+    z-index: 12;
+    background-image: url(../images/main/Cover\ big\ web\ 50\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+main {
+    background-color: white;
+    text-align: center;}
+video {
+    padding: 10px;
+}
+
+section h5 {
+    margin: 40px;
+}
+.Quote h1{text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+font-size:x-large;
+font-family:arial;
+}
+.about {
+    border-radius: 50%;
+}
+
+
+.Cta{
+    background-color: #ff6700;
+    padding-bottom: 5%;
+    padding-top: 10%;
+}
+.sub {
+    border:rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255);
+    padding: 28px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50% ;
+  }
+.sub:hover {background: #ff6700;}
+.creator_of{background-image: url(images/bg\ main.jpg);
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size:cover;}
+.creator_of img {border-radius: 50%;}
+.about p{padding-left: 25%;
+    padding-right:25%;}
+button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;}
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+.mystory{
+  background-color: rgb(255, 255, 255);
+  margin: 30%;
+}
+.btn1{
+  background-color: #343434;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+.btn2{
+  margin: 20px;
+  color: black;
+}
+.btn2 a{
+  color: black;
+  padding-bottom: 3px;
+}
+.Quote{
+  background-image:url(../images/bg/yellow_grunge01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}  
+.transhr{
+  width: 50px;
+  transition: all 0.3s ease;
+} 
+.btn2 a:hover hr{
+  width: 150px;
+  transition: all 0.3s ease;
+} 

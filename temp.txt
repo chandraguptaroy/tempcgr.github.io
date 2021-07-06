@@ -1,0 +1,50 @@
+
+
+Found on a Google on how to include header and footer on all pages.
+
+G-Drive import image template: 
+<a href="https://drive.google.com/uc?export=view&id=xxxxxxxxxxxxxxx">
+<img src="https://drive.google.com/uc?export=view&id=xxxxxxxxxxxxxx"
+
+
+Javascripts:
+
+Font Asesome: <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+e query: <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS.min.js" integrity="sha512-yfw7F0e6Vqdxeg6nDlK4l4+pyBvwozVA61StkFRHcwW2dTAIRa4rfmvi4xXmcRmcnq4NI3jbOY4B8cc25n5SkA=="  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src=EQCSS.js></script>
+
+
+Potential Videos for making templates:
+JS : Best
+https://youtu.be/j5Sl6vx_l1s
+2nd:
+https://www.youtube.com/watch?v=H1iSe67L-0Y
+
+Php: 
+https://www.youtube.com/watch?v=jPUySyc5nzY
+
+
+Potential Js: Not working for me.
+
+class MyHeader extends HTMLElement {
+    connectedCallback(){
+        this.innerHTML = 
+        '<header>'+
+        '<nav>'+
+        '<div class="logo">'+
+            '<img src="images/main/cgrwhite.png" alt=""></div>'+
+            '<input type="checkbox" id="click">'+
+            '<label for="click" class="menubtn">'+
+                '<i class="fas fa-bars"></i>'+
+            '</label>'+
+            '<ul>'+
+                '<li><a class="" href="blog/blog.html">Blog</a></li>'+
+                '<li><a class="" href="work.html">Work</a></li>'+
+                '<li><a class="" href="about.html">About</a></li>'+
+            '</ul>'+
+        '</nav>'+
+    '</header>'
+    }
+}
+
+customElements.define('my-header',MyHeader);

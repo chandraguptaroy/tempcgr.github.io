@@ -4,186 +4,67 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="../css/all.css" >
     <style>
         body {
-
             background-color: rgb(255, 255, 255);
             font-family: "Raleway", sans-serif;
-
             text-align: center;
             font-size: larger;
-
+            padding: 2%;
         }
-
-        h3 {
+        p{text-align: left;}
+        section{
+            padding-top: 10px ;
+            padding-bottom: 10px ;
+        }
+        h1{text-align: center;}
+        h3{
             font-size: xx-large;
         }
-
+        h4{font-size: xx-large;
+        text-align: left;}
         * {
             box-sizing: border-box;
         }
-
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
+        .mystory{ text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;}
+        #side{ font-size: x-small;
+        text-align: right;
+        margin-right: 30%;
         }
-
-        [class*="col-"] {
-            float: left;
-            padding: 15px;
-        }
-
-
-
-
-        /* For mobile phones: */
-        [class*="col-"] {
-            width: 100%;
-        }
-
-        @media only screen and (min-width: 600px) {
-
-            /* For tablets: */
-            .col-s-1 {
-                width: 8.33%;
-            }
-
-            .col-s-2 {
-                width: 16.66%;
-            }
-
-            .col-s-3 {
-                width: 25%;
-            }
-
-            .col-s-4 {
-                width: 33.33%;
-            }
-
-            .col-s-5 {
-                width: 41.66%;
-            }
-
-            .col-s-6 {
-                width: 50%;
-            }
-
-            .col-s-7 {
-                width: 58.33%;
-            }
-
-            .col-s-8 {
-                width: 66.66%;
-            }
-
-            .col-s-9 {
-                width: 75%;
-            }
-
-            .col-s-10 {
-                width: 83.33%;
-            }
-
-            .col-s-11 {
-                width: 91.66%;
-            }
-
-            .col-s-12 {
-                width: 100%;
-            }
-        }
-
-        @media only screen and (min-width: 768px) {
-
-            /* For desktop: */
-            .col-1 {
-                width: 8.33%;
-            }
-
-            .col-2 {
-                width: 16.66%;
-            }
-
-            .col-3 {
-                width: 25%;
-            }
-
-            .col-4 {
-                width: 33.33%;
-            }
-
-            .col-5 {
-                width: 41.66%;
-            }
-
-            .col-6 {
-                width: 50%;
-            }
-
-            .col-7 {
-                width: 58.33%;
-            }
-
-            .col-8 {
-                width: 66.66%;
-            }
-
-            .col-9 {
-                width: 75%;
-            }
-
-            .col-10 {
-                width: 83.33%;
-            }
-
-            .col-11 {
-                width: 91.66%;
-            }
-
-            .col-12 {
-                width: 100%;
-            }
-        }
-
         .blogcontainer {
             background-color: white;
             border: black;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             padding: 10px;
+            margin-left: 20%;
         }
-
+        .imgcontainer{
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.489);
+        }
         .asopacity {
             opacity: 0.75;
+        }
+        @media only screen and (max-width: 600px) {
+            #side{margin-right: 5px;}
         }
     </style>
 </head>
 
 <body>
-
-
+    <hr>
+    <H1 style="font-size: 300%; font-family: fantasy;">ABOUT ME</H1>
+    <hr>
     <div class="row">
-
-        <div class="col-12 col-s-12 ">
-            <div >
-                <img src="./images/Cover.jpg" width="100%" alt="">
-                <hr>
-                <H1 style="font-size: 300%; font-family: fantasy;">ABOUT ME</H1>
-                <hr>
+        <div  class="col-4 col-s-12 ">
+            <div class="imgcontainer">
+                <img src="../images/main/chandu.png" width="100%" alt="">
             </div>
         </div>
-        <div class="col-6 col-s-12 ">
+        <div class="col-8 col-s-12" style="float: right;">
             <div class="blogcontainer">
-                <img src="./images/why it.jpg" width="100%" alt="">
-            </div>
-        </div>
-
-
-
-        <!-- personal information -->
-        <div class="col-6 col-s-12">
-            <div class="blogcontainer">
-                <p>
+                <p id="introwords" style="text-align: left;">
                     First, I would like to answer this question:<br>
                     What do I want to become?<br> <br>
                     Become? My true-self and keep growing and be a happy fulfilled human, who will remain fit to his
@@ -197,48 +78,43 @@
                     <i>On our path we need mentors who guide us and with whom we could check in when we seem lost, with
                         the Internet we could make anyone our mentor. Listen to their videos and follow through.</i>
                 </p>
-
             </div>
-
         </div>
-
-    </div>
-
-    <div class="col-6 col-s-12 ">
-        <div class="blogcontainer">
-            <h3>My Mentors:</h3>
-            <ul>
-                <li>Vishen Lakhiani</li>
-                <li>Elon Musk</li>
-                <li>Sandeep Maheshwari</li>
-                <li>Aman Dhattarwal</li>
-            </ul>
-            <p>Have i even met them?-No,<br>
-                I follow them, I listen to them, I search for advice on Google from them.<br>
-                They are the people whom I want to like someday, not people around me, The normal bs society.
-            </p>
-
-            <h3>Industries I want to change:</h3>
-            <ul>
-                <li>Education</li>
-                <li>Food</li>
-            </ul>
-            <h3>Industries I like:</h3>
-            <ul>
-                <li>VR/AR</li>
-                <li>AI</li>
-                <li>Flimmaking</li>
-            </ul>
-        </div>
-        <div class="blogcontainer">
-            <img src="./images/eduv.jpg" alt="" width="100%">
         </div>
     </div>
-
-    <div class="col-6 col-s-12 ">
-        <div class="blogcontainer">
-            <h3>My Story:</h3>
-            <p><i>Updated (06-2021)</i>
+    <div class="row">
+        <div class="col-8 col-s-12 ">
+            <div class="blogcontainer">
+                <h4>My Mentors:</h4>
+                <p>
+                    Vishen Lakhiani<br> Elon Musk<br> Sandeep Maheshwari<br> Aman Dhattarwal 
+                </p>
+            <p id="side"> Have i even met them?-No,<br>I follow them, I listen to them, I search for advice on Google from them.<br>
+                    They are the people whom I want to be like someday, not people around me, The normal bs society.
+                </p>
+                <h4>Industries I want to change:</h4>
+                <p>
+                    Education 
+                    Food </p>
+                
+                <h4>Industries I like:</h4>
+                
+                    <p>VR/AR 
+                    /AI 
+                    /Flimmaking 
+                    </p>
+            </div>
+        </div>
+        <div class="col-4 col-s-12 ">
+            <div class="imgcontainer">
+                <img src="../images/main/chandu.png" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+    <section  class="mystory">
+        <div class="">
+            <h3 style="text-align: center;">My Story:</h3>
+            <p style="text-align: center;"><i>Updated (06-2021)</i>
                 <br><br>
                 Now how did I get started in all these things I am doing today? –
                 Animation, Graphic Designing, Website development, Writing, Marketing for my YouTube channels, social
@@ -251,11 +127,11 @@
                 But I knew someone wasn't coming to save us.
 
                 <br><br>
-                <hr style="height: 2px;width: 25%;stroke: black; stroke-width: 10px; color: black; margin: 10%; " >
+                <hr color=black width="30%" size=".5px" />
                 <br><br>
                 —Change does not just come, change is brought—
                 <br><br>
-                <hr style="height: 2px;width: 25%;stroke: black; stroke-width: 10px; color: black; margin: 10%; text-align: center;" >
+                <hr color=black width="30%" size=".5px" />
                 <br><br>
                 Someone tomorrow, from among us will rise up and bring this change –Make our education system more
                 efficient and engaging.
@@ -316,14 +192,40 @@
                 What I have today is Courage to say that —I CAN DO IT.
             </p>
         </div>
-    </div>
+</section>  
     <section>
         <div class="free">
             <h2>Get your free Assets:</h2>
+            <hr color=black width="10%" size=".5px" />
             <h3>Productive Wallpapers:</h3>
-            <h3>Focus Background Music</h3>
-            <h3>Eduv Wallpapers:</h3>
-            <h3>Why it Wallpapers:</h3>
+            <a href="https://drive.google.com/uc?export=view&id=1oRsw-7T1QFOwvNGDP3L4VYW1FJBjflXw">
+                <img src="https://drive.google.com/uc?export=view&id=1oRsw-7T1QFOwvNGDP3L4VYW1FJBjflXw"
+                style="width: 500px; max-width: 100%; height: auto"
+                title="Click for the larger version." /><br><br>
+            <a href="https://drive.google.com/uc?export=view&id=1tOsbNGoIcw8a3ukOvc-Es_8ociXR52hT">
+                <img src="https://drive.google.com/uc?export=view&id=1tOsbNGoIcw8a3ukOvc-Es_8ociXR52hT"
+                style="width: 500px; max-width: 100%; height: auto"
+                title="Click for the larger version." /><br><br>
+            <a href="https://drive.google.com/uc?export=view&id=1r5l7_OsgkaptmriqGcI_67sfpaMNlHdJ">
+                <img src="https://drive.google.com/uc?export=view&id=1r5l7_OsgkaptmriqGcI_67sfpaMNlHdJ"
+                style="width: 500px; max-width: 100%; height: auto"
+                title="Click for the larger version." /><br><br>
+            <a href="https://drive.google.com/uc?export=view&id=1ai1y6DFk3NyMmqJPZ6sdW69iJvVVGAMl">
+                <img src="https://drive.google.com/uc?export=view&id=1ai1y6DFk3NyMmqJPZ6sdW69iJvVVGAMl"
+                style="width: 500px; max-width: 100%; height: auto"
+                title="Click for the larger version." /><br><br>
+                <div class="btn">
+                    <a href="https://drive.google.com/file/d/1tZ-YSbrxXJHn6D-r4lo2tX0dU8GHrAXl/view?usp=sharing"><b>Download All</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div><br><br>
+            <h3>Quote Wallpapers:</h3>
+            <a href="https://drive.google.com/uc?export=view&id=1r-_kP7Q95Nw9xNt0WMXnplxGZUSAS8w4">
+                <img src="https://drive.google.com/uc?export=view&id=1r-_kP7Q95Nw9xNt0WMXnplxGZUSAS8w4"
+                style="width: 500px; max-width: 100%; height: auto"
+                title="Click for the larger version." /><br>
+            <div class="btn">
+                <a href="https://drive.google.com/file/d/1tZ-YSbrxXJHn6D-r4lo2tX0dU8GHrAXl/view?usp=sharing"><b>Download All</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div>
+            <br><br><h3>Focus Background Music</h3>
+            <br><br><h3>Eduv Wallpapers:</h3>
+            <br><br><h3>Why it Wallpapers:</h3>
         </div>
     </section>
 </body>
