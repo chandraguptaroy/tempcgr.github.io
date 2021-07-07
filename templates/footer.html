@@ -5,70 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <style>
-        footer{background-color: rgb(0, 106, 255);
+        body{
+            margin: 0;
+            padding: 0;
         }
-        .row{
-            height: 400px;
-            
-            margin: 50px;
-        }
-        .top{height: 500px;}
-        #div1,#div2,#div3{
-            border-radius: 5px;
-            height: 500px;
-            opacity: 1;
-            
-        }
-        #div1{ /*left*/
-        width: 30%;
-        float: left;
-        background-color: aqua;
-        margin-top: 10px;
-        }
-        #div2{ /*center*/
-        width: 30%;
-        float: initial;
-        margin: 0 auto;
-        background-color: aqua;
-        }
-        #div3{ /*right*/
-        width: 30%;
-        float: right;
-        margin: 0 0;
-        background-color: aqua}
-        .footerlogo{
-            width: 100px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 50%;
-        }
-        .second{
-            background-color: black;
-        }
+       footer{
+           margin: 0;
+           padding: 0;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: aqua;
+       }
+       .wrapper{
+            padding: 20px;
+            width: 95%;
+            margin: 20px auto;
+       }
+       .cols{
+           display: flex;
+           flex-flow: row wrap;
+           justify-content: center;
+           margin: 10px 0;
+       }
+       .col{
+           flex: 1;
+           margin: 10px;
+           padding: 10px;
+           background: rgb(0, 208, 255);
+           transition: 0.3s ease;
+           text-align: center;
+           border-radius: 10px;
+       }
+       .col:first-child{
+           background-color: rgb(0, 255, 0);
+       }
+       .col:last-child{
+           background-color: rgb(241, 87, 26);
+       }
+       .social{
+           background-color: white;
+           height: 40px;
+           width: 50%;
+           border-radius: 5px;
+           margin-top: 15px;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+       }
+       .links{ padding: 2%;}
+       .social:nth-child(1){background-color: red;}
+       .social:nth-child(2){background-color: blue;}
+       .social:nth-child(3){background-color: green;}
+       @media screen and (max-width: 540px) {
+           
+       }
     </style>
 </head>
 <body>
     <footer>
-    <section class="top">
-    <div class="row">
-        <div id="div3">
-            <img class="footerlogo" src="../images/main/eduv.jpg" >
+        <div class="wrapper">
+            <section class="cols">
+                <div class="col">
+                    <img style="width: 25%;border-radius: 50%;" src="../images/main/eduv.jpg">
+                    <h2>Eduv</h2>
+                    <p><i>Educational Videos with Industry Level Editing</i></p>
+                    <div class="links" style="margin-top: 20px;">
+                        <div class="social"><a href="https://youtube.com/c/chandraguptaroy" target="_blank"><i class="fab fa-youtube"></i> </a></div>
+                        <div class="social"><a href="https://instagram.com/chandraguptaroy" target="_blank"><i class="fab fa-instagram"></i> </a></div>
+                        <div class="social"></div>
+                        <div class="social"></div>
+                        <div class="social"></div>
+                        <div class="social"></div>
+                        <div class="social"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img style="width: 25%;border-radius: 50%;" src="../images/main/chandu.png">
+                    <h2>CGR</h2>
+                    <p>Vlogs | How-to's | Reviews </p>
+                </div>
+                <div class="col">
+                    <img style="width: 25%;border-radius: 50%;" src="../images/main/why it.jpg">
+                    <h2>Whyit</h2>
+                    <p>Exploration of Reasoning</p>
+                </div>
+            </section>
+            <div class="second">
+                <hr color=black width="10%" size="1px" />
+                <p style="text-align: center;">Chandra Gupta Roy | @chandraguptaroy</p>
+            </section>
         </div>
-        <div id="div1">
-            <img class="footerlogo" src="../images/main/why it.jpg" >
-        </div>
-        <div id="div2">
-            <img class="footerlogo" src="../images/main/chandu.png" >
-        </div>  
-    </div>
-    </section>
-    <section>
-    <div class="second">
-        <p>Chandra Gupta Roy | @chandraguptaroy</p>
-    </div>
-    </section>
-</footer>
+    </footer>
 </body>
 </html>

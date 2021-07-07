@@ -9,88 +9,16 @@
   <link rel="stylesheet" href="css/mynav.css">
   <link rel="stylesheet" href="css/stylehome.css">
   <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/totopbutton.css">
   <link rel="stylesheet" href="css/socialibar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <script type="module" src="templates.js"></script>
   <style>
-    p {
-      text-align: center;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    .cta {
-      text-align: center;
-      background-color: #ff6700;
-    }
-    .Quote hr{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-    hr{display: block;
-      margin-left: auto;
-      margin-right: auto;}
-    #div1{
-      width: 33%;
-      float: left;
-    }
-    #div2{
-      width: 33%;
-      float: initial;
-      margin: 0 auto;
-    }
-    #div3{
-      width: 33%;
-      float: right;
-      margin: 0 0;
-    }
-    .embed{
-        position: relative;
-        width: 100%;
-        padding-bottom: 50%;
-        height: auto;
-    }
-    .embed iframe{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 90%;
-        height:90%;
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;}
-        #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: rgb(0, 255, 242); /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
 
   </style>
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  <header01></header01>
+  
   <header>
     <nav id="Nav">
 
@@ -111,18 +39,20 @@
     </div>
   </header>
   <main>
-    <div class="Social-menu">
-      <ul>
-        <li><a href="https://youtube.com/c/chandraguptaroy" target="_blank"><i class="fab fa-youtube"></i> </a> </li>
-        <li><a href="https://instagram.com/chandraguptaroy" target="_blank"><i class="fab fa-instagram"></i> </a> </li>
-        <li><a href="https://twitter.com/chandraguptaroy" target="_blank"><i class="fab fa-twitter"></i> </a> </li>
-        <li><a href="https://facebook.com/chandraguptaroy" target="_blank"><i class="fab fa-facebook"></i> </a> </li>
-      </ul>
-    </div>
-
+  <!--               Social bar               -->
+      <div class="Social-menu">
+        <ul>
+          <li><a href="https://youtube.com/c/chandraguptaroy" target="_blank"><i class="fab fa-youtube"></i> </a> </li>
+          <li><a href="https://instagram.com/chandraguptaroy" target="_blank"><i class="fab fa-instagram"></i> </a> </li>
+          <li><a href="https://twitter.com/chandraguptaroy" target="_blank"><i class="fab fa-twitter"></i> </a> </li>
+          <li><a href="https://facebook.com/chandraguptaroy" target="_blank"><i class="fab fa-facebook"></i> </a> </li>
+        </ul>
+      </div>
+  <!--               Social bar               -->
     <section>
         <div class="mysotry">
-            <h2 class="font">My Story<br></h2>
+            <h2 class="font">My Story<br></h2><br>
+            <hr color=black width="25%" size=".5px" /><br><br>
               <p>I am a Visionary. And professionally I have become many different things—Editor, Designer, Writer,
               Marketer etc.<br>
               I am the creator of Education Valley and Why it, and I created them with the intention to create something
@@ -157,18 +87,18 @@
               I needed to lose weight, build muscles and make a studio.<br>
               I have lost weight and I am building muscles and of course, no money for a studio.<br>
             </p><br>
-            <div><a href="./about.html"><button class="btn1" >Read More</button></a></div>
-            </div>
+            <div class="btn">
+              <a href="main/about.html"><b>Read More </b><br><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div>
         </section>
             <section class="Quote">
               <hr color=black width="70%" size=".5px" />
-              <h1> You are not seperated from your goals by a number of years but by a number of action.</h1>
+              <h1><i> You are not seperated from your goals by a number of years but by a number of action.</i></h1>
               <h3><br>—Self-Reminder—</h3>
               <hr color=black width="70%" size=".5px" />
         </section>
         <section class="3miq">
-              <h2 class="font">My 3MIQ's</h2>
-              <hr color=black width="20%" size=".5px" />
+              <h2 class="font">My 3MIQ's</h2><br>
+              <hr color=black width="20%" size=".5px" /><br>
               <div>
               <a href="https://drive.google.com/uc?export=view&id=19CsBQu-UExiBBXGVnFOZIP4PlSNfmxaG">
                 <img src="https://drive.google.com/uc?export=view&id=19CsBQu-UExiBBXGVnFOZIP4PlSNfmxaG"
@@ -179,7 +109,9 @@
             <a href="https://drive.google.com/file/d/1tZ-YSbrxXJHn6D-r4lo2tX0dU8GHrAXl/view?usp=sharing"><b>Download Template</b><br><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div>
             
         </section>
-        <section class="Youtube">
+        <!--           You Tube      Start        -->
+    <section class="Youtube">
+        <h2>YouTube:<br><br></h2>
       <div>
         <h1>Education Valley:</h1>
         <h3>Educational Videos:<br><br></h3>
@@ -267,14 +199,18 @@
               </div>
             </div>
     </section>
+     <!--           You Tube   End           -->
     <section>
-      <h2>Hello,</h2>
+      <h2><br><br>Hello,</h2>
       <img class="about" src="images/main/chandu.png" width="200px" alt="dp">
       <br>
       <h3>Chandra Gupta Roy</h3>
     </section>
   </main>
 </body>
+
+ <!--                   Top button     Start        -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>//Get the button:
   mybutton = document.getElementById("myBtn");
   
@@ -295,4 +231,6 @@
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }</script>
 
+
+ <!--                   Top button    End         -->
 </html>
