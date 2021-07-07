@@ -11,52 +11,82 @@
             margin: 0;
             padding: 0;
         }
-       footer{
+        footer{
            margin: 0;
            padding: 0;
            font-family: Arial, Helvetica, sans-serif;
-           background-color: aqua;
+           background-image: url(../images/bg/striped\ black\ bg.jpg);
+           background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
        }
-       .wrapper{
+       .fot-wrapper{
             padding: 20px;
             width: 95%;
             margin: 20px auto;
        }
-       .cols{
+       .fot-cols{
            display: flex;
            flex-flow: row wrap;
            justify-content: center;
            margin: 10px 0;
        }
-       .col{
+       .fot-col{
+           position: relative;
            flex: 1;
            margin: 10px;
            padding: 10px;
-           background: rgb(0, 208, 255);
+           background: rgba(0, 208, 255, 1);
            transition: 0.3s ease;
            text-align: center;
-           border-radius: 10px;
+           border-radius: 5px;
        }
-       .col:first-child{
-           background-color: rgb(0, 255, 0);
+       .fot-col:first-child{
+           background: linear-gradient(135deg, #066f00 -30%, #01e601 100%);
        }
-       .col:last-child{
+
+       .fot-col:last-child{
            background-color: rgb(241, 87, 26);
        }
-       .social{
-           background-color: white;
-           height: 40px;
-           width: 50%;
-           border-radius: 5px;
-           margin-top: 15px;
-           display: block;
-           margin-left: auto;
-           margin-right: auto;
+       .fot-col::after,.fot-col::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .fot-col:nth-child(2)::before{
+            clip-path:polygon(10% -13%, -13% 20%, 30% 80%, 40% 100%) ;
+            background: linear-gradient(135deg, #0088ff 0%, #00ffe1 35%);
+            }
+        .fot-col:first-child::before{
+            clip-path: circle(30% at left 20%);
+            background: linear-gradient(135deg, #066f00 0%, #01e601 35%);}
+        .fot-col:last-child::before{
+            clip-path: circle(5% at right 20%);
+            background: linear-gradient(135deg, #066f00 0%, #01e601 35%);}
+        .fot-col:last-child::after{
+            clip-path: circle(10% at left 20%);
+            background: linear-gradient(135deg, #066f00 0%, #01e601 35%);}
+        .fot-col-top{
+            padding-top: 7px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            background: rgba(174, 103, 103, 0.25);
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.408);
+            border-left: 1px solid rgba(255,255, 255, 0.5);
+            border-top: 1px solid rgba(255,255, 255, 0.5);
+            transition: all 0.3 ease;
        }
-       .links{ padding: 2%;}
-       .social:nth-child(1){background-color: red;}
-       .social:nth-child(2){background-color: blue;}
-       .social:nth-child(3){background-color: green;}
+       .fot-col-top:hover{
+            box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.653);
+            transition: all 0.3 ease;
+       }
+       
+      
        @media screen and (max-width: 540px) {
            
        }
@@ -64,36 +94,33 @@
 </head>
 <body>
     <footer>
-        <div class="wrapper">
-            <section class="cols">
-                <div class="col">
-                    <img style="width: 25%;border-radius: 50%;" src="../images/main/eduv.jpg">
-                    <h2>Eduv</h2>
-                    <p><i>Educational Videos with Industry Level Editing</i></p>
-                    <div class="links" style="margin-top: 20px;">
-                        <div class="social"><a href="https://youtube.com/c/chandraguptaroy" target="_blank"><i class="fab fa-youtube"></i> </a></div>
-                        <div class="social"><a href="https://instagram.com/chandraguptaroy" target="_blank"><i class="fab fa-instagram"></i> </a></div>
-                        <div class="social"></div>
-                        <div class="social"></div>
-                        <div class="social"></div>
-                        <div class="social"></div>
-                        <div class="social"></div>
+        <div class="fot-wrapper">
+            <section class="fot-cols">
+                <div class="fot-col">
+                    <div class="fot-col-top">
+                        <img style="width: 25%;border-radius: 50%;" src="../images/main/eduv.jpg">
+                        <h2>Eduv</h2>
+                        <p><i>Educational Videos with Industry Level Editing</i></p>
                     </div>
                 </div>
-                <div class="col">
-                    <img style="width: 25%;border-radius: 50%;" src="../images/main/chandu.png">
-                    <h2>CGR</h2>
-                    <p>Vlogs | How-to's | Reviews </p>
+                <div class="fot-col">
+                    <div class="fot-col-top">
+                        <img style="width: 25%;border-radius: 50%;" src="../images/main/chandu.png">
+                        <h2>CGR</h2>
+                        <p>Vlogs | How-to's | Reviews </p>
+                    </div>
                 </div>
-                <div class="col">
-                    <img style="width: 25%;border-radius: 50%;" src="../images/main/why it.jpg">
-                    <h2>Whyit</h2>
-                    <p>Exploration of Reasoning</p>
+                <div class="fot-col">
+                    <div class="fot-col-top">
+                        <img style="width: 25%;border-radius: 50%;" src="../images/main/why it.jpg">
+                        <h2>Whyit</h2>
+                        <p>Exploration of Reasoning</p>
+                    </div>
                 </div>
             </section>
-            <div class="second">
-                <hr color=black width="10%" size="1px" />
-                <p style="text-align: center;">Chandra Gupta Roy | @chandraguptaroy</p>
+            <div class="fot-second">
+                <hr color=white width="10%" size="1px" />
+                <p style="text-align: center;color: white;">Chandra Gupta Roy | @chandraguptaroy</p>
             </section>
         </div>
     </footer>

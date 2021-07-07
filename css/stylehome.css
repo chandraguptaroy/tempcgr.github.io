@@ -42,14 +42,16 @@ h1,h2,h3 {
 }
 
 header {
-    height: 600px;
-    width: 100%;
-    z-index: 12;
-    background-image: url(../images/main/Cover\ big\ web\ 50\ 2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    background-attachment: fixed;
+  background-color: #014f80;
+  height: 47vh;
+  width: 100%;
+  z-index: 12;
+  background-image: url(../images/main/Cover\ big\ web\ 50.jpg);
+  background-repeat: no-repeat;
+  background-size: none;
+  background-position: bottom center;
+  background-attachment: fixed;
+  object-fit: contain;
 }
 main {
     background-color: white;
@@ -69,12 +71,6 @@ font-family:arial;
     border-radius: 50%;
 }
 
-
-.Cta{
-    background-color: #ff6700;
-    padding-bottom: 5%;
-    padding-top: 10%;
-}
 .sub {
     border:rgb(255, 255, 255);
     background-color:rgb(255, 255, 255);
@@ -158,19 +154,16 @@ hr{display: block;
 #div1{
   width: 33%;
   float: left;
-  background-color: #ff6700;
 }
 #div2{
   width: 33%;
   float: initial;
   margin: 0 auto;
-  background-color: blue;
 }
 #div3{
   width: 33%;
   float: right;
   margin: 0 0;
-  background-color: aqua;
 }
 .embed{
     position: relative;

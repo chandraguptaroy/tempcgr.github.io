@@ -2,16 +2,6 @@
 
 Found on a Google on how to include header and footer on all pages.
 
-G-Drive import image template: 
-<a href="https://drive.google.com/uc?export=view&id=xxxxxxxxxxxxxxx">
-<img src="https://drive.google.com/uc?export=view&id=xxxxxxxxxxxxxx"
-
-
-Javascripts:
-
-Font Asesome: <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-e query: <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.9.2/EQCSS.min.js" integrity="sha512-yfw7F0e6Vqdxeg6nDlK4l4+pyBvwozVA61StkFRHcwW2dTAIRa4rfmvi4xXmcRmcnq4NI3jbOY4B8cc25n5SkA=="  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src=EQCSS.js></script>
 
 
 Potential Videos for making templates:
