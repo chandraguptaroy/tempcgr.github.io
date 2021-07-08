@@ -55,7 +55,7 @@ label{display: none;}
         position: fixed;
         top: -100%;
         left: 0;
-        background: rgb(62, 62, 62);
+        background: rgba(62, 62, 62, 0.891);
         height: 50vh;
         width: 100%;
         display: block;

@@ -1,0 +1,17 @@
+document.write('<div> \
+<div style="float: left; padding-top: 0;"><h1>Recommended Courses</h1></div>\
+<div style="float: right ;padding-top: 15px;"><button style="border-color: rgb(0, 255, 0); background-color: white; padding: 10px;  padding-left: 20px;padding-right: 20px; ">View all</button></div>\
+</div>\
+<br>\
+<br><br><br><br>\
+<div class="container horizontal-scrollable">\
+<div class="row text-center" style="height: 300px;">\
+    <div class="col-xs-4" style="height: 300px;">1</div>\
+    <div class="col-xs-4" style="height: 300px;">2</div>\
+    <div class="col-xs-4" style="height: 300px;">3</div>\
+    <div class="col-xs-4" style="height: 300px;">4</div>\
+    <div class="col-xs-4" style="height: 300px;">5</div>\
+    <div class="col-xs-4" style="height: 300px;">6</div>\
+    <div class="col-xs-4" style="height: 300px;">7</div>\
+</div> </div>\
+    ');
