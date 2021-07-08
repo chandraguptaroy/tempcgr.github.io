@@ -1,22 +1,21 @@
 /*  Start      Button with transition   Start*/
 a{text-decoration: none;}
 .transhr{
-    width: 50px;
-    transition: all 0.3s ease;
-  } 
-  .btn a:hover hr{
-    width: 150px;
-    transition: all 0.3s ease;
-  }
-  .btn{
-    margin: 20px;
-    color: black;
-  }
-  
-  .btn a{
-    color: black;
-    padding-bottom: 3px;
-  }
+  width: 50px;
+  transition: all 0.3s ease;
+} 
+.btn a:hover hr{
+  width: 150px;
+  transition: all 0.3s ease;
+}
+.btn{
+  margin: 20px;
+  color: black;
+}
+.btn a{
+  color: black;
+  padding-bottom: 3px;
+}
   /* End      Button with transition   End*/ 
 
 /*             Responsive         Start */

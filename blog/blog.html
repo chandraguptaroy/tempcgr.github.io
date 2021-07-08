@@ -1,242 +1,175 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="../css/all.css">
   <style>
+    /*                 Body         Start           */
     body {
       background-color: rgb(245, 245, 245);
-
     }
-
+    h1,h3{
+      text-align: center;
+    }
     * {
       box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    [class*="col-"] {
-      float: left;
-      padding: 15px;
-    }
-
     .header {
       text-align: center;
       font-size: xx-large;
-
     }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      position: -webkit-sticky;
-      /* Safari */
-      position: sticky;
-      top: 0;
+    #title{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 5%;
     }
-
-    li {
-      float: left;
-    }
-
-    li a {
+    img{
+      height: 30vh;
+      width: auto;
       display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.408);
     }
-
-    li a:hover {
-      background-color: #111;
-    }
-
-    .active {
-      background-color: #4CAF50;
-    }
-
-
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
-
-    @media only screen and (min-width: 600px) {
-
-      /* For tablets: */
-      .col-s-1 {
-        width: 8.33%;
-      }
-
-      .col-s-2 {
-        width: 16.66%;
-      }
-
-      .col-s-3 {
-        width: 25%;
-      }
-
-      .col-s-4 {
-        width: 33.33%;
-      }
-
-      .col-s-5 {
-        width: 41.66%;
-      }
-
-      .col-s-6 {
-        width: 50%;
-      }
-
-      .col-s-7 {
-        width: 58.33%;
-      }
-
-      .col-s-8 {
-        width: 66.66%;
-      }
-
-      .col-s-9 {
-        width: 75%;
-      }
-
-      .col-s-10 {
-        width: 83.33%;
-      }
-
-      .col-s-11 {
-        width: 91.66%;
-      }
-
-      .col-s-12 {
-        width: 100%;
-      }
-    }
-
-    @media only screen and (min-width: 768px) {
-
-      /* For desktop: */
-      .col-1 {
-        width: 8.33%;
-      }
-
-      .col-2 {
-        width: 16.66%;
-      }
-
-      .col-3 {
-        width: 25%;
-      }
-
-      .col-4 {
-        width: 33.33%;
-      }
-
-      .col-5 {
-        width: 41.66%;
-      }
-
-      .col-6 {
-        width: 50%;
-      }
-
-      .col-7 {
-        width: 58.33%;
-      }
-
-      .col-8 {
-        width: 66.66%;
-      }
-
-      .col-9 {
-        width: 75%;
-      }
-
-      .col-10 {
-        width: 83.33%;
-      }
-
-      .col-11 {
-        width: 91.66%;
-      }
-
-      .col-12 {
-        width: 100%;
-      }
-    }
-
-    .blogcontainer {
+    hr{margin-bottom: 9px;}
+    /*                 Body       End           */
+    /*                 Blog      Start            */
+    [class*="blogcontainer-"] {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       background-color: white;
       border: black;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      padding: 10px;
+      padding-top: 10px;
+      padding-bottom: 5px;
     }
-
+    .blogcontainer-1 {
+      width: 80%;
+    }
+    .latest{
+      width: 80%;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
     .asopacity {
       opacity: 0.75;
     }
-
-    .btn1 {
-      background-color: #484848;
-      /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
+    #latestblogpic{
+      height: 120px;
+      width: 200px;
+      object-fit: cover;
+      text-align: left;
+      margin-left: 5px;
+      margin-right: 5px;
     }
+    .btn{
+      text-align: center;
+      line-height: 1.5;
+    }
+    /*                      Blog             End            */
+    /*           Last section Author and Popular     Start       */
+    .blogcontainer-2{
+      width: 95%;
+    }
+    .blogcontainer .popular{
+      width: 95%;
+    }
+    .author{
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .author img{
+      border-radius: 50%;
+      width: 40%;
+      height: auto;
+    }
+    .popularblog{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    #popularbtn{
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+    }
+    .popularblog .btn{text-align:right ;}
+    .popularblog .btn a:hover hr{
+      width: 80px;
+      transition: all 0.3s ease;
+      text-align: right;
+    }
+    .transhr{text-align: right;}
+    /*           Last section Author and Popular     End       */
+    /*           Responsiveness         */
+    @media screen and (max-width:640px) {
+      .latest{ width: 97%;}
+    }
+    /*           Responsiveness         */
   </style>
 </head>
 
 <body>
-
-
-  <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
   <div class="header">
-    <h1>MY Blog</h1>
-    <h3>welcome to myblog</h3>
-
+    <h1>My Blog</h1>
+    <hr color=black width="10%" size=".5px" />
   </div>
 
+
+  <!--            Latest Blog              -->
+  <h1 id="title">Latest Blog:</h1>
   <div class="row">
     <div class="col-12 col-s-12 ">
-      <div class="blogcontainer">
-        <img src="./img/index/blog1.jpg" alt="" width="100%">
-        <div>
-          <h1><b>EDUCATION</b></h1>
-          <h3>The Change it needs, <span class="asopacity">july 2, 2021</span></h3>
-        </div>
-        <div>
-          <p style="font-size: large;">Education is basically a way to pass on information from the previous generation
-            to the next and the study to understand and apply it to achieve something from it and produce something.
-            Though a medium that can be either oral(most primitive), written or recorded video(and advancing…).</p>
+      <div class="blogcontainer-1">
+        <div class="latest">
+          <img src="./img/index/blog1.jpg" alt="" width="100%">
           <div>
-            <div> <a href="./Education_change.html"><button class="btn1" >Read More</button></div></a>
-            <div></div>
+            <h1><b>EDUCATION</b></h1>
+            <h3>The Change it needs, <span class="asopacity">july 2, 2021</span></h3>
+          </div>
+          <div>
+            <p style="font-size: large;">Education is basically a way to pass on information from the previous generation
+              to the next and the study to understand and apply it to achieve something from it and produce something.
+              Though a medium that can be either oral(most primitive), written or recorded video(and advancing…).
+            </p><br>
+            <div class="btn">
+              <a href="Education_change.html" target="_blank"><b>Read Blog</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!--            Latest Blog              -->
+<!--               Blog Topic/Sections                   -->
+<section class="blogcateogries">
+  <div class="log">
+    <a><img></a>
+  </div>
+  <div class="tech">
 
+  </div>
+  <div class="educatoin">
 
+  </div>
+  <div class="health">
 
+  </div>
+</section>
+<!--               Blog Topic/Sections                   -->
+    <!--       Vlog      
     <div class="col-9 col-s-12 ">
       <div class="blogcontainer">
         <img src="./img/index/blog2.jpg" alt="" width="100%">
@@ -256,76 +189,53 @@
         </div>
       </div>
     </div>
+          Vlog      -->
+  
 
-    <!-- <div class="col-9 col-s-12 ">
-      <div class="blogcontainer">
-        <img src="./img/index/woods.jpg" alt="" width="100%">
-        <div>
-          <h1><b>Chitkohra Chawal Bazar</b></h1>
-          <h3>Market <span class="asopacity">july 1, 2021</span></h3>
-        </div>
-        <div>
-          <p style="font-size: large;">It also has a big Vegetable market where every vegetable is available at one place.
-            So, almost everything is available here.
-            For a cheap price.</p>
+          <!--        Last section Author and Popular                Start             -->  
+  <div class="row">
+    <!--                Author          Start       -->
+    <div class="col-6 col-s-12">
+      <div class="blogcontainer-2">
+        <div class="author">
+          <img src="./img/index/profile.jpg" alt="" width="100%">
           <div>
-            <div><button class="btn1">Read More</button></div>
-            <div></div>
+            <h4><b>Chandra Gupta Roy</b></h4>
+            <p style="font-size: large" ;>On our path we need mentors.<br>Who Guide us and to whom we could check in when we
+              seem lost.<br>And with the Internet we could make anyone our mentor. Listen to their videos, read their blogs and learn. </p>
           </div>
         </div>
       </div>
-    </div> -->
-
-
-
-    <!-- personal information -->
-    <div class="col-3 col-s-12">
-      <div class="blogcontainer">
-        <img src="./img/index/profile.jpg" alt="" width="100%">
-        <div>
-          <h1><b>Chandra Gupta Roy</b></h1>
-          <p style="font-size: large" ;>On our path we need mentors who guide us and with whom we could check in when we
-            seem lost, with the Internet we could make anyone our mentor. Listen to their videos and follow through.</p>
-          </p>
-        </div>
-      </div>
-
     </div>
-
-    <div class="col-3 col-s-12">
-      <div class="blogcontainer">
-        <div style="background-color: rgb(245, 245, 245);">
+    <!--                Author          End       -->
+    <!--                Popular Blogs          Start       -->
+    <div class="col-6 col-s-12">
+      <div class="blogcontainer-2">
+        <div class="popular">
           <h1>Popular Posts</h1>
-        </div>
-        <hr>
-        <div style="display: flex;">
-          <div style="width: 20%;"><img src="./img/index/blog1.jpg" alt="" width="100px" height="100px"></div>
-          <div style="width: 80%; text-align: right; font-size: x-large;">EDUCATION</div>
-        </div>
-        <hr>
-        <div  style="display: flex;" >
-          <div style="width: 20%;"><img src="./img/index/blog2.jpg" alt="" width="100px" height="100px"></div>
-          <div  style="width: 80%;text-align: right; font-size: x-large; ">Chitkohra Chawal Bazar</div>
-        </div>
+          <hr color=black width="10%" size=".5px"/>
+          <hr>
+          <div class="popularblog">
+            <img id="latestblogpic" src="./img/index/blog1.jpg">
+            <h3>Education</h3>
+            <div class="btn" id="popularbtn">
+              <a href="xxxxxxxxxxxxxx"><b>Read</b><hr class="transhr" color=black width="70%" size=".5px"/></a>
+            </div>
+          </div>
+          <hr>
+          <div class="popularblog" >
+            <img id="latestblogpic" src="./img/index/blog2.jpg">
+            <h3>Chitkohra</h3>
+            <div class="btn" id="popularbtn">
+              <a href="xxxxxxxxxxxxxx"><b>Read </b><hr class="transhr" color=black width="70%" size=".5px"/></a>
+            </div>
+          </div>
+        </div>  
       </div>
-      <!-- <hr>
-      <div  style="display: flex;" >
-        <div style="width: 20%;"><img src="./img/index/blog2.jpg" alt="" width="100px" height="100px"></div>
-        <div  style="width: 80%;text-align: right; font-size: x-large; ">Chitkohra Chawal Bazar</div>
-      </div>
-    </div> -->
-
     </div>
-
-
-
-
-
+    <!--                Popular Blogs          End       -->
   </div>
-  </div>
-
-
-
+  <!--        Last section Author and Popular                End             --> 
 </body>
 
 </html>
