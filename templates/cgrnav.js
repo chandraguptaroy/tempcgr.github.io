@@ -6,9 +6,9 @@ document.write('<header>\
         <i class="fas fa-bars"></i>\
     </label>\
     <ul>\
-        <li><a class="" href="/Blog/blog.html">Blog</a></li>\
-        <li><a class="" href="/main/work.html">Work</a></li>\
-        <li><a class="" href="/main/about.html">About</a></li>\
+        <li><a class="" href="/tempcgr.github.io/Blog/blog.html">Blog</a></li>\
+        <li><a class="" href="/tempcgr.github.io/main/work.html">Work</a></li>\
+        <li><a class="" href="/tempcgr.github.io/main/about.html">About</a></li>\
     </ul>\
 </nav>\
 </header>\
