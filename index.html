@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/stylehome.css">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/cgrnav.css">
-  <link rel="stylesheet" href="css/totopbutton.css">
+  <link rel="stylesheet" href="css/totop.css">
   <link rel="stylesheet" href="css/socialibar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <script type="module" src="templates.js"></script>
@@ -192,28 +192,10 @@
   </main>
 </body>
 
- <!--                   Top button     Start        -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>//Get the button:
-  mybutton = document.getElementById("myBtn");
-  
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }</script>
+
+<script src="templates/totop.js"></script>
 
 
- <!--                   Top button    End         -->
+
+
 </html>
