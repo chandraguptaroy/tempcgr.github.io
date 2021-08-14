@@ -9,6 +9,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 50px;
+    z-index: 12;
 }
 nav .logo img{
     width: 300px;
@@ -23,16 +24,16 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.2px;
     padding: 8px 10px;
     border-radius: 5px;
 
 }
 nav ul li a:hover{
     color: black;
-    background-color: rgba(113, 233, 251, 0.66);
+    background-color: rgba(113, 233, 251, 0.551);
     transition: all .3s ease;
 }
 #click{
@@ -55,13 +56,13 @@ label{display: none;}
         position: fixed;
         top: -100%;
         left: 0;
-        background: rgba(62, 62, 62, 0.891);
-        height: 50vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.97) 0%, rgba(0, 0, 0, 0.99) 100%);
+        height: 70vh;
         width: 100%;
         display: block;
         padding: 5%;
         text-align: center;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease-in-out;
     }
     #click:checked ~ ul{
         top: 80px;
@@ -94,4 +95,7 @@ label{display: none;}
     #click:checked ~ ul{
         top: 120px;
     }
-}
+    #click:checked ~ nav {
+        background-color: black;
+    }
+    }

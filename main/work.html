@@ -1,8 +1,1096 @@
 <!DOCTYPE html>
+<html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">
+    <link rel="stylesheet" href="/css/cgrnav.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!--  Font   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" defer >
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" defer>
+    <!--  Font   -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+     /*              MAIN            01       Start*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: absolute;
+  width: 100%;
+
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.template{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+ .template::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #67ccff;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+} 
+::selection{
+  background:	#FF676D;
+  color: #fff;
+}
+.container{
+  max-width: 1500px;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-10px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  padding: 2px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.408);
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .media-icons{
+  margin-top: 5px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #67ccff;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #67ccff;
+  background-color: #fff;
+  border-color: #67ccff;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    width: 100%;
+  }
+}
+
+/*              MAIN            01       End*/
+
+/*                   1:     02   desktop    Start*/
+#one-two-two:checked ~ .main-card{
+  margin-left: -100%;}
+.container .one-two-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.one-two-button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.one-two-button label.active{
+  width: 35px;
+}
+#one-two-one:checked ~ .one-two-button .one-two-one{
+  width: 35px;
+}
+#one-two-one:checked ~ .one-two-button .one-two-two{
+  width: 15px;
+}
+#one-two-two:checked ~ .one-two-button .one-two-one{
+  width: 15px;
+}
+#one-two-two:checked ~ .one-two-button .one-two-two{
+  width: 35px;
+}
+/*                       1: 02   desktop    End*/
+/*                   1:     02   mobile    Start*/
+#one-two-mob-two:checked ~ .main-card{
+  margin-left: -100%;}
+.container .one-two-mob-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.one-two-mob-button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.one-two-mob-button label.active{
+  width: 35px;
+}
+#one-two-mob-one:checked ~ .one-two-mob-button .one-two-mob-one{
+  width: 35px;
+}
+#one-two-mob-one:checked ~ .one-two-mob-button .one-two-mob-two{
+  width: 15px;
+}
+#one-two-mob-two:checked ~ .one-two-mob-button .one-two-mob-one{
+  width: 15px;
+}
+#one-two-mob-two:checked ~ .one-two-mob-button .one-two-mob-two{
+  width: 35px;
+}
+/*                       1: 02   mobile    End*/
+
+
+/*                        02       Start*/
+#two-two:checked ~ .main-card{
+  margin-left: -100%;}
+.container .two-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.two-button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.two-button label.active{
+  width: 35px;
+}
+#two-one:checked ~ .two-button .two-one{
+  width: 35px;
+}
+#two-one:checked ~ .two-button .two-two{
+  width: 15px;
+}
+#two-two:checked ~ .two-button .two-one{
+  width: 15px;
+}
+#two-two:checked ~ .two-button .two-two{
+  width: 35px;
+}
+/*                        02       End*/
+
+
+/*                        03       Start*/
+#three-two:checked ~ .main-card{
+  margin-left: -100%;}
+.container .three-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.three-button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.three-button label.active{
+  width: 35px;
+}
+#three-one:checked ~ .three-button .three-one{
+  width: 35px;
+}
+#three-one:checked ~ .three-button .three-two{
+  width: 15px;
+}
+#three-two:checked ~ .three-button .three-one{
+  width: 15px;
+}
+#three-two:checked ~ .three-button .three-two{
+  width: 35px;
+}
+/*                        03       End*/
+
+.work-titles{
+  text-align: center;
+  margin-top: 30px;
+  font: normal normal bold 250%/1.5 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+.work-titles-2{
+  text-align: left;
+  padding-left: 4%;
+  margin-top: 30px;
+  font: italic normal  normal  200%/1.5 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+header{
+  height: 80vh;
+  background-image: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.367) 90%),  url(/images/work/work_bg_unsplash.webp);
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+}
+label{display: block;}
+hr{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Cover Art  Start*/
+@media (max-width: 600px) {
+  .coverart-desktop{
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  .coverart-mobile{
+    display: none;
+  }
+}
+/*Cover Art End*/
+/*        Model Slide Show       Start*/
+
+.work-js-slideshow-col {
+    width: 5%;
+    float: left;
+}
+.work-js-slideshow-row {
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    background: black;
+    padding-top: 20px;
+}
+/* Sldes Img ctrl*/
+.mySlides img{
+  margin-bottom: -6px;
+  height: 450px;
+  object-fit:contain
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*        Model Slide Show       End*/
+   </style>
+<body>
+<script src="/templates/cgrnav.js"></script>
+
+<!--            1:            My.......                     Start    -->
+<h1 class="work-titles">My Photoshops:</h1>
+<hr color=black width="8%" size=".5px" />
+<h2 class="work-titles-2">Thumbnails: </h2>
+<div class="template">
+  <div class="container">
+    <input type="radio" name="dot" id="one">
+    <input type="radio" name="dot" id="two">
+    
+    <!--                        Full Card Set          Start                -->
+    <div class="main-card">
+
+        <!--                        First Card Set          Start                -->
+      <div class="cards">
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+              <img src="/images/work/photoshop/thumbnails/whyitrasism.webp" onclick="openModal();currentSlide(1)">
+           </div>
+                     <div class="details">
+             <div class="name">Why Racism</div>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="/images/work/photoshop/thumbnails/transfer gdrive.webp" alt="" onclick="openModal();currentSlide(2)">
+           </div>
+           <div class="details">
+             <div class="name">Tech Turorial</div>
+           </div>
+
+         </div>
+        </div>
+
+
+        <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/thumbnails/Eduv_Industrial.webp" alt="" onclick="openModal();currentSlide(3)">
+            </div>
+           <div class="details">
+             <div class="name">Project Notes</div>
+           </div>
+          </div>
+         </div>
+      </div>
+        <!--                        First Card Set          End                -->
+        
+        
+        <!--                        Second Card Set          Start                -->
+
+      <div class="cards">
+        <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/thumbnails/whyitbluelight.webp" alt="" onclick="openModal();currentSlide(4)">
+            </div>
+           <!--External Link    Start-->
+           <div class="details">
+             <div class="name">Why it: Bluelight</div>
+           <div class="media-icons">
+             <a href="#"><i class="fas fa-external-link-alt"></i></a>
+           </div>
+          </div>
+          <!--External Link    End-->
+          </div>
+         </div>
+        
+        
+         <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/thumbnails/daddybirthday.webp" alt="" onclick="openModal();currentSlide(5)">
+            </div>
+           <!--External Link    Start-->
+           <div class="details">
+             <div class="name">Dad's Birthday</div>
+           <div class="media-icons">
+             <a href="#"><i class="fas fa-external-link-alt"></i></a>
+           </div>
+          </div>
+          <!--External Link    End-->
+          </div>
+         </div>
+
+
+         <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/thumbnails/eduv_bigsmall.webp" alt="" onclick="openModal();currentSlide(6)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+
+      </div>
+
+    <!--                        Second Card Set          End                -->
+    </div>
+    <!--                        Full Card Set          End                -->
+    <div class="button">
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
+    </div>
+  </div>
+</div>
+<!--            1:    My.......             End    -->
+
+
+
+
+
+<!--                 1    :    2nd        desktop            Start  -->
+
+<div class="coverart-desktop">
+<h1 class="work-titles-2">Cover Arts:</h1>
+<div class="template">
+  <div class="container">
+    <input type="radio" name="dot" id="one-two-one">
+    <input type="radio" name="dot" id="one-two-two">
+    
+    <!--                        Full Card Set          Start                -->
+    <div class="main-card">
+
+        <!--                        First Card Set          Start                -->
+      <div class="cards">
+
+
+        <div class="card" style="width: calc(100% / 2 - 10px); @media (max-width: 600px) {
+            width: 100%;}" >
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/cover art/cgr channel art.webp" alt="" onclick="openModal();currentSlide(7)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+
+
+
+         <div class="card" style="width: calc(100% / 2 - 10px);" >
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/cover art/eduv channel art wide.webp" alt="" onclick="openModal();currentSlide(8)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+      </div>
+        <!--                        First Card Set          End                -->
+        
+        
+        <!--                        Second Card Set          Start                -->
+
+      <div class="cards">
+        <div class="card"  style="width: calc(100% / 2 - 10px);">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/cover art/Profitable Words Cover Art.webp" alt="" onclick="openModal();currentSlide(9)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+
+
+
+
+         <div class="card" style="width: calc(100% / 2 - 10px);">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/cover art/chandraguptaroy cover art2020.webp" alt="" onclick="openModal();currentSlide(10)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+
+      </div>
+
+    <!--                        Second Card Set          End                -->
+    </div>
+    <!--                        Full Card Set          End                -->
+    <div class="one-two-button">
+      <label for="one-two-one" class=" active one-two-one"></label>
+      <label for="one-two-two" class="one-two-two"></label>
+    </div>
+  </div>
+</div>
+</div>
+<!--                  1:             2nd       desktop            End    -->
+
+<!--                 1    :    2nd   mobile                  Start  -->
+
+<div class="coverart-mobile">
+<h1 class="work-titles-2">Cover Arts:</h1>
+<div class="template">
+  <div class="container">
+    <input type="radio" name="dot" id="one-two-mob-one">
+    <input type="radio" name="dot" id="one-two-mob-two">
+    
+    <!--                        Full Card Set          Start                -->
+    <div class="main-card">
+
+        <!--                        First Card Set          Start                -->
+      <div class="cards">
+
+
+        <div class="card"  >
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/cover art/cgr channel art.webp" alt="" onclick="openModal();currentSlide(7)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+
+
+
+         <div class="card"  >
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/cover art/eduv channel art wide.webp" alt="" onclick="openModal();currentSlide(8)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+      </div>
+        <!--                        First Card Set          End                -->
+        
+        
+        <!--                        Second Card Set          Start                -->
+
+      <div class="cards">
+        <div class="card"  >
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/cover art/Profitable Words Cover Art.webp" alt="" onclick="openModal();currentSlide(9)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+
+
+
+
+         <div class="card" >
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/photoshop/cover art/chandraguptaroy cover art2020.webp" alt="" onclick="openModal();currentSlide(10)">
+            </div>
+           <div class="details">
+             <div class="name">Programming Video</div>
+           </div>
+          </div>
+         </div>
+
+
+      </div>
+
+    <!--                        Second Card Set          End                -->
+    </div>
+    <!--                        Full Card Set          End                -->
+    <div class="one-two-mob-button">
+      <label for="one-two-mob-one" class=" active one-two-mob-one"></label>
+      <label for="one-two-mob-two" class="one-two-mob-two"></label>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--                  1:             2nd       mobile            End    -->
+
+
+
+
+
+<!--                                 2nd                     Start    -->
+
+<h1 class="work-titles">My Illustrations:</h1>
+<hr color=black width="8%" size=".5px" />
+<!--                     2nd                    Start  -->
+<div class="template">
+  <div class="container">
+    <input type="radio" name="dot" id="two-one">
+    <input type="radio" name="dot" id="two-two">
+    
+    <!--                        Full Card Set          End                -->
+    <div class="main-card">
+
+        <!--                        First Card Set          Start                -->
+      <div class="cards">
+
+
+        <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/illustrator/logo/cgr signature_short.webp" alt="" onclick="openModal();currentSlide(11)">
+            </div>
+           <div class="details">
+             <div class="name">Signature: CGR</div>
+           </div>
+          </div>
+         </div>
+
+
+         <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/illustrator/logo/eduv_logo.webp" alt="" onclick="openModal();currentSlide(12)">
+            </div>
+           <div class="details">
+             <div class="name">Logo: Education Valley</div>
+           </div>
+          </div>
+         </div>
+
+
+         <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/illustrator/portraits/captainjacksparrow.webp" alt="" onclick="openModal();currentSlide(13)">
+            </div>
+           <div class="details">
+             <div class="name">Portrait: Johnny Depp </div>
+           </div>
+          </div>
+         </div>
+
+      </div>
+        <!--                        First Card Set          End                -->
+        
+        
+        <!--                        Second Card Set          Start                -->
+
+      <div class="cards">
+        <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/illustrator/portraits/emma watson.webp" alt="" onclick="openModal();currentSlide(14)">
+            </div>
+           <div class="details">
+             <div class="name">Protrait: Emma Watson</div>
+           </div>
+          </div>
+         </div>
+
+
+         <div class="card">
+          <div class="content">
+            <div class="img">
+             <img src="/images/work/illustrator/portraits/sandeep maheshwari.webp" alt="" onclick="openModal();currentSlide(15)">
+            </div>
+           <div class="details">
+             <div class="name">Portrait: Sandeep Maheshwari</div>
+           </div>
+          </div>
+         </div>
+
+
+
+
+
+      </div>
+
+    <!--                        Second Card Set          End                -->
+    </div>
+    <!--                        Full Card Set          End                -->
+    <div class="two-button">
+      <label for="two-one" class=" active two-one"></label>
+      <label for="two-two" class="two-two"></label>
+    </div>
+  </div>
+</div>
+<!--                    2nd                     End    -->
+
+
+
+
+
+
+<!--    Modular       JS Open Image Gallery           Start-->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1</div>
+      <img src="/images/work/photoshop/thumbnails/fullq/whyit Racism.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 </div>
+      <img src="/images/work/photoshop/thumbnails/fullq/cgr gdrive.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 </div>
+      <img src="/images/work/photoshop/thumbnails/fullq/eduv industrial revolution.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 </div>
+      <img src="/images/work/photoshop/thumbnails/fullq/whyit Blue light.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">5 </div>
+        <img src="/images/work/photoshop/thumbnails/fullq/cgr daddy birthday.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 </div>
+        <img src="/images/work/photoshop/thumbnails/fullq/eduv thumbnail computer programs.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 </div>
+        <img src="/images/work/photoshop/cover art/fullq/cgr channel art.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8 </div>
+        <img src="/images/work/photoshop/cover art/fullq/eduv channel art wide.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">9 </div>
+        <img src="/images/work/photoshop/cover art/fullq/Profitable Words Cover Art.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">10 </div>
+        <img src="/images/work/photoshop/cover art/fullq/chandraguptaroy cover art2020.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">11 </div>
+        <img src="/images/work/illustrator/logo/fullq/cgr signature_short.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">12 </div>
+        <img src="/images/work/illustrator/logo/fullq/eduv_logo.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">13 </div>
+        <img src="/images/work/illustrator/portraits/fullq/captainjacksparrow.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">14 </div>
+        <img src="/images/work/illustrator/portraits/fullq/emma watson.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">15 </div>
+        <img src="/images/work/illustrator/portraits/fullq/sandeep maheshwari_portrait.png" style="width:100%">
+      </div>
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="work-js-slideshow-row" >
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/thumbnails/whyitrasism.webp" style="width:100%" onclick="currentSlide(1)" alt="Why it: Racism">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/thumbnails/transfer gdrive.webp" style="width:100%" onclick="currentSlide(2)" alt="CGR: G-Drive Transfer">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/thumbnails/Eduv_Industrial.webp" style="width:100%" onclick="currentSlide(3)" alt="Eduv: Industrail Revolution Notes">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/thumbnails/whyitbluelight.webp" style="width:100%" onclick="currentSlide(4)" alt="Why it: Blue Light">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/thumbnails/daddybirthday.webp" style="width:100%" onclick="currentSlide(5)" alt="CGR: Birthday Video">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/thumbnails/eduv_bigsmall.webp" style="width:100%" onclick="currentSlide(6)" alt="Eduv: Programming Video">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/cover art/cgr channel art.webp" style="width:100%" onclick="currentSlide(7)" alt="CGR: Rock Lightning Channel Art YouTube">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/cover art/eduv channel art wide.webp" style="width:100%" onclick="currentSlide(8)" alt="Education Valley Cover Art YouTube">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/cover art/Profitable Words Cover Art.webp" style="width:100%" onclick="currentSlide(9)" alt="Cover Art for Profitable Words">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/photoshop/cover art/chandraguptaroy cover art2020.webp" style="width:100%" onclick="currentSlide(10)" alt="Professional Channel Art for CGR YouTube channel">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/illustrator/logo/cgr signature_short.webp" style="width:100%" onclick="currentSlide(11)" alt="Digital Signature">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/illustrator/logo/eduv_logo.webp" style="width:100%" onclick="currentSlide(12)" alt="Education Valley Logo">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/illustrator/portraits/captainjacksparrow.webp" style="width:100%" onclick="currentSlide(13)" alt="Johnny Depp Portrait">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/illustrator/portraits/emma watson.webp" style="width:100%" onclick="currentSlide(14)" alt="Emma Watson Portrait">
+        </div>
+        <div class="work-js-slideshow-col">
+        <img class="demo cursor" src="/images/work/illustrator/portraits/sandeep maheshwari.webp" style="width:100%" onclick="currentSlide(15)" alt="Sandeep Maheshwari Portrait">
+        </div>
+
+
+        
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!--    Modular       JS Open Image Gallery           End-->
+
+</body>
+</html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="/images/main/chandu.png">
   <title>Work</title>
   <style>#myBtn {
     display: none; /* Hidden by default */
@@ -28,9 +1116,9 @@
   <main>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <!--Best latest works with slide function, then at last option to show all, right triangle type 
+    Best latest works with slide function, then at last option to show all, right triangle type 
     And all stuffs show cases packed inside something like inside a photoframe(something like that ie. with a uniform (white, transparent, beautiful) boundary) -->   
-    <section class="Photoshop">
+    <!-- <section class="Photoshop">
         <div class="landscape">
 
         </div>
@@ -69,8 +1157,8 @@
       </p>
     </section>
     <h1>Just for try.....</h1>
-    <iframe style="text-align: center;"src="https://discordapp.com/widget?id=856813435537588234&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-  </main>
+    <iframe style="text-align: center;"src="https://discordapp.com/widget?id=856813435537588234&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+  <!-- </main>
     <script>//Get the button:
       mybutton = document.getElementById("myBtn");
       
@@ -91,4 +1179,4 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }</script>
 </body>
-</html>
+</html> --> 

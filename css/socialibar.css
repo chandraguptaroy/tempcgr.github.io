@@ -1,10 +1,15 @@
+.Social-menu{
+    z-index: 3;
+}
 .Social-menu ul{
     display: block;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: center;} 
+    justify-content: center;
+    z-index: 3;
+} 
 /*.Social-menu ul{
     position: absolute;
     top:85%;

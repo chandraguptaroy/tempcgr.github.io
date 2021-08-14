@@ -1,0 +1,6 @@
+Buttons with hover hr effect: *link all.css for this to work  <link rel="stylesheet" href="../css/all.css">
+                <!--Button-->
+                <div class="btn">
+                    <a href="xxxxxxxxxxxxxx"><b>Download </b><br><br><hr class="transhr" color=black width="70%" size=".5px"/></a>
+                </div>
+                <!--Button-->

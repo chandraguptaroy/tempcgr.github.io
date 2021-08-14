@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">  <!--Website small logo-->
+  <link rel="stylesheet" href="/css/cgrnav.css">    <!--        Navbar         -->
+  <link rel="stylesheet" href="/css/totopbutton.css"> <!--        ToTop         -->
+  <link rel="stylesheet" href="/css/all.css">
+
+  <!--   Font Awesome > Icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  <!--  Font   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <!--  Font   -->
+
+  <style>
+    /*                 Body         Start           */
+    body {
+      background-color: rgb(245, 245, 245);
+      text-emphasis-color: black;
+    }
+    p,h2,h4{color: black;}
+    h1,h3{
+      text-align: center;
+      color: black;
+    }
+    .blog-title{
+      font-weight: bolder;
+      font-size: larger;
+    }
+    .blog-title2{
+      font-variant: small-caps;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    header{
+      height: 40vh;
+      background-color: black;
+    }
+    .header {
+      text-align: center;
+      font-size: xx-large;
+    }
+    #blog-title{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 5%;
+    }
+    .blogimg{
+      height: 30vh;
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.408);
+    }
+    hr{margin-bottom: 9px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    }
+    /*                 Body       End           */
+    /*                 Blog      Start            */
+    [class*="blogcontainer-"] {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      border: black;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    .blogcontainer-1 {
+      width: 90%;
+    }
+    .latest{
+      width: 80%;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+    .asopacity {
+      opacity: 0.75;
+    }
+
+    .btn{
+      text-align: center;
+      line-height: 1.5;
+    }
+    /*                      Blog             End            */
+    /*                        Blog  Catrogries         Start          */
+    
+    .blogcats{ 
+      padding-top: 5%;
+      padding-bottom: 5%;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 5%;
+      padding-right: 5%;
+      flex-wrap: wrap;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .blogcats a img{
+      width: 256px;
+      height: 144px;
+      transform: scale();
+    }
+    .container{ 
+      width: 256px;
+      height: 144px;
+      position: relative;
+      margin-bottom: 5%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .blog-cate-title{
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: large;
+      font-style: italic;
+      font-weight: bolder;
+      text-shadow:  2px 0 10px black;
+    }
+    @media screen and (max-width:640px) {
+      .blogcats{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      [class*="cate-"] {
+        margin: 0%;
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom: 10px;
+      }
+      }
+    
+    .cate-health{
+      background-image: url(img/main/healthbg.webp);
+      background-size: cover;
+    }
+    .cate-tech{
+      background-image: url(img/main/techbg.webp);
+      background-size: cover;
+    }
+    .cate-edu{
+      background-image: url(img/index/blog1.webp);
+      background-size: cover;
+    }
+    .cate-logs{
+      background-image: url(img/index/blog2.webp);
+      background-size: cover;
+    }
+    /*                        Blog  Catrogries         End          */
+    /*           Last section Author and Popular     Start       */
+    .blogcontainer-2{
+      width: 95%;
+    }
+    .blogcontainer .popular{
+      width: 95%;
+    }
+    .author{
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .author img{
+      border-radius: 50%;
+      width: 40%;
+      height: auto;
+    }
+    .blog-author-title{
+      font-weight: bold;
+      font-variant: small-caps;
+      font-size: large;
+    }
+    #popularblogpic{
+      height: 120px;
+      width: 200px;
+      object-fit: cover;
+      text-align: left;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .popularblog{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    #popularbtn{
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+    }
+    .popularblog .btn{text-align:right ;}
+    .popularblog .btn a:hover hr{
+      width: 80px;
+      transition: all 0.3s ease;
+      text-align: right;
+    }
+    .transhr{text-align: right;}
+    /*           Last section Author and Popular     End       */
+    /*           Responsiveness         */
+    @media screen and (max-width:640px) {
+      .latest{ width: 97%;}
+    }
+    /*           Responsiveness         */
+  </style>
+</head>
+
+<body>
+  <script src="..\templates/cgrnav.js"></script>
+  <div class="header">
+    <h1 class="blog-title">My Blog</h1>
+    <hr color=black width="80px" size=".5px" />
+  </div>
+
+
+  <!--            Latest Blog         start     -->
+  <h1 id="blog-title">Latest Blog:</h1>
+  <div class="row">
+    <div class="col-12 col-s-12 ">
+      <div class="blogcontainer-1">
+        <div class="latest">
+          <img class="blogimg"src="img/index/blog1.webp" alt="" width="100%">
+          <div><br>
+            <h1 class="blog-title2">EDUCATION</h1><br>
+            <h3 class="blog-title2" >The Change It Needs, <span class="asopacity">July 2, 2021</span></h3>     <br>
+          </div>
+          <div>
+            <p style="font-size: large;">Education is basically a way to pass on information from the previous generation
+              to the next and the study to understand and apply it to achieve something from it and produce something.
+              Though a medium that can be either oral(most primitive), written or recorded video(and advancing…).
+            </p><br>
+            <div class="btn">
+              <a href="Education_change.html" target="_blank"><b>Read Blog</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--            Latest Blog              -->
+
+
+<!--               Blog Topic/Sections                   -->
+<section class="blogcats">
+  <a href="main/tech.html">
+  <div class="container cate-health">
+    <div class="blog-cate-title">HEALTH</div>
+  </div>
+</a>
+<a href="main/tech.html">
+  <div class="container cate-tech">
+    <div class="blog-cate-title">TECH</div>
+  </div>
+</a>
+  <a href="main/tech.html">
+    <div class="container cate-edu">
+      <div class="blog-cate-title">EDUCATION</div>
+    </div>
+  </a>
+  <a href="main/tech.html">
+    <div class="container cate-logs">
+      <div class="blog-cate-title">LOGS</div>
+    </div>
+  </a>
+</section>
+<!--               Blog Topic/Sections         End          -->
+
+
+
+
+
+    <!--       Vlog      
+    <div class="col-9 col-s-12 ">
+      <div class="blogcontainer">
+        <img src="./img/index/blog2.webp" alt="" width="100%">
+        <div>
+          <h1><b>Chitkohra Chawal Bazar</b></h1>
+          <h3>Market <span class="asopacity">july 1, 2021</span></h3>
+        </div>
+        <div>
+          <p style="font-size: large;">It also has a big Vegetable market where every vegetable is available at one
+            place.
+            So, almost everything is available here.
+            For a cheap price.</p>
+          <div>
+            <div><a href="./chitkohra_chawal_bazaar.html"><button class="btn1">Read More</button></div></a>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+          Vlog      -->
+  
+
+          <!--        Last section Author and Popular                Start             -->  
+  <div class="row">
+    <!--                Author          Start       -->
+    <div class="col-6 col-s-12">
+      <div class="blogcontainer-2">
+        <div class="author">
+          <img class="blogimg" src="./img/index/profile.webp" alt="" width="100%">          <br>
+          <div>
+            <h1 class="blog-author-title">Chandra Gupta Roy</h1>                                                <br>
+            <p style="font-size: large" ;>On our path we need mentors.<br>Who Guide us and to whom we could check in when we
+              seem lost.<br>And with the Internet we could make anyone our mentor. Listen to their videos, read their blogs and learn. </p>        <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                Author          End       -->
+    <!--                Popular Blogs          Start       -->
+    <div class="col-6 col-s-12">
+      <div class="blogcontainer-2">
+        <div class="popular">
+          <h1>Popular Posts</h1>
+          <hr color=black width="10%" size=".5px"/>
+          <hr>
+          <div class="popularblog">
+            <img id="popularblogpic" src="./img/index/blog1.webp">
+            <h3>Education</h3>
+            <div class="btn" id="popularbtn">
+              <a href="/blog/education/Education_change.html"><b>Read</b><hr class="transhr" color=black width="70%" size=".5px"/></a>
+            </div>
+          </div>
+          <hr>
+          <div class="popularblog" >
+            <img id="popularblogpic" src="./img/index/blog2.webp">
+            <h3>Chitkohra</h3>
+            <div class="btn" id="popularbtn">
+              <a href="/blog/logs/chitkohra_chawal_bazaar.html"><b>Read </b><hr class="transhr" color=black width="70%" size=".5px"/></a>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <!--                Popular Blogs          End       -->
+  </div>
+  <!--        Last section Author and Popular                End             --> 
+</body>
+
+</html>

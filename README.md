@@ -1,2 +1,2 @@
-# tempcgr.github.io
+# cgr.github.io
 
