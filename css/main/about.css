@@ -20,6 +20,7 @@ main {
     text-align: center;
 }
 p{text-align: left;}
+
 section{
     padding-top: 10px ;
     padding-bottom: 10px ;
@@ -49,7 +50,7 @@ header{
     width: 100%;
     z-index: -15;
     /* background-image: url(../images/main/Cover\ big\ web\ 50.jpg); */
-    background-image: url(/images/bg/ignitecoverblackstriphighres.jpg);
+    background-image: url(/images/bg/ignitecoverblackstriphighres.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left bottom;
@@ -72,7 +73,12 @@ header{
 @media only screen and (max-width: 600px) {
     #side{margin-right: 5px;}
     header{
-        background-image: url(/images/bg/ignitecoverblackstrip.jpg);
+        background-image: url(/images/bg/ignitecoverblackstriphighres.webp);
+        height: 83vh;
+    }
+    .blogcontainer{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 hr{

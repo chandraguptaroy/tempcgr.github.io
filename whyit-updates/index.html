@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/images/main/chandu.png">
+    <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">
+    <!--   Font Awesome > Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" /> 
+
     <title>Updates</title>
     <style>
      
@@ -51,7 +54,7 @@
             background-size: cover;
         }
         .cate-2{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/techbg.webp); 
             background-position: center;
             background-size: cover;
         }
@@ -71,20 +74,92 @@
             background-size: cover;
         }
         .cate-6{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/main/whyit_logo.webp); 
             background-position: center;
             background-size: cover;
         }
+        a{
+            text-decoration: none;
+        }
         /*Cateogies        End*/
+        /*   Social Bar        Start   */
+        .Social-menu{
+        z-index: 3;
+        }
+        .Social-menu ul{
+            display: block;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            z-index: 3;
+        } 
+        .Social-menu ul li  {
+            list-style: none;
+            margin: 0 15px;} /*spacing*/
+        .Social-menu ul li .fab{
+            font-size: 20px;
+            line-height: 40px;
+            transition: .6%;
+            color: rgb(255, 255, 255);}
+        .Social-menu ul li .fab:hover{
+            color: rgb(0, 0, 0);        
+        }
+        .Social-menu ul li a{
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);}
+        .Social-menu ul li a:hover{
+            transition: all 0.3s ease;
+            transform: translate(0, -10px);}
+        .Social-menu ul li:nth-child(4) a{
+            background-color: #3b5999;
+            transition: all 0.3s ease;}
+        .Social-menu ul li:nth-child(1) a{
+            background-color: #cd201f;
+            transition: all 0.3s ease;
+        }.Social-menu ul li:nth-child(2) a{
+            background-color: #e4405f;
+            transition: all 0.3s ease;
+        }.Social-menu ul li:nth-child(3) a{
+            background-color: #55acee;
+            transition: all 0.3s ease;}
+        .Social-menu ul li:nth-child(5) a{
+            background-color: #1ed760;
+            transition: all 0.3s ease;}
+        .Social-menu ul li a:hover{
+        background-color: #ffffff;
+        transition: all 0.3s ease;}
+        /*   Social Bar        End   */
     </style>
 </head>
 <body>
     <section class="head">
-        <img id="logo" src="/images/main/why it.jpg" style="width: 100px; display: block; margin-right: auto; margin-left: auto;border-radius: 50%; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.476);">
+        <img id="logo" src="/images/main/whyit_logo.webp" style="width: 100px; display: block; margin-right: auto; margin-left: auto;border-radius: 50%; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.476);">
         <h2 style="text-align: center;">Why it</h2>
         <hr color=black width="50px" size=".5px" />
         <p style="text-align: center;"><br>Exploration of Curiosity
         </p>
+       <!--        Social Bar         -->
+       <br>
+       <section class="social">
+        <div class="Social-menu">
+          <ul>
+            <li><a href="https://www.youtube.com/channel/UCNB4tK6-Q0GMmrNMk_XnZKw/featured" target="_blank"><i class="fab fa-youtube"></i> </a> </li>
+            <li><a href="https://www.instagram.com/whyit.show/" target="_blank"><i class="fab fa-instagram"></i> </a> </li>
+            <li><a href="https://www.twitter.com/whyit_show" target="_blank"><i class="fab fa-twitter"></i> </a> </li>
+            <li><a href="https://www.facebook.com/whyit.show" target="_blank"><i class="fab fa-facebook-f"></i> </a> </li>
+            <li><a href="https://open.spotify.com/show/52m7JMuIeShOe2CN9zd2Uf" target="_blank"><i class="fab fa-spotify"></i> </a> </li>
+          </ul>
+        </div>
+      </section>
     </section>
 
 <!-- Latest         Start-->
@@ -92,7 +167,7 @@
         <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; "><i>Latest:</i></h2>
             <!-- Video 01-->
         <div id="block">
-        <a href="xxx"><img src="/images/latest thumbnails/gdrive.jpg"
+        <a href="xxx"><img src="/images/latest thumbnails/gdrive.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
 
     </section>
@@ -101,12 +176,12 @@
 
 <!-- Cateogries         Start-->
 <section class="cateogries">
-    <div class="cate-1"><p>Health</p></div>
-    <div class="cate-2"><p>Tech</p></div>
-    <div class="cate-3"><p>Relationships</p></div>
-    <div class="cate-4"><p>Productivity</p></div>
-    <div class="cate-5"><p>Change</p></div>
-    <div class="cate-6"><p>All</p></div>
+    <a href="https://youtube.com/playlist?list=PLS9B-S9sejBXCRsi7JJ8CAn7YXACSH_U8"><div class="cate-1"><p>Health</p></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBV8_InjpMPmSRWLOfKvtXJP"><div class="cate-2"><p>Tech</p></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBXNGxQF-Uz02XlnaykjMo4T"><div class="cate-3"><p>Relationships</p></div></a>
+    <a href="https://youtube.com/playlist?list=PLS9B-S9sejBVEfWQGDuWke9iB_t2weRBN"><div class="cate-4"><p>Productivity</p></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBVJsCjASSgKkyejNEKzzlPv"><div class="cate-5"><p>Change</p></div></a>
+    <a href="https://www.youtube.com/channel/UCNB4tK6-Q0GMmrNMk_XnZKw/videos"><div class="cate-6"><p>All</p></div></a>
 </section>
 
 <!-- Cateogries          End-->
@@ -119,18 +194,18 @@
         <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; "><i>Our Videos:</i></h2>
         <div id="block">
             <!-- Video 01-->
-        <a href="xxx"><img src="/images/latest thumbnails/gdrive.jpg"
+        <a href="xxx"><img src="/images/latest thumbnails/gdrive.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>  
             <!-- Video 02-->
-        <div id="block"><a href="xxx"><img src="/images/latest thumbnails/gdrive.jpg"
+        <div id="block"><a href="xxx"><img src="/images/latest thumbnails/gdrive.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
 
         <div id="block">
             <!-- Video 03-->
-        <a href="xxx"><img src="/images/latest thumbnails/eduv thumbnail computer programs.jpg"
+        <a href="xxx"><img src="/images/latest thumbnails/eduv thumbnail computer programs.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
             <!-- Video 04-->
-        <div id="block"><a href="xxx"><img src="/images/latest thumbnails/gdrive.jpg"
+        <div id="block"><a href="xxx"><img src="/images/latest thumbnails/gdrive.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
     </section>
                 <!-- Videos                  End-->

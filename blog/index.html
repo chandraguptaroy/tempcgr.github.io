@@ -2,6 +2,9 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chandra Gupta Roy's Blog">
+  <meta name="keywords" content="Chandra Gupta Roy's Blog, Blogs, CGR Website- Blog">
+  <meta name="author" content="Chandra Gupta Roy">
   <title>Blog</title>
   <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">  <!--Website small logo-->
   <link rel="stylesheet" href="/css/cgrnav.css">    <!--        Navbar         -->
@@ -40,8 +43,12 @@
       box-sizing: border-box;
     }
     header{
-      height: 40vh;
-      background-color: black;
+      height: 70vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.809) 0%, rgba(0, 0, 0, 0.421) 100%),  url(/blog/img/index/bg_pexels.webp);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
     .header {
       text-align: center;
@@ -98,7 +105,15 @@
       text-align: center;
       line-height: 1.5;
     }
+    .blog-content-bar  a{
+      color: black;
+      margin-top: 5px;
+    }
     /*                      Blog             End            */
+
+
+
+    
     /*                        Blog  Catrogries         Start          */
     
     .blogcats{ 
@@ -161,14 +176,25 @@
       background-size: cover;
     }
     .cate-edu{
-      background-image: url(img/index/blog1.webp);
+      background: linear-gradient(rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.108) 100%),  url(img/index/blog1.webp);
       background-size: cover;
     }
     .cate-logs{
       background-image: url(img/index/blog2.webp);
       background-size: cover;
     }
+    .cate-pg{
+      background: linear-gradient(rgba(0, 0, 0, 0.394) 0%, rgba(0, 0, 0, 0.421) 100%),  url(/blog/img/main/personalgrowth_pexels.webp);
+      background-size: cover;
+      background-position: top left;
+    }
     /*                        Blog  Catrogries         End          */
+
+
+
+
+
+
     /*           Last section Author and Popular     Start       */
     .blogcontainer-2{
       width: 95%;
@@ -230,10 +256,16 @@
 </head>
 
 <body>
-  <script src="..\templates/cgrnav.js"></script>
+  <script src="/templates/cgrnav.js"></script>  <!--Navigation Bar-->
   <div class="header">
     <h1 class="blog-title">My Blog</h1>
     <hr color=black width="80px" size=".5px" />
+    <div class="blog-content-bar">
+      <a href="#blog-popular">Popular</a>&nbsp;<span>|</span>
+      <a href="#blog-cats">Cateogries</a>&nbsp;<span>|</span>
+      <a href="#blog-author">Popular</a>
+    </div>
+    
   </div>
 
 
@@ -265,25 +297,30 @@
 
 
 <!--               Blog Topic/Sections                   -->
-<section class="blogcats">
-  <a href="main/tech.html">
+<section id="blog-cats" class="blogcats">
+  <a href="main/health.html">
   <div class="container cate-health">
     <div class="blog-cate-title">HEALTH</div>
   </div>
 </a>
-<a href="main/tech.html">
+<a href="/blog/tech/">
   <div class="container cate-tech">
     <div class="blog-cate-title">TECH</div>
   </div>
 </a>
-  <a href="main/tech.html">
+  <a href="main/education.html">
     <div class="container cate-edu">
       <div class="blog-cate-title">EDUCATION</div>
     </div>
   </a>
-  <a href="main/tech.html">
+  <a href="main/logs.html">
     <div class="container cate-logs">
       <div class="blog-cate-title">LOGS</div>
+    </div>
+  </a>
+  <a href="main/personalgrowth.html">
+    <div class="container cate-pg">
+      <div class="blog-cate-title">PERSONAL GROWTH</div>
     </div>
   </a>
 </section>
@@ -321,7 +358,7 @@
     <!--                Author          Start       -->
     <div class="col-6 col-s-12">
       <div class="blogcontainer-2">
-        <div class="author">
+        <div id="blog-author" class="author">
           <img class="blogimg" src="./img/index/profile.webp" alt="" width="100%">          <br>
           <div>
             <h1 class="blog-author-title">Chandra Gupta Roy</h1>                                                <br>
@@ -335,7 +372,7 @@
     <!--                Popular Blogs          Start       -->
     <div class="col-6 col-s-12">
       <div class="blogcontainer-2">
-        <div class="popular">
+        <div id="blog-popular" class="popular">
           <h1>Popular Posts</h1>
           <hr color=black width="10%" size=".5px"/>
           <hr>

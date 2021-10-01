@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--    Website small logo       -->
+    <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">
+    <!--      CSS     -->
+    <link rel="stylesheet" href="/css/cgrnav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="/css/footer.css">   <!--        Footer         -->
+    <link rel="stylesheet" href="/css/totopbutton.css"> <!--        ToTop         -->
+    <link rel="stylesheet" href="/css/socialibar.css">   <!--        Social Bar         -->
+    
+    <link rel="stylesheet" href="/css/all.css">
+    
+    <!--   Font Awesome > Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!--  Font   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!--  Font   -->
+    
+    <style>
+        header
+        {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.809) 0%, rgba(0, 0, 0, 0.421) 100%),  url(/blog/img/index/fullq/bg_pexels.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        hr{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*        Titles  Start     */
+        .blog-title-1{
+            font-weight: bolder;
+            font-size: larger;
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .blog-title-2{
+            font-weight: normal;
+            font-size: medium;
+            color: black;
+        }
+        .blog-title-2-sub{
+            color: rgb(30, 30, 30);
+            font-size: small;
+        }
+        /*        Titles  End     */
+
+        /*       Sections       Start  */
+        .blog-content-para{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        /*       Sections       End  */
+
+
+        /*    Blog More Blogs       Start*/
+        .blog-more-blogs{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        [class*="more-blog-"] {
+            width: 426px;
+            height: 240px;
+            background: linear-gradient(rgba(0, 0, 0, 0.394) 0%, rgba(0, 0, 0, 0.421) 100%),  url(/blog/img/main/fullq/personalgrowth_pexels.jpg);
+            background-size: cover;
+            background-position: top left;
+            
+        }
+        .more-blog{
+            width: 50%; 
+        }
+        /*    Blog More Blogs       End*/
+        
+        
+        
+        /*       Author          Start*/
+        .blog-author{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding: 50px;
+            align-items: center;
+        }
+        .blog-author-image img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            vertical-align:auto;
+            margin-right: 20px;
+        }
+        /*       Author          End*/
+
+
+
+
+        /*                        Blog  Catrogries         Start          */
+        .blogcats{ 
+            padding-top: 5%;
+            padding-bottom: 5%;
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 5%;
+            padding-right: 5%;
+            flex-wrap: wrap;
+        }
+        .container{ 
+            width: 256px;
+            height: 144px;
+            position: relative;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .blog-cate-title{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: large ;
+            font-style: italic;
+            font-weight: bolder;
+            text-shadow:  2px 0 10px black;
+        }
+        @media screen and (max-width:640px) {
+
+            [class*="cate-"] {
+                margin: 0%;
+                display: block;
+                margin-left: auto;
+                margin-right:auto;
+                margin-bottom: 10px;
+            }
+            .container{
+                width:128px;
+                height: 72px;
+                flex-wrap: wrap;
+                flex-flow: row;
+            }
+            .blog-cate-title{
+                font-size: small;
+            }
+        }
+        
+        .cate-health{
+            background-image: url(img/main/healthbg.webp);
+            background-size: cover;
+        }
+        .cate-tech{
+            background-image: url(img/main/techbg.webp);
+            background-size: cover;
+        }
+        .cate-edu{
+            background: linear-gradient(rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.108) 100%),  url(img/index/blog1.webp);
+            background-size: cover;
+        }
+        .cate-logs{
+            background-image: url(img/index/blog2.webp);
+            background-size: cover;
+        }
+        .cate-pg{
+            background: linear-gradient(rgba(0, 0, 0, 0.394) 0%, rgba(0, 0, 0, 0.421) 100%),  url(/blog/img/main/fullq/personalgrowth_pexels.jpg);
+            background-size: cover;
+            background-position: top left;
+        }
+        /*                        Blog  Catrogries         End          */
+    </style>
+</head>
+<body>
+    <header>
+        <script src="/templates/cgrnav.js"></script>  <!--Navigation Bar-->
+    </header>
+    <main>
+        <div class="blog-title-1">Blog Topic</div>
+        <hr  color=black width="50px" size="1px" /><br><br>
+
+        <div class="blog-content-para">
+            <p class="blog-title-2">
+                Hello There
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis delectus adipisci dolores nisi quo explicabo ducimus! Commodi alias minima nesciunt ratione, veniam mollitia in minus voluptates suscipit praesentium voluptatum architecto itaque eveniet, nobis, blanditiis atque perferendis cum veritatis totam nulla. Numquam autem ut fugiat ex aut minus culpa nulla reiciendis consequuntur natus velit blanditiis voluptate nostrum nisi, quidem libero aliquid quae molestias iste dicta? Perferendis, blanditiis soluta maiores pariatur eos cumque dolore ipsam hic autem mollitia tempore voluptates molestiae cum suscipit vel quis aspernatur ullam cupiditate totam dicta. Eaque quisquam quos ea odit hic officia dolorum ratione illo numquam rerum.
+            </p>
+        </div>
+
+        <section class=" blog-more-blogs-section">
+            <div class="blog-title-1">More Blogs:</div>
+            <section class="blog-more-blogs">
+                <a href="main/health.html">
+                    <div class="col-4 more-blog-01"></div>
+                    <div class="blog-title-2">HEALTH</div>
+                </a>
+                <a href="main/health.html">
+                    <div class="col-4 more-blog-02"></div>
+                    <div class="blog-title-2">HEALTH</div>
+                </a>
+                <a href="main/health.html">
+                    <div class="col-4 more-blog-03"></div>
+                    <div class="blog-title-2">HEALTH</div>
+                </a>
+            </section>
+        </section>
+
+        <br><hr  color=gray width="20%" size="1px" />
+        <div class=" blog-author">
+            <div class="blog-author-image"><img src="/blog/img/index/profile.webp"></div>
+            <div class="blog-author-details">
+                <div class="blog-title-2-sub">Written By:<br></div>
+                    Chandra Gupta Roy
+                <div class="blog-title-2-sub">Date<br></div>
+            </div>
+        </div>
+
+
+        <br><hr  color=gray width="70%" size="1px" />
+        <!--               Blog Topic/Sections                   -->
+        <section class="blogcats">
+        <a href="main/health.html">
+            <div class="container cate-health">
+                <div class="blog-cate-title">HEALTH</div>
+            </div>
+        </a>
+        <a href="main/tech.html">
+            <div class="container cate-tech">
+            <div class="blog-cate-title">TECH</div>
+            </div>
+        </a>
+            <a href="main/education.html">
+            <div class="container cate-edu">
+                <div class="blog-cate-title">EDUCATION</div>
+            </div>
+            </a>
+            <a href="main/logs.html">
+            <div class="container cate-logs">
+                <div class="blog-cate-title">LOGS</div>
+            </div>
+            </a>
+            <a href="main/personalgrowth.html">
+            <div class="container cate-pg">
+                <div class="blog-cate-title">PERSONAL GROWTH</div>
+            </div>
+            </a>
+        </section>
+        <!--               Blog Topic/Sections         End          -->
+    </main>
+    
+</body>
+</html>

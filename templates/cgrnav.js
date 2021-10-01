@@ -7,8 +7,8 @@ document.write('<header>\
     </label>\
     <ul>\
         <li><a class="" href="/blog/">BLOG</a></li>\
-        <li><a class="" href="/main/work.html">WORK</a></li>\
-        <li><a class="" href="/main/about.html">ABOUT</a></li>\
+        <li><a class="" href="/work/">WORK</a></li>\
+        <li><a class="" href="/about/">ABOUT</a></li>\
     </ul>\
 </nav>\
 </header>\
