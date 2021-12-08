@@ -5,7 +5,7 @@
   <meta name="description" content="Chandra Gupta Roy's Blog">
   <meta name="keywords" content="Chandra Gupta Roy's Blog, Blogs, CGR Website- Blog">
   <meta name="author" content="Chandra Gupta Roy">
-  <title>Blog</title>
+  <title>Blog | CGR Chandra Gupta Roy</title>
   <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">  <!--Website small logo-->
   <link rel="stylesheet" href="/css/cgrnav.css">    <!--        Navbar         -->
   <link rel="stylesheet" href="/css/totopbutton.css"> <!--        ToTop         -->
@@ -60,13 +60,18 @@
       padding-top: 5%;
     }
     .blogimg{
-      height: 30vh;
-      width: auto;
+      height: auto;
+      width: 50%;
       display: block;
       margin-left: auto;
       margin-right: auto;
       border-radius: 10px;
       box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.408);
+    }
+    @media screen and (max-width:640px) {
+      .blogimg{
+        width: 80%;
+      }
     }
     hr{margin-bottom: 9px;
     display: block;
@@ -275,7 +280,7 @@
     <div class="col-12 col-s-12 ">
       <div class="blogcontainer-1">
         <div class="latest">
-          <img class="blogimg"src="img/index/blog1.webp" alt="" width="100%">
+          <img class="blogimg"src="img/index/blog1.webp" alt="Blog's Latest Blog picture" width="100%">
           <div><br>
             <h1 class="blog-title2">EDUCATION</h1><br>
             <h3 class="blog-title2" >The Change It Needs, <span class="asopacity">July 2, 2021</span></h3>     <br>
@@ -286,7 +291,7 @@
               Though a medium that can be either oral(most primitive), written or recorded video(and advancing…).
             </p><br>
             <div class="btn">
-              <a href="Education_change.html" target="_blank"><b>Read Blog</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a>
+              <a href="education/Education_change.html" target="_blank"><b>Read Blog</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a>
             </div>
           </div>
         </div>
@@ -359,7 +364,7 @@
     <div class="col-6 col-s-12">
       <div class="blogcontainer-2">
         <div id="blog-author" class="author">
-          <img class="blogimg" src="./img/index/profile.webp" alt="" width="100%">          <br>
+          <img class="blogimg" src="./img/index/profile.webp" alt="Blog author picture" width="100%">          <br>
           <div>
             <h1 class="blog-author-title">Chandra Gupta Roy</h1>                                                <br>
             <p style="font-size: large" ;>On our path we need mentors.<br>Who Guide us and to whom we could check in when we
@@ -377,7 +382,7 @@
           <hr color=black width="10%" size=".5px"/>
           <hr>
           <div class="popularblog">
-            <img id="popularblogpic" src="./img/index/blog1.webp">
+            <img id="popularblogpic" src="./img/index/blog1.webp" alt="Popular Blog Post-1 Picture">
             <h3>Education</h3>
             <div class="btn" id="popularbtn">
               <a href="/blog/education/Education_change.html"><b>Read</b><hr class="transhr" color=black width="70%" size=".5px"/></a>
@@ -385,7 +390,7 @@
           </div>
           <hr>
           <div class="popularblog" >
-            <img id="popularblogpic" src="./img/index/blog2.webp">
+            <img id="popularblogpic" src="./img/index/blog2.webp" alt="Popular Blog Post-2 Picture">
             <h3>Chitkohra</h3>
             <div class="btn" id="popularbtn">
               <a href="/blog/logs/chitkohra_chawal_bazaar.html"><b>Read </b><hr class="transhr" color=black width="70%" size=".5px"/></a>

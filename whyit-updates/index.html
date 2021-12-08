@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Why it Latest/Updates Page">
+    <meta name="keywords" content="Why it">
+    <meta name="author" content="Chandra Gupta Roy">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">
+    <link rel="shortcut icon" type="image/webp" href="/images/main/whyit_logo_circle.webp">
     <!--   Font Awesome > Icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" /> 
 
-    <title>Updates</title>
+    <title>Whyit-Updates | CGR Chandra Gupta Roy</title>
     <style>
-     
-        #contents{
-            padding-top: 30px;
+        *{
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #block{
+        #contents{
+            padding-top: 0px;
+        }
+        .block{
             padding-top:2%;
             padding-bottom: 2% ;
         }
@@ -26,9 +31,22 @@
             border-radius: 5px;  
             width: 100%; 
         }
-        #block img:hover{
-            transform: scale(1.1);
+        /* Latest         Start */
+        #block img{
+            animation: jump 1s cubic-bezier(1, 0.01, 0, 0.98) infinite alternate 1.5s;
         }
+        #block img:hover{
+            animation-play-state: paused;
+        }
+        @keyframes jump{
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+        }
+        /* Latest          End */
         /*Cateogies        Start*/
         .cateogries{
             display: flex;
@@ -37,46 +55,53 @@
             justify-content: space-evenly;
             padding-top: 20px;
         }
+        .cate-titles{
+            position: absolute;
+            text-align: center;
+            top: 30%;
+            right: 5%;
+            color: white;
+            text-shadow: 0px 0px 4px #000000;
+        }
         [class*="cate-"] {
             width: 150px;
             height: 50px;
-            background-color: black;
             margin: 10px;
             border-radius: 10px;
             text-align: center;
         }
-        [class*="cate-"] p{
-            color: white;
+        [class*="cate-"]{
+            position: relative;
         }
         .cate-1{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/health.webp); 
             background-position: center;
             background-size: cover;
         }
         .cate-2{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/techbg.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/techbg.webp); 
             background-position: center;
             background-size: cover;
         }
         .cate-3{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/love_relationship-unsplash.webp); 
             background-position: center;
             background-size: cover;
         }
         .cate-4{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
-            background-position: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images//google_calendar-unsplash.webp); 
+            background-position: top center;
             background-size: cover;
         }
         .cate-5{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
-            background-position: center;
-            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/change_smokebomb_bg.webp); 
+            background-position: center center;
+            background-size:cover;
         }
         .cate-6{
             background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/main/whyit_logo.webp); 
-            background-position: center;
-            background-size: cover;
+            background-position: top center;
+            background-size:auto;
         }
         a{
             text-decoration: none;
@@ -145,10 +170,10 @@
         <img id="logo" src="/images/main/whyit_logo.webp" style="width: 100px; display: block; margin-right: auto; margin-left: auto;border-radius: 50%; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.476);">
         <h2 style="text-align: center;">Why it</h2>
         <hr color=black width="50px" size=".5px" />
-        <p style="text-align: center;"><br>Exploration of Curiosity
+        <p style="text-align: center;">Exploration of Curiosity
         </p>
        <!--        Social Bar         -->
-       <br>
+       
        <section class="social">
         <div class="Social-menu">
           <ul>
@@ -167,8 +192,8 @@
         <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; "><i>Latest:</i></h2>
             <!-- Video 01-->
         <div id="block">
-        <a href="xxx"><img src="/images/latest thumbnails/gdrive.webp"
-            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+        <a href="https://youtu.be/eMwx6T5bGjQ"><img src="latest_thumbnails/Why_indistractable.webp"
+            style="width: 450px; max-width: 95%; height: auto"title="Click for the larger version." /></a></div>
 
     </section>
 
@@ -176,12 +201,12 @@
 
 <!-- Cateogries         Start-->
 <section class="cateogries">
-    <a href="https://youtube.com/playlist?list=PLS9B-S9sejBXCRsi7JJ8CAn7YXACSH_U8"><div class="cate-1"><p>Health</p></div></a>
-    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBV8_InjpMPmSRWLOfKvtXJP"><div class="cate-2"><p>Tech</p></div></a>
-    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBXNGxQF-Uz02XlnaykjMo4T"><div class="cate-3"><p>Relationships</p></div></a>
-    <a href="https://youtube.com/playlist?list=PLS9B-S9sejBVEfWQGDuWke9iB_t2weRBN"><div class="cate-4"><p>Productivity</p></div></a>
-    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBVJsCjASSgKkyejNEKzzlPv"><div class="cate-5"><p>Change</p></div></a>
-    <a href="https://www.youtube.com/channel/UCNB4tK6-Q0GMmrNMk_XnZKw/videos"><div class="cate-6"><p>All</p></div></a>
+    <a href="https://youtube.com/playlist?list=PLS9B-S9sejBXCRsi7JJ8CAn7YXACSH_U8"><div class="cate-1"><div class="cate-titles">Health</div></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBV8_InjpMPmSRWLOfKvtXJP"><div class="cate-2"><div class="cate-titles">Tech</div></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBXNGxQF-Uz02XlnaykjMo4T"><div class="cate-3"><div class="cate-titles">Relationships</div></div></a>
+    <a href="https://youtube.com/playlist?list=PLS9B-S9sejBVEfWQGDuWke9iB_t2weRBN"><div class="cate-4"><div class="cate-titles">Productivity</div></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBVJsCjASSgKkyejNEKzzlPv"><div class="cate-5"><div class="cate-titles">Change</div></div></a>
+    <a href="https://www.youtube.com/c/Whyit_show/videos"><div class="cate-6"><div class="cate-titles">All</div></div></a>
 </section>
 
 <!-- Cateogries          End-->
@@ -192,21 +217,42 @@
 
     <section id="contents" class="cgr">
         <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; "><i>Our Videos:</i></h2>
-        <div id="block">
-            <!-- Video 01-->
-        <a href="xxx"><img src="/images/latest thumbnails/gdrive.webp"
-            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>  
-            <!-- Video 02-->
-        <div id="block"><a href="xxx"><img src="/images/latest thumbnails/gdrive.webp"
-            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
-
-        <div id="block">
-            <!-- Video 03-->
-        <a href="xxx"><img src="/images/latest thumbnails/eduv thumbnail computer programs.webp"
-            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+            <!-- Video 12-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=mAFFDfS5ZEw&t=301s"><img src="latest_thumbnails/why_rethink_marriage.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version."  alt="Why it Video- Why rethink marriage " /></a></div>  
+            <!-- Video 11-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=0oBwIaYabqg"><img src="latest_thumbnails/why_podcasts2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." alt="Why it Video- Why Podcasts are booming " /></a></div>
+            <!-- Video 10-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=NsnC3baCsvw"><img src="latest_thumbnails/whyit_Racism2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." alt="Why it Video- Why Racism Still Exists " /></a></div>
+            <!-- Video 09-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=NGLJtHOMSPk"><img src="latest_thumbnails/why_bluelight2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version."  alt="Why it Video- Why Bluelight is dangerous"/></a></div>
+            <!-- Video 08-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=kr83GFtkRWA"><img src="latest_thumbnails/why_china_spread_coronavirus2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version."  alt="Why it Video- Why China spread coronavirus "/></a></div>  
+            <!-- Video 07-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=NFfFsXL9UKs"><img src="latest_thumbnails/why_get_bored2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version."  alt="Why it Video- Why do we get bored? "/></a></div>
+            <!-- Video 06-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=uB4V3L0mAQQ"><img src="latest_thumbnails/why_watch_motivational_videos2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Why should you watch Motivational Videos | Why it"  alt="Why it Video- Why should you watch motivational videos "/></a></div>
+            <!-- Video 05-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=keXQvN9y2f8&t=177s"><img src="latest_thumbnails/why_exercise2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." alt="Why it Video- Why should we exercise? " /></a></div>
             <!-- Video 04-->
-        <div id="block"><a href="xxx"><img src="/images/latest thumbnails/gdrive.webp"
-            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+        <div class="block"><a href="https://www.youtube.com/watch?v=gCLtXGzdl3w"><img src="latest_thumbnails/why_lockdown-extension2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version."  alt="Why it Video- Why is lockdown extending? "/></a></div>  
+            <!-- Video 03-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=_orJRIH2Oxg&t=144s"><img src="latest_thumbnails/why_diets_fail2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." alt="Why it Video- Why diets always fail? " /></a></div>
+            <!-- Video 02-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=vOWZ_1ndSZw&t=4s"><img src="latest_thumbnails/why_lose_weight2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." alt="Why it Video- Why should you lose weight?" /></a></div>
+            <!-- Video 01-->
+        <div class="block"><a href="https://www.youtube.com/watch?v=rntBm58Ty_I&t=99s"><img src="latest_thumbnails/why_lockdown2.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." alt="Why it Video- Why was lockdown implemented? What is the future? " /></a></div>
     </section>
                 <!-- Videos                  End-->
 

@@ -2,16 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="CGR Latest/Updates Page">
+    <meta name="keywords" content="CGR- Updates">
+    <meta name="author" content="Chandra Gupta Roy">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/images/main/chandu.png">
-    <title>Updates</title>
+    <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">
+    <!--   Font Awesome > Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" /> 
+
+    <title>CGR-Updates</title>
     <style>
-     
-        #contents{
-            padding-top: 30px;
+        *{
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #block{
+        #contents{
+            padding-top: 0px;
+        }
+        .block{
             padding-top:2%;
             padding-bottom: 2% ;
         }
@@ -23,9 +31,22 @@
             border-radius: 5px;  
             width: 100%; 
         }
-        #block img:hover{
-            transform: scale(1.1);
+        /* Latest         Start */
+        #block img{
+            animation: jump 1s cubic-bezier(1, 0.01, 0, 0.98) infinite alternate 1.5s;
         }
+        #block img:hover{
+            animation-play-state: paused;
+        }
+        @keyframes jump{
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+        }
+        /* Latest          End */
         /*Cateogies        Start*/
         .cateogries{
             display: flex;
@@ -34,57 +55,135 @@
             justify-content: space-evenly;
             padding-top: 20px;
         }
+        .cate-titles{
+            position: absolute;
+            text-align: center;
+            top: 30%;
+            right: 5%;
+            color: white;
+        }
         [class*="cate-"] {
             width: 150px;
             height: 50px;
-            background-color: black;
             margin: 10px;
             border-radius: 10px;
             text-align: center;
         }
-        [class*="cate-"] p{
-            color: white;
+        [class*="cate-"]{
+            position: relative;
         }
         .cate-1{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/health.webp); 
             background-position: center;
             background-size: cover;
         }
         .cate-2{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/techbg.webp); 
             background-position: center;
             background-size: cover;
         }
         .cate-3{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/techbg.webp); 
             background-position: center;
             background-size: cover;
         }
         .cate-4{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/techbg.webp); 
             background-position: center;
             background-size: cover;
         }
         .cate-5{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(images/techbg.webp); 
             background-position: center;
             background-size: cover;
         }
         .cate-6{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/socialpg/whyit/health.webp); 
-            background-position: center;
-            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.122)),  url(/images/main/whyit_logo.webp); 
+            background-position: top center;
+            background-size:auto;
+        }
+        a{
+            text-decoration: none;
         }
         /*Cateogies        End*/
+        /*   Social Bar        Start   */
+        .Social-menu{
+        z-index: 3;
+        }
+        .Social-menu ul{
+            display: block;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            z-index: 3;
+        } 
+        .Social-menu ul li  {
+            list-style: none;
+            margin: 0 15px;} /*spacing*/
+        .Social-menu ul li .fab{
+            font-size: 20px;
+            line-height: 40px;
+            transition: .6%;
+            color: rgb(255, 255, 255);}
+        .Social-menu ul li .fab:hover{
+            color: rgb(0, 0, 0);        
+        }
+        .Social-menu ul li a{
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 4px rgba(0, 0, 0, .5);}
+        .Social-menu ul li a:hover{
+            transition: all 0.3s ease;
+            transform: translate(0, -10px);}
+        .Social-menu ul li:nth-child(4) a{
+            background-color: #3b5999;
+            transition: all 0.3s ease;}
+        .Social-menu ul li:nth-child(1) a{
+            background-color: #cd201f;
+            transition: all 0.3s ease;
+        }.Social-menu ul li:nth-child(2) a{
+            background-color: #e4405f;
+            transition: all 0.3s ease;
+        }.Social-menu ul li:nth-child(3) a{
+            background-color: #55acee;
+            transition: all 0.3s ease;}
+        .Social-menu ul li:nth-child(5) a{
+            background-color: #1ed760;
+            transition: all 0.3s ease;}
+        .Social-menu ul li a:hover{
+        background-color: #ffffff;
+        transition: all 0.3s ease;}
+        /*   Social Bar        End   */
     </style>
 </head>
 <body>
     <section class="head">
-        <img id="logo" src="/images/main/why it.jpg" style="width: 100px; display: block; margin-right: auto; margin-left: auto;border-radius: 50%; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.476);">
+        <img id="logo" src="/images/main/whyit_logo.webp" style="width: 100px; display: block; margin-right: auto; margin-left: auto;border-radius: 50%; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.476);">
         <h2 style="text-align: center;">Why it</h2>
         <hr color=black width="50px" size=".5px" />
         <p style="text-align: center;"><br>Exploration of Curiosity
         </p>
+       <!--        Social Bar         -->
+       
+       <section class="social">
+        <div class="Social-menu">
+          <ul>
+            <li><a href="https://www.youtube.com/channel/UCNB4tK6-Q0GMmrNMk_XnZKw/featured" target="_blank"><i class="fab fa-youtube"></i> </a> </li>
+            <li><a href="https://www.instagram.com/whyit.show/" target="_blank"><i class="fab fa-instagram"></i> </a> </li>
+            <li><a href="https://www.twitter.com/whyit_show" target="_blank"><i class="fab fa-twitter"></i> </a> </li>
+            <li><a href="https://www.facebook.com/whyit.show" target="_blank"><i class="fab fa-facebook-f"></i> </a> </li>
+            <li><a href="https://open.spotify.com/show/52m7JMuIeShOe2CN9zd2Uf" target="_blank"><i class="fab fa-spotify"></i> </a> </li>
+          </ul>
+        </div>
+      </section>
     </section>
 
 <!-- Latest         Start-->
@@ -92,8 +191,8 @@
         <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; "><i>Latest:</i></h2>
             <!-- Video 01-->
         <div id="block">
-        <a href="xxx"><img src="/images/latest thumbnails/gdrive.jpg"
-            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+        <a href="xxx"><img src="latest_thumbnails/why_rethink_marriage.webp"
+            style="width: 450px; max-width: 95%; height: auto"title="Click for the larger version." /></a></div>
 
     </section>
 
@@ -101,12 +200,12 @@
 
 <!-- Cateogries         Start-->
 <section class="cateogries">
-    <div class="cate-1"><p>Health</p></div>
-    <div class="cate-2"><p>Tech</p></div>
-    <div class="cate-3"><p>Relationships</p></div>
-    <div class="cate-4"><p>Productivity</p></div>
-    <div class="cate-5"><p>Change</p></div>
-    <div class="cate-6"><p>All</p></div>
+    <a href="https://youtube.com/playlist?list=PLS9B-S9sejBXCRsi7JJ8CAn7YXACSH_U8"><div class="cate-1"><div class="cate-titles">Health</div></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBV8_InjpMPmSRWLOfKvtXJP"><div class="cate-2"><div class="cate-titles">Tech</div></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBXNGxQF-Uz02XlnaykjMo4T"><div class="cate-3"><div class="cate-titles">Relationships</div></div></a>
+    <a href="https://youtube.com/playlist?list=PLS9B-S9sejBVEfWQGDuWke9iB_t2weRBN"><div class="cate-4"><div class="cate-titles">Productivity</div></div></a>
+    <a href="https://www.youtube.com/playlist?list=PLS9B-S9sejBVJsCjASSgKkyejNEKzzlPv"><div class="cate-5"><div class="cate-titles">Change</div></div></a>
+    <a href="https://www.youtube.com/channel/whyit_show/videos"><div class="cate-6"><div class="cate-titles">All</div></div></a>
 </section>
 
 <!-- Cateogries          End-->
@@ -117,20 +216,41 @@
 
     <section id="contents" class="cgr">
         <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; "><i>Our Videos:</i></h2>
-        <div id="block">
-            <!-- Video 01-->
-        <a href="xxx"><img src="/images/latest thumbnails/gdrive.jpg"
+            <!-- Video 12-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_rethink_marriage.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>  
-            <!-- Video 02-->
-        <div id="block"><a href="xxx"><img src="/images/latest thumbnails/gdrive.jpg"
+            <!-- Video 11-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_podcasts.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
-
-        <div id="block">
-            <!-- Video 03-->
-        <a href="xxx"><img src="/images/latest thumbnails/eduv thumbnail computer programs.jpg"
+            <!-- Video 10-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/whyitrasism.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+            <!-- Video 09-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/whyitbluelight.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+            <!-- Video 08-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_china_spread_coronavirus.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>  
+            <!-- Video 07-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_get_bored.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+            <!-- Video 06-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_watch_motivational_videos.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+            <!-- Video 05-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_exercise.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
             <!-- Video 04-->
-        <div id="block"><a href="xxx"><img src="/images/latest thumbnails/gdrive.jpg"
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_lockdown_extends.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>  
+            <!-- Video 03-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_diets_fail.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+            <!-- Video 02-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_lost_weight.webp"
+            style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
+            <!-- Video 01-->
+        <div class="block"><a href="xxx"><img src="latest_thumbnails/why_lockdown.webp"
             style="width: 500px; max-width: 100%; height: auto"title="Click for the larger version." /></a></div>
     </section>
                 <!-- Videos                  End-->
