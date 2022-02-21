@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chandra Gupta Roy's Graphic Design Potfolio">
+    <meta name="keywords" content="CGR Graphic Design Potfolio, Graphic Design Potfolio, CGR Potfolio">
+    <meta name="author" content="Chandra Gupta Roy">
+    <title>Graphic Design Potfolio - CGR Potfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />  <!--Font Awesome Icons-->
+    <link rel="shortcut icon" type="image/webp" href="/images/main/icons/cgr_icon.webp"><!--Website Logo -->
+    <link rel="stylesheet" href="/css/my-nav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="/css/all.css">    <!--        AllCss         -->
+    <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
+    <style>
+        /*       Potfolio-Images Flex Box css Grid one        Start*/
+        .potfolio-images-flexbox{
+            padding: 20px;
+            margin-left: 10px;
+            margin-right:10px;
+        }
+        .img-grid-row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            }
+
+            /* Create four equal columns that sits next to each other */
+        .img-grid-column {
+            flex: 50%;
+            padding: 0 4px;
+            }
+        .img-grid-column img {
+            margin-top: 10px;
+            vertical-align: middle;
+            width: 100%;
+            }
+            /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+        .img-grid-column {
+            flex: 50%;
+            max-width: 50%;
+            }
+        .view-change-buttons{
+            display: none;
+        }
+            }
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .img-grid-column {
+            flex: 100%;
+            max-width: 100%;
+            }
+        }
+        /* Style the buttons */
+        .view-change-buttons{
+            text-align: center;
+        }
+        .view-change-btn {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .view-change-btn:hover {
+        background-color: #ddd;
+        }
+        .view-change-btn.active {
+        background-color: #666;
+        color: white;}
+        /*       Potfolio-Images Flex Box css Grid one       End*/
+
+        /*       Potfolio-Show Images        Start*/
+        .pot-show-row {
+            margin: 8px -16px;
+            }
+            /* Add padding BETWEEN each column (if you want) */
+        .pot-show-row,.pot-show-row > .pot-show-column {
+            padding: 8px;
+            }
+            /* Create four equal columns that floats next to each other */
+        .pot-show-column {
+            float: left;
+            width: 25%;
+            }
+            /* Clear floats after rows */
+        .pot-show-row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            /* Content */
+        .pot-show-content {
+            background-color: white;
+            padding: 10px;
+            }
+            /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 900px) {
+            .pot-show-column {
+                width: 50%;
+            }
+            }
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .pot-show-column {
+                width: 100%;
+            }
+        }
+        /*       Potfolio-Show Images        End*/
+    </style>
+</head>
+<body>
+    <my-nav></my-nav>
+    <header>
+
+    </header>
+    <!--            Image Grid  FlexBoxo      Start     -->
+    <div class="potfolio-images-flexbox">
+        <div class="view-change-buttons">
+            <p>Click on the buttons to change the grid view.</p>
+            <button class="view-change-btn" onclick="one()">1</button>
+            <button class="view-change-btn active" onclick="two()">2</button>
+            <button class="view-change-btn" onclick="four()">4</button>
+        </div>
+        <div class="img-grid-row">
+            <div class="img-grid-column">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/13reasonswhy-thumbnail-post.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/apartment-wrap.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/blackandwhite-man-focus.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/why_get_bored2.webp">
+                
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/cgr-coat-editbg_color.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/Duotone-Oliwier Gesla.webp">
+                
+                
+            </div>
+            <div class="img-grid-column">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/whyit-lockdown-girl.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/xrp-dogecoin-worthless-one.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/whyit Racism.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/why_podcasts.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/color-retouch-levels-skyland.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/girl-duotone-purpleone.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/xrp-dogecoin-worthless-two.webp">
+            </div>
+            <div class="img-grid-column">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/girl_green-glitch2.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/Glitch-Effect-with-splash.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/new_van-reveal-thumbanil-one-red.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/nike-glowing_shoes.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/plant_bgremoval-puppetwrap.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/glitch-sexygirl-pexels.webp">
+                
+            </div>
+            <div class="img-grid-column">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/why_exercise2.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/why_china_spread_coronavirus2.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/why-motivational-speakers.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/viking-girl_color.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/spotify-duotone.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/projext-eduv-buddha.webp">
+                <img src="/potfolio/graphic-design-potfolio/images/image-flex-grid/smoothies oranges.webp">
+            </div>
+        </div>
+        <script>
+            // Get the elements with class="img-grid-column"
+            var elements = document.getElementsByClassName("img-grid-column");
+            
+            // Declare a "loop" variable
+            var i;
+            
+            // Full-width images
+            function one() {
+                for (i = 0; i < elements.length; i++) {
+                elements[i].style.flex = "100%";
+                }
+            }
+            
+            // Two images side by side
+            function two() {
+                for (i = 0; i < elements.length; i++) {
+                elements[i].style.flex = "50%";
+                }
+            }
+            
+            // Four images side by side
+            function four() {
+                for (i = 0; i < elements.length; i++) {
+                elements[i].style.flex = "25%";
+                }
+            }
+        </script>
+    </div>
+        <!--            Image Grid   FLexBoxo    End     -->
+
+        <!--     Portfolio Show Gallery Grid      Start    -->
+        <div class="pot-show-row">
+            <div class="pot-show-column">
+                <div class="pot-show-content">
+                    <img src="mountains.jpg" alt="Mountains" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="pot-show-column">
+                <div class="pot-show-content">
+                    <img src="lights.jpg" alt="Lights" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="pot-show-column">
+                <div class="pot-show-content">
+                    <img src="nature.jpg" alt="Nature" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="pot-show-column">
+                <div class="pot-show-content">
+                    <img src="mountains.jpg" alt="Mountains" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--     Portfolio Show Gallery Grid     End   -->
+        
+    
+</body>
+</html>

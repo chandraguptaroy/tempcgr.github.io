@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Basic SEO-->
+    <title>Blog | Blog-CGR Chandra Gupta Roy</title>
+    <meta name="description" content="Chitkohra Chawal Bazar Review and Tour">
+    <meta name="keywords" content="Chitkohra, Chitkohra Chawal Bazar, Blog-CGR, ChitkohraChawalBazar Review">
+    <meta name="author" content="CGR Chandra Gupta Roy">
+    <!--    Website small logo       -->
+    <link rel="shortcut icon" type="image/webp" href="/images/main/chandu.webp">
+    <!--      CSS     -->
+    <link rel="stylesheet" href="/css/my-nav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="/css/my-main-footer.css">    <!--        M-Footer         -->
+    <link rel="stylesheet" href="/css/all.css">    <!--        All Css         -->
+    <link rel="stylesheet" href="/css/sub-blog.css">    <!--        sub-blog css        -->
+    <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
+    <script type="module" src="/js template/sub-blog.js"></script> <!--Subscribe to Blog-->
+    <!--   Font Awesome > Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    
+    <style>
+        html{font-family: sans-serif}
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+        header
+        {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.809) 0%, rgba(0, 0, 0, 0.421) 100%),  url(/blog/images/main/bg_pexels.webp);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        hr{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*        Titles  Start     */
+        .blog-content{
+            width: 700px;
+            margin: auto;
+            padding: normal;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /*        Titles  End     */
+
+        /*       Sections       Start  */
+        .blog-content-para{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        /*       Sections       End  */
+
+
+        /*   All Blogs  Start*/
+        [class*="blogg-all-blog-"]{
+            height: 20vh;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.667);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        [class*="blogg-all-blog-"] h2,[class*="blogg-all-blog-"] p{
+            line-height: normal;
+        }
+        [class*="blogg-all-blog-"] img{
+            text-align: right;
+            height: 100%;
+            width: 300px;
+            object-fit: cover;
+        }
+        @media only screen and (max-width:700px){
+            [class*="blogg-all-blog-"]{
+                height: 25vh;
+            }
+            [class*="blogg-all-blog-"] img{
+                width: 50%;
+            }
+        }
+        .blog-written{
+            padding: 10px;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .blog-content ul,.blog-content ol{
+            margin-left: 30px;
+        }
+        /*     All Blogs End*/
+        
+        
+        
+        /*       Author          Start*/
+        .blog-author{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            align-items: center;
+        }
+        .blog-author-image img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            vertical-align:auto;
+            margin-right: 20px;
+        }
+        .blogs-author-social ul{
+            display: flex;
+            justify-content: center;
+        }
+        .blogs-author-social ul li{
+            list-style: none;
+            margin: 0 15px;
+        }
+        .blogs-author-social ul li a{
+            color: black;
+        }
+        /*       Author          End*/
+
+
+
+
+        /*                        Blog  Catrogries         Start          */
+        .blogcats{ 
+            padding-top: 5%;
+            padding-bottom: 5%;
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 5%;
+            padding-right: 5%;
+            flex-wrap: wrap;
+        }
+        .container{ 
+            width: 256px;
+            height: 144px;
+            position: relative;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .blog-cate-title{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-style: italic;
+            font-weight: bolder;
+            text-shadow:  2px 0 10px black;
+        }
+        @media screen and (max-width:640px) {
+            [class*="cate-"] {
+                margin: 0%;
+                display: block;
+                margin-left: auto;
+                margin-right:auto;
+                margin-bottom: 10px;
+            }
+            .container{
+                width:128px;
+                height: 72px;
+                flex-wrap: wrap;
+                flex-flow: row;
+            }
+            .blog-content{
+                width: 90%;
+            }
+        }
+        
+        .cate-health{
+            background-image: url(/blog/images/main/healthbg.webp);
+            background-size: cover;
+        }
+        .cate-tech{
+            background-image: url(/blog/images/main/techbg.webp);
+            background-size: cover;
+        }
+        .cate-edu{
+            background: linear-gradient(rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.108) 100%),  url(/blog/images/main/edubg.webp);
+            background-size: cover;
+        }
+        .cate-logs{
+            background-image: url(/blog/images/main/logsbg.webp);
+            background-size: cover;
+        }
+        .cate-pg{
+            background: linear-gradient(rgba(0, 0, 0, 0.394) 0%, rgba(0, 0, 0, 0.421) 100%),  url(/blog/images/main/personalgrowth_pexels.webp);
+            background-size: cover;
+            background-position: top left;
+        }
+        /*                        Blog  Catrogries         End          */
+        .text-center{text-align: center;}
+    </style>
+</head>
+<body>
+    <my-nav></my-nav> <!--Navigation Bar-->
+    <header>
+    </header>
+    <main>
+        <br>
+        <h1 class="text-center">Relationship Advice & Mine...</h1><br>
+        <hr  color=black width="50px" size="1px" /><br><br>
+
+        <div class="blog-content">
+            <p>
+                Hey, there. This is CGR and welcome to my blog,<br>
+                Here, I talk about multiple topics that are all related to increasing self-awareness. So, if that resonates with you.
+                <a class="sub-blogbtn"onclick="subblogpopupToggle();">Click Here!</a><br>
+                <br>
+                Today's topic is Relationships.<br>
+                <br>
+                Now I won’t be giving you- How to make a gf/bf bullet points(probably), however, I think this short blog can be a good read. 🌚<br>
+                <br>
+                My Credentials😌:<br>
+                Have I been in relationships? - Of course!<br>
+                Have I been in sexual-romantic-relationships? - Nope!<br>
+                Do I have deep relationships? - Yes<br>
+                Did I make them? - I’ll say Yes<br>
+                <br>
+                Today, I have some meaningful relationships. But, if I backtrack just about 3-4 years back, I literally had NONE. Even with my own siblings, it was just like God gave me those relationships and I thus have to live with them and we have to be there for each other (not by our own choice).<br>
+                <br>
+                However, things had to change as I am a Hopeless Romantic (although, learned this word a few weeks back😤) and I forever wanted an amazing romantic life❤, when I reflected I didn’t see that coming, I didn’t even have a good relationship with my siblings or parents or anyone in the world, how am I supposed to attract or have an amazing romantic life in future?<br>
+                <br>
+            </p>
+                <ul>
+                    <li>Could I make people laugh? - No</li>
+                    <li>Was I happy? -No</li>
+                    <li>Was I vulnerable - No</li>
+                    <li>Did I really love myself? - No</li>
+                    <li>Can I really love someone? -No</li>
+                    <li>So, Will someone really love me? -No</li>
+                </ul>
+            <p>
+                <br>
+                This shocked me to my very existence.<br>
+                I was just a fat person, who isn’t happy, who has no meaningful relationship, who does not contribute anything to this society.<br>
+                <br>
+                {insert picture fatty- chandu}
+                <br>
+                Now, if you know my name -CGR, aka Chandra Gupta Roy. Historically, one of the greatest kings that ever ruled on the Indian Subcontinent and was the founder of the largest Empire that ruled India was named Chandra Gupta. So, Idk, how that relates🤷‍♂️😅 but I had to do something, not little by little, not slowly, but BIG change, quick. I was almost 16 and I felt that there was no time( long list-get fit, develop skill, earn money, learn humor, learn zillion different things about people, clothing, looks, dating, eating, etc.. ) to go slow, improve sustainably. I wanted a Romance asap, I mean romance in my 20's. Right? (with lots of money, of course, no time not at all🥵 )<br>
+                <br>
+                Fast forward three years, I am fit, I have skills, I am doing freelancing 🤑 and looking forward to doing startups, I have learned many things related to people, I can make people around me laugh (learning from Chandler Bing [Friends] 😂)<br>
+                <br>
+                The Relationship part… Am I in a Romantic Relationship? -No, am I actively looking for it? -No.
+                Will I find it- Yes!! 😉<br>
+                And, Yes. I have worked on relationships part, been venerable, respected people’s choices, learned everyone’s different, made people laugh, laughed at myself, shared experiences, smiled genuinely, made eye contact, really listened to people, told stories myself, gave myself permission to hang out sometime, use social media to chat, just have an open heart.<br>
+                <br>
+                What I have learned- People more than anything want to connect at a deep level, more than money, sex, name, fame. Just real talk, share experiences. 
+                However, they are locked to themselves, everyone. We don’t trust anyone to open up.<br>
+                <br>
+                Love can be a chance, aka dumb luck -Otis Milburn(Sex Education), but Friendship is required for that luck to play its cards, in fact, I really think that friendships must be promoted more, which may or may not culminate into dating, etc in future which is the last part but a person needs friends who listen to each other. How can this be achieved? I guess, by getting involved in activities and realizing that friends can be just friends.<br>
+                <br>
+                Mistakes I have made along the way: <br>
+                Btw, long journey ahead (literally…) and I mean it, I am no expert but here’s what I know…
+                <br>
+            </p>
+                <ol>
+                    <li>Mistake no. 1, avoiding girls just because they have bf’s</li>
+                    <li>Mistake no. 2, avoiding people just because they watch anime/or YouTube Vines</li>
+                    <li>Mistake no. 3, focused too much on studies, rather than bunking some classes with classmates.</li>
+                    <li>Mistake no. 4, not participating in social activities.</li>
+                    <li>Mistake no. 5, listening too much to Arijit Singh’s Songs (Romantic Songs). Yeah, I think that’s real (although I want to listen now…)</li>
+                    <li>Mistake no. 6, not making a list of mistakes😂, jk(just kidding)! There must be millions.</li>
+                </ol>
+                <br>
+            <p>
+                Finally, I wish you good luck for finding a dozen great friends who care for you and a person who will love you beyond your imagination and will come to the moon for you ❤. Wish me the same and I’ll keep you posted.
+                <br>
+                Btw,<br>
+                Researchers say Relationships contribute the most to a person’s happiness and overall well-being, so don’t neglect it. It does not take as much time as we imagine, it would.<br>
+                Lastly, subscribe...
+                <a class="sub-blogbtn"onclick="subblogpopupToggle();">Subscribe!</a>
+            </p>
+            
+        </div>
+        <br><br>
+        <div class="moreblogs">
+            <a href="/blog/relationships-myadvice-and-journey-age-19/">
+                <div class="blogg-all-blog-relationshipadvice">
+                    <div class="blog-written">
+                        <h2>Relationship Advice & Mine...</h2>
+                        <p>Yes, I have build deep meaningful relationships, although I was bankrupt once.</p>
+                    </div>
+                    <img src="/blog/education-the-change-it-needs/edubg.webp">
+                </div>
+            </a>
+            <a href="/blog/chitkohra-chawal-bazar-patna/">
+                <div class="blogg-all-blog-chitkohra-bazar">
+                    <div class="blog-written">
+                        <h2>Chitkohra Bazar- Tour and Review of the Place</h2>
+                        <p>It the Oldest & biggest Market of Patna, let's see a part of it ourselves.</p>
+                    </div>
+                    <img src="/blog/chitkohra-chawal-bazar-patna/logsbg.webp">
+                </div>
+            </a>
+            <a href="/blog/education-the-change-it-needs/">
+                <div class="blogg-all-blog-education-change">
+                    <div class="blog-written">
+                        <h2>Education-The Change it needs</h2>
+                        <p>Personal Thoughts: What I is education and what is the missing part and how can it be imporved?</p>
+                    </div>
+                    <img src="/blog/education-the-change-it-needs/edubg.webp">
+                </div> 
+            </a>
+        </div>
+
+        <br><hr  color=gray width="20%" size="1px" />
+        <div class=" blog-author">
+            <div class="blog-author-image"><img src="/images/main/chandu.webp" alt="Blog Author Photo"></div>
+            <div class="blog-author-details">
+                <h4 class="">Written By:<br></h4>
+                    Chandra Gupta Roy
+                <h5 class="">Date: 15th August 2021<br></h5>
+            </div>
+        </div>
+        <div class="blogs-author-social">
+            <ul>
+                <li><a href="https://youtube.com/c/chandraguptaroy" target="_blank"><i class="fab fa-youtube"></i> </a> </li>
+                <li><a href="https://instagram.com/chandraguptaroy/" target="_blank"><i class="fab fa-instagram"></i> </a> </li>
+                <li><a href="https://twitter.com/chandraguptaroy" target="_blank"><i class="fab fa-twitter"></i> </a> </li>
+                <li><a href="https://facebook.com/thechandraguptaroy" target="_blank"><i class="fab fa-facebook-f"></i> </a> </li>
+            </ul>
+        </div>
+
+
+        <br><hr  color=gray width="70%" size="1px" />
+        <!--               Blog Topic/Sections                   -->
+        <section class="blogcats" title="Blog Categories">
+        <a href="main/health.html">
+            <div class="container cate-health">
+                <div class="blog-cate-title">HEALTH</div>
+            </div>
+        </a>
+        <a href="main/tech.html">
+            <div class="container cate-tech">
+            <div class="blog-cate-title">TECH</div>
+            </div>
+        </a>
+            <a href="main/education.html">
+            <div class="container cate-edu">
+                <div class="blog-cate-title">EDUCATION</div>
+            </div>
+            </a>
+            <a href="main/logs.html">
+            <div class="container cate-logs">
+                <div class="blog-cate-title">LOGS</div>
+            </div>
+            </a>
+            <a href="main/personalgrowth.html">
+            <div class="container cate-pg">
+                <div class="blog-cate-title">PERSONAL GROWTH</div>
+            </div>
+            </a>
+        </section>
+        <!--               Blog Topic/Sections         End          -->
+    </main>
+    <!-- <p>Hola amigos! How are you doing? <a class="sub-blogbtn"onclick="subblogpopupToggle();">Click Me!</a> </p> -->
+    <!--         Subscribe to Blog Sub2Blog Sub-blog    Start -->
+    <sub2-blog></sub2-blog>
+    <script>
+        function subblogpopupToggle(){
+            const popup =document.getElementById('sub-blog');
+            popup.classList.toggle('active')
+        }
+    </script>
+    <!--         Subscribe to Blog Sub2Blog Sub-blog    End -->
+    <my-m-footer></my-m-footer>
+</body>
+</html>

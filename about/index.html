@@ -9,41 +9,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="shortcut icon" type="image/png" href="/images/main/chandu.webp">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="/css/main/about.css" >
-    <link rel="stylesheet" href="/css/cgrnav.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/all.css" >
-
-     <!--  Font   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <!--  Font   -->
+    <link rel="shortcut icon" type="image/webp" href="/images/main/icons/cgr_icon.webp"><!--Website Logo -->
+    <link rel="stylesheet" href="/css/my-nav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="/css/all.css">      <!--All CSS-->
+    <link rel="stylesheet" href="/css/my-main-footer.css">      <!--Footer Main css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />  <!--Font Awesome Icons-->
+    <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
     <style>
-
+        /*Nav Bar active*/
+        .nav-about{
+            color: rgb(0, 76, 255);
+        }
+        main {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: auto;
+            box-sizing:initial;
+            text-align: center;
+        }
+        p{text-align: left;}
+        .row{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        section{
+            padding-top: 10px ;
+            padding-bottom: 10px ;
+            margin: auto;
+            padding: auto;
+        }
+        .mystory{ text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;}
+        #side{ font-size: x-small;
+        text-align: right;
+        margin-right: 30%;
+        }
+        header{
+            background-color: #383737;
+            height: 77vh;
+            width: 100%;
+            z-index: -15;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        .blogcontainer {
+            background-color: white;
+            padding: 10px;
+        }
+        .quote-change{
+            font-size: xx-large;
+            font-variant: small-caps;
+            font-weight: 700;
+        }
+        .imgcontainer img{
+            box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 50%);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media only screen and (max-width: 600px) {
+            #side{margin-right: 5px;}
+            .blogcontainer{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .row{
+                padding: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
     
+    <my-nav></my-nav>
     <header>
-        <script src="/templates/cgrnav.js"></script>
+
     </header>
-    <hr>
-    <H1 style="font-size: 300%; font-family: fantasy;">ABOUT ME</H1>
-    <hr>
+    <h1 class="center-text">About Me</h1>
     <main>
         <div class="row">
-            <div  class="col-4 col-s-12 ">
+            <div  class="col-5 col-s-12 ">
                 <div class="imgcontainer">
-                    <img src="/images/person/zoo01.webp" width="100%" alt="Chandra Gupta Roy's Image at Park">
+                    <img src="/images/CGR-images/zoo01.webp" width="100%" alt="Chandra Gupta Roy's Image at Park">
                 </div>
             </div>
-            <div class="col-8 col-s-12" style="float: right;">
+            <div class="col-7 col-s-12">
                 <div class="blogcontainer">
                     <p id="introwords" style="text-align: left;">
                         First, I would like to answer this question:<br>
@@ -56,8 +112,6 @@
                         Can I?<br>
                         Yes, because no one can fucking stop me.
                         <br><br>
-                        <i>On our path we need mentors who guide us and with whom we could check in when we seem lost, with
-                            the Internet we could make anyone our mentor. Listen to their videos and follow through.</i>
                     </p>
                 </div>
             </div>
@@ -65,7 +119,9 @@
         </div>
         <div class="row">
             <div class="col-8 col-s-12 ">
-                <div class="blogcontainer">
+                <div class="blogcontainer left-text">
+                    <p class="italic-text">On our path we need mentors who guide us and with whom we could check in when we seem lost, with
+                        the Internet we could make anyone our mentor. Listen to their videos and follow through.</p>
                     <h4>My Mentors:</h4>
                     <p>
                         Vishen Lakhiani<br> Elon Musk<br> Sandeep Maheshwari<br> Aman Dhattarwal 
@@ -88,13 +144,13 @@
             </div>
             <div class="col-4 col-s-12 ">
                 <div class="imgcontainer">
-                    <img src="/images/person/eco02.webp" alt="Chandra Gupta Roy picture" width="100%">
+                    <img src="/images/CGR-images/eco02.webp" alt="Chandra Gupta Roy picture" width="100%">
                 </div>
             </div>
         </div>
+        <h1 class="center-text">My Story:</h1>
         <section  class="mystory">
             <div class="mystory-text">
-                <h3 style="text-align: center;">My Story:</h3>
                 <p style="text-align: center;"><i>Updated (06-2021)</i>
                     <br><br>
                     Now how did I get started in all these things I am doing today? –
@@ -106,14 +162,15 @@
                     like movies, It would be easier to learn and remember.
                     <br><br>
                     But I knew someone wasn't coming to save us.
-
+                </p>
                     <br><br>
                     <hr color=black width="30%" size=".5px" />
                     <br><br>
-                    —Change does not just come, change is brought—
+                    <div class="quote-change italic-text">—Change does not just come, Change is brought—</div>
                     <br><br>
                     <hr color=black width="30%" size=".5px" />
                     <br><br>
+                    <p>
                     Someone tomorrow, from among us will rise up and bring this change –Make our education system more
                     efficient and engaging.
                     Should I wait for them? Why not me?
@@ -173,7 +230,12 @@
                     What I have today is Courage to say that <br><span style="font-weight: bold;">—I CAN DO IT.</span>
                 </p>
             </div>
-    </section>  
+    </section>
+    <div class="my-quotes">
+        <h1>My Quotes:</h1>
+        <p>(feel free to use...✌)</p>
+        <img src="">
+    </div>
         <section>
             <div class="free">
                 <h3>GET YOUR FREE ASSETS:</h3><br>
@@ -209,8 +271,9 @@
                 <br><br><h3>Why it Wallpapers:</h3>
             </div>
         </section>
-        <script src="/templates/footer.js"></script>
+        
     </main>
+    <my-m-footer></my-m-footer>
 </body>
 
 </html>

@@ -1,0 +1,79 @@
+        .hire-me-btn{
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 0 10px 0 black;
+            width: max-content;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hire-me-btn:hover{
+            cursor: pointer;
+        }
+        
+        /*Popup-CSS*/
+        #hire-btn{
+            width: 300px;
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgb(85, 85, 85);
+            position: fixed;
+            top: -100%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1000;
+            transition: 0.5s;
+            visibility: hidden;
+        }
+        .hire-btn{cursor: pointer;}
+        #hire-btn-cross{cursor: pointer;}
+        #hire-btn-cross i{padding-top: 20px;}
+        #hire-btn form input:focus{
+            background-color: rgba(0, 0, 0, 0.457);
+        }
+        .hire-btn-2{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        [class*="hire-btn-2-"] {
+            display: flex;
+            justify-content:space-between;
+            flex-direction: column;
+        }
+        [class*="hire-btn-2-social-"] {
+            display: flex;
+            justify-content:space-between;
+            flex-direction: row;
+        }
+        [class*="hire-btn-2-social-"] a{
+            margin-left: 3px;
+        }
+        .hire-btn-2 .fab{
+            margin-left: 5px;
+            font-size: 16px;
+            color: black;
+        }
+        #hire-btn .fas,#hire-btn .fab,#hire-btn .fa, #hire-btn .fa-solid{
+            font-size: 16px;
+            color: black;
+        }
+        .hr-divider{
+            border-top-width: 1px;
+            height: 0;
+            border-color: #8a8a8a;
+            margin-bottom: 1rem;
+        }
+
+        /*Modal change*/
+        #hire-btn.active,#hire-btn.active{
+            visibility: visible;
+            top: 50%;
+        }
+        form input{
+            border-width: 1px;
+            border-color: #8a8a8a;
+            border-radius: 5px;
+            padding: 3px;
+        }

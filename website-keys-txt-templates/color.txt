@@ -1,0 +1,35 @@
+Using: 
+Main Blue: #008AFF
+Dark Blue: #004cff
+Yellow: #E3D924
+
+Grey Shadow version: #ddd
+
+
+Color mixer etc: color.adobe.com
+Color Palette: https://colorsinspo.com/
+
+
+CGR Dp: 
+color 1 light: #02b1e8
+color 2 mid:   #007ecb
+color 3 dark:  #08459e
+
+venngage: 
+Blue+ Orange combinations: 
+#8ecae6 Very light
+#219ebc blue main
+#023047 dark blue
+#E3D924 yellow
+#ffb703 light orange
+#fb8500 orange
+
+Shades: 
+#ffffff white
+#00171f dark blue
+#003459 mid dark
+#007ea7 mid 
+#00a8e8 light
+
+
+

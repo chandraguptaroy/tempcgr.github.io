@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chandra Gupta Roy's Graphic Design Potfolio">
+    <meta name="keywords" content="CGR Graphic Design Potfolio, Graphic Design Potfolio, CGR Potfolio">
+    <meta name="author" content="Chandra Gupta Roy">
+    <title>How to connect Whatsapp to pc | WhatsApp Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />  <!--Font Awesome Icons-->
+    <link rel="shortcut icon" type="image/webp" href="/images/main/icons/cgr_icon.webp"><!--Website Logo -->
+    <link rel="stylesheet" href="/css/my-nav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="/css/my-main-footer.css">    <!--        M-Footer         -->
+    <link rel="stylesheet" href="/css/all.css">    <!--        AllCss         -->
+    <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
+    <style>
+        .blog-content-main h2{text-align: center;
+        margin-top: 30px;
+        }
+        .blog-content-main h3,.blog-content-main p{
+            margin-top: 50px;
+            margin-left: 30%;
+            margin-right: 30%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .blog-content-main img{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;}
+        .mob{
+            height: 500px;
+            width: auto;
+        }
+        header{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.122)),  url(/blog/category/tech/bgbg.webp);
+            height: 50vh;
+            width: auto;
+            background-size: cover;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+
+            background-attachment: fixed;
+        }
+        .column{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-between;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        @media (max-width:600px){
+            img{
+                width: 90%;
+                margin-bottom: 10px;
+            }
+            .mob{
+                width: 90%;
+                height: auto;
+            }
+            .column{
+                display: block;
+                margin: 10px;
+            }
+            h2,h3,p{
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        }
+
+        /*   All Blogs  Start*/
+        [class*="blogg-all-blog-"]{
+            height: 20vh;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.667);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        [class*="blogg-all-blog-"] h2,[class*="blogg-all-blog-"] p{
+            line-height: normal;
+        }
+        [class*="blogg-all-blog-"] img{
+            text-align: right;
+            height: 100%;
+            width: 300px;
+            object-fit: cover;
+        }
+        .blog-written{
+            padding: 10px;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        @media only screen and (max-width:700px){
+            [class*="blogg-all-blog-"]{
+                height: 25vh;
+            }
+            [class*="blogg-all-blog-"] img{
+                width: 50%;
+            }
+        }
+        /*     All Blogs End*/
+        
+        
+        
+        /*       Author          Start*/
+        .blog-author{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            align-items: center;
+        }
+        .blog-author-image img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            vertical-align:auto;
+            margin-right: 20px;
+        }
+        .blogs-author-social ul{
+            display: flex;
+            justify-content: center;
+        }
+        .blogs-author-social ul li{
+            list-style: none;
+            margin: 0 15px;
+        }
+        .blogs-author-social ul li a{
+            color: black;
+        }
+        /*       Author          End*/
+
+
+
+
+        /*                        Blog  Catrogries         Start          */
+        .blogcats{ 
+            padding-top: 5%;
+            padding-bottom: 5%;
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 5%;
+            padding-right: 5%;
+            flex-wrap: wrap;
+        }
+        .container{ 
+            width: 256px;
+            height: 144px;
+            position: relative;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .blog-cate-title{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: large ;
+            font-style: italic;
+            font-weight: bolder;
+            text-shadow:  2px 0 10px black;
+        }
+        @media screen and (max-width:640px) {
+            [class*="cate-"] {
+                margin: 0%;
+                display: block;
+                margin-left: auto;
+                margin-right:auto;
+                margin-bottom: 10px;
+            }
+            .container{
+                width:128px;
+                height: 72px;
+                flex-wrap: wrap;
+                flex-flow: row;
+            }
+            .blog-cate-title{
+                font-size: small;
+            }
+        }
+        
+        .cate-health{
+            background-image: url(/blog/images/main/healthbg.webp);
+            background-size: cover;
+        }
+        .cate-tech{
+            background-image: url(/blog/images/main/techbg.webp);
+            background-size: cover;
+        }
+        .cate-edu{
+            background: linear-gradient(rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.108) 100%),  url(/blog/images/main/edubg.webp);
+            background-size: cover;
+        }
+        .cate-logs{
+            background-image: url(/blog/images/main/logsbg.webp);
+            background-size: cover;
+        }
+        .cate-pg{
+            background: linear-gradient(rgba(0, 0, 0, 0.394) 0%, rgba(0, 0, 0, 0.421) 100%),  url(/blog/images/main/personalgrowth_pexels.webp);
+            background-size: cover;
+            background-position: top left;
+        }
+        /*                        Blog  Catrogries         End          */
+        .text-center{text-align: center;}
+    </style>
+</head>
+<body>
+    <my-nav></my-nav>
+    <header></header>
+    <br><br>
+    <main>
+        <div class="blog-content-main">
+            <h2>Simplest Way!</h2>
+            <h3>Step 1: Search web WhatsApp on Google</h3>
+            <img src="/blog/how-to-connect-whatsapp-to-pc/images/01.webp">
+            <h3>Step 2: Select the First Option, Tap/Click Once</h3>
+            <img src="/blog/how-to-connect-whatsapp-to-pc/images/02.webp">
+            <p>This window will appear</p>
+            <img src="/blog/how-to-connect-whatsapp-to-pc/images/02 02.webp">
+            <h3>Step 3: Open WhatsApp in your phone</h3>
+            <img class="mob" src="/blog/how-to-connect-whatsapp-to-pc/images/03_.webp">
+            <h3>Step 4: Click on three dots on the right side and select Web WhatsApp</h3>
+            <img class="mob" src="/blog/how-to-connect-whatsapp-to-pc/images/04_.webp">
+            <h3>Step 5: Select Link a Device and Scan the Qr code on the pc screen</h3>
+            <div class="column">
+                <img class="mob" src="/blog/how-to-connect-whatsapp-to-pc/images/05_.webp">
+                <img class="mob" src="/blog/how-to-connect-whatsapp-to-pc/images/05 02_.webp">
+                <img class="mob" src="/blog/how-to-connect-whatsapp-to-pc/images/0503_.webp">
+            </div>
+            <h3>Done, within a minutes you have logged your WhatsApp into your PC. </h3>
+            <img src="/blog/how-to-connect-whatsapp-to-pc/images/done.webp">
+            <h3>Now, after using you can simply remove access to pc from your phone, whenever you want.</h3>
+            
+            <h3>For that, go back to WhatsApp and click on three dots --> WhatsApp Web. </h3>
+            <img class="mob" src="/blog/how-to-connect-whatsapp-to-pc/images/04_.webp">
+            <h3>And Remove access by Selecting the logged In browser -->Click Log Out.</h3>
+            <div class="column">
+                <img class="mob" src="/blog/how-to-connect-whatsapp-to-pc/images/unlink 01_.webp">
+                <img class="mob" src="/blog/how-to-connect-whatsapp-to-pc/images/unlike 02_.webp">
+            </div>
+            <h2>Done! Enjoy</h2><br><br>
+        </div>
+        <h1 class="text-center">More Blogs:</h1>
+        <div class="moreblogs" style="line-height: 1.5;">
+            <a href="/blog/relationships-myadvice-and-journey-age-19/">
+                <div class="blogg-all-blog-relationshipadvice">
+                    <div class="blog-written">
+                        <h2>Relationship Advice & Mine...</h2>
+                        <p>Yes, I have build deep meaningful relationships, although I was bankrupt once.</p>
+                    </div>
+                    <img src="/blog/education-the-change-it-needs/edubg.webp">
+                </div>
+            </a>
+            <a href="/blog/chitkohra-chawal-bazar-patna/">
+                <div class="blogg-all-blog-chitkohra-bazar">
+                    <div class="blog-written">
+                        <h2>Chitkohra Bazar- Tour and Review of the Place</h2>
+                        <p>It the Oldest & biggest Market of Patna, let's see a part of it ourselves.</p>
+                    </div>
+                    <img src="/blog/chitkohra-chawal-bazar-patna/logsbg.webp">
+                </div>
+            </a>
+            <a href="/blog/education-the-change-it-needs/">
+                <div class="blogg-all-blog-education-change">
+                    <div class="blog-written">
+                        <h2>Education-The Change it needs</h2>
+                        <p>Personal Thoughts: What I is education and what is the missing part and how can it be imporved?</p>
+                    </div>
+                    <img src="/blog/education-the-change-it-needs/edubg.webp">
+                </div> 
+            </a>
+        </div>
+
+        <br><hr  color=gray width="20%" size="1px" />
+        <div class=" blog-author">
+            <div class="blog-author-image"><img src="/images/main/chandu.webp" alt="Blog Author Photo"></div>
+            <div class="blog-author-details">
+                <h4 class="">Written By:<br></h4>
+                    Chandra Gupta Roy
+                <h5 class="">Date: 15th December 2020<br></h5>
+            </div>
+        </div>
+        <div class="blogs-author-social">
+            <ul>
+                <li><a href="https://youtube.com/c/chandraguptaroy" target="_blank"><i class="fab fa-youtube"></i> </a> </li>
+                <li><a href="https://instagram.com/chandraguptaroy/" target="_blank"><i class="fab fa-instagram"></i> </a> </li>
+                <li><a href="https://twitter.com/chandraguptaroy" target="_blank"><i class="fab fa-twitter"></i> </a> </li>
+                <li><a href="https://facebook.com/thechandraguptaroy" target="_blank"><i class="fab fa-facebook-f"></i> </a> </li>
+            </ul>
+        </div>
+
+
+        <br><hr  color=gray width="70%" size="1px" />
+        <!--               Blog Topic/Sections                   -->
+        <section class="blogcats">
+        <a href="main/health.html">
+            <div class="container cate-health">
+                <div class="blog-cate-title">HEALTH</div>
+            </div>
+        </a>
+        <a href="main/tech.html">
+            <div class="container cate-tech">
+            <div class="blog-cate-title">TECH</div>
+            </div>
+        </a>
+            <a href="main/education.html">
+            <div class="container cate-edu">
+                <div class="blog-cate-title">EDUCATION</div>
+            </div>
+            </a>
+            <a href="main/logs.html">
+            <div class="container cate-logs">
+                <div class="blog-cate-title">LOGS</div>
+            </div>
+            </a>
+            <a href="main/personalgrowth.html">
+            <div class="container cate-pg">
+                <div class="blog-cate-title">PERSONAL GROWTH</div>
+            </div>
+            </a>
+        </section>
+        <!--               Blog Topic/Sections         End          -->
+
+    </main>
+    <my-m-footer></my-m-footer>
+</body>
+</html>

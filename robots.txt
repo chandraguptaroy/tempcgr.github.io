@@ -1,0 +1,5 @@
+Sitemap: https://thecgr.com/sitemap.txt
+Homepage: https://thecgr.com/
+Blog Page: https://thecgr.com/blog/
+About Page: https://thecgr.com/about/
+Graphic Designing Service Page: https://thecgr.com/servces/graphic-designing/

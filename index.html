@@ -1,257 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Chandra Gupta Roy's Website">
-  <meta name="keywords" content="Chandra Gupta Roy's Website, Chandra Gupta Roy, CGR Website">
-  <meta name="author" content="Chandra Gupta Roy">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chandra Gupta Roy</title>
-  <!--    Website small logo       -->
-  <link rel="shortcut icon" type="image/webp" href="/images/icons/cgr_icon.webp">
-  <link rel="icon" type="image/webp" href="/images/icons/cgr_icon.webp">
-  <!--      CSS     -->
-  <link rel="stylesheet" href="/css/stylehome.css">
-  <link rel="stylesheet" href="/css/cgrnav.css">    <!--        Navbar         -->
-  <link rel="stylesheet" href="/css/footer.css">   <!--        Footer         -->
-  <link rel="stylesheet" href="/css/totopbutton.css"> <!--        ToTop         -->
-  <link rel="stylesheet" href="/css/socialibar.css">   <!--        Social Bar         -->
-  
-  <link rel="stylesheet" href="/css/all.css">
- 
-  <!--   Font Awesome > Icons  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <!--  Font   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <!--  Font   -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />  <!--Font Awesome Icons-->
+  <link rel="shortcut icon" type="image/webp" href="/images/main/icons/cgr_icon.webp"><!--Website Logo -->
+  <title>Chandra Gupta Roy's Website | CGR</title>
+  <link rel="stylesheet" href="/css/my-nav.css">    <!--        Navbar         -->
+  <link rel="stylesheet" href="/css/my-main-footer.css">    <!--        MFooter         -->
+  <link rel="stylesheet" href="/css/all.css">    <!--        All.css         -->
+  <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
   <style>
-      .mystory p{
-        font-family: Arial, Helvetica, sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+    /*   Header  */
+    .header-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+    .header-container .col-left {
+      flex: 1;
+      padding: 20px;
+    }
+    .header-container .col-left h1 {
+      font-family: 'montserrat';
+      font-size: 40px;
+      text-transform:uppercase;
+      position: relative;
+      color: transparent;
+      animation: text_revealing 0s ease forwards;
+      /* animation-delay: 1s; */
+      display: inline-block;
+    }
+    .header-container .col-left h1:nth-child(1) {
+      animation-delay: 1s;
+      
+    }
+    .header-container .col-left h1:nth-child(2) {
+      animation-delay: 2s;
+      font-size: 30px;
+    }
+    .header-container .col-left h1:nth-child(3) {
+      animation-delay: 3s;
+      
+    }
+    .header-container .col-left h1:nth-child(1) span {
+      animation-delay: .5s;
+    }
+    .header-container .col-left h1:nth-child(2) span {
+      /* animation-direction: reverse; */
+      animation-delay: 1.5s;
+    }
+    .header-container .col-left h1:nth-child(3) span {
+      animation-delay: 2.5s;
+    }
+    .header-container .col-left h1 span {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 0;
+      left: 0;
+      top: 0;
+      background-color: rgb(0, 0, 0);
+      animation: revealing 1s ease forwards;
+      animation-delay: .5s;
+    }
+    .header-container .col-right {
+      flex: 1;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      display: block;
+      font-size: 0;
+    }
+    .header-container .col-right img {
+      height: 60vh;
+      width: auto;
+    }
+    @keyframes text_revealing {
+      100% {
+        color: rgb(0, 0, 0);
       }
-      header{
+    }
+    @keyframes revealing {
+      50% {
         width: 100%;
-        
+        left: 0;
       }
+      100% {
+        left: 100%;
+        width: 0%;
+      }
+    }
+    
+    @media only screen and (max-width: 890px) {
+      .header-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .header-container .col-left h1 {
+        display: block;
+      }
+      .header-container .col-left h1 {
+        font-size: 25px;
+      }
+      .header-container .col-left{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .header-container .col-right img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .self-defination{text-align: center;}
+    .self-defination-text{
+      padding: 20px;
+      display: inline-block;
+      text-align: left;
+      width: fit-content;
+    }
+    @media screen and (max-width:890px){.self-defination-text{width: min-content;}}
+    /*Header TExt one over*/
+
+
+    /*Social Bar Start*/
+  .Social-menu{
+    z-index: 3;
+    display: block;
+    margin-top: 150px;
+  }
+  .Social-menu ul{
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      z-index: 3;
+  } 
+  .Social-menu ul li  {
+      list-style: none;
+      margin: 0 15px;} /*spacing*/
+  .Social-menu ul li .fab{
+      font-size: 20px;
+      line-height: 48px;
+      color: #008AFF;}
+  .Social-menu ul li a{
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff;
+      text-align: center;
+      border: #008AFF solid 2px;
+    }
+    @media only screen and (max-width:890px){
+      .Social-menu{
+        margin-top: 10px;
+      }
+    }
+    /*Social Bar    End*/
+    /*Header     Over*/
+
+
+    /* Main Page Content    Starts*/
+
+    .page-color:nth-child(odd){
+      background-color: #008AFF;
+      padding: 50px;
+    }
+    .page-color:nth-child(even){
+      background-color: #ffffff;
+      padding: 50px;
+    }
+    .self-defination h1,.self-defination h3{
+      font-style: italic;
+    }
+    /*Passions Column      Start*/
+    .passions{
+      padding: 100px;
+    }
+    .passions .p-divs{
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px grey;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      position: relative;
+      height: 400px;
+    }
+    .passions .p-divs .ban-label{
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+    .passions .p-divs a .far{
+      font-size: 50px;
+      color: #E3D924;
+    }
+    .passions .p-divs-heading .fas{
+      font-size: 25px;
+    }
+    .passions .p-divs p{
+      text-align: right;
+      position: absolute;
+      bottom: 30%;
+      right: 20px;
+      font-style: italic;
+    }
+    .passions .p-divs-heading{
+      display: flex;
+      padding-top: 10px;
+      justify-content: center;
+    }
+    .passions .p-divs-heading h1{
+      z-index: 2;
+    }
+    .passions .p-divs-heading a{
+      width: 45px;
+      height: 45px;
+      line-height: 50px;
+      border-radius: 50%;
+      background-color: #E3D924;
+      color: rgb(0, 0, 0);
+    }
+    .passions .passions-bg{
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .passions .passions-bg img{
+      margin-top: 15px;
+      height: 90%;
+      width: auto;
+      position: absolute;
+      left: 10%;
+      opacity: 0.8;
+    }
+    .passions .graphics{
+      background-image: url(/images/home/purple\ gradient1.webp);
+    }
+    .passions .writing{
+      background-image: url(/images/home/liq-dropshadow.webp);
+    }
+    .passions .coding{
+      background-image: url(/images/home/passions/0101-transparent-flip.webp);
+    }
+    @media screen and (max-width:890px){
+      .passions{
+        padding: 0;
+      }
+      .page-color:nth-child(even){
+        padding: 10px;
+      }
+      .page-color:nth-child(odd){
+        padding: 10px;
+      }
+      .passion .p-divs{
+        height: 600px;
+      }
+      .passions .passions-bg{
+        background-position: right;
+      }
+      .passions .graphics p{
+        display: none;
+      }
+      .passions .passions-bg img{
+        position: initial;
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.7;
+      }
+    }
+    /*Passions Column      End*/
+
+
+    /*Services     Start*/
+    .service .service-quote{
+      text-transform: uppercase;
+      text-align: center;
+      padding: 20px;
+      font-style: italic;
+    }
+    .services-list{
+      width: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+    .service #popup,.service #popup2{
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.749);
+      width: max-content;
+      position: fixed;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 1000;
+      transition: 0.5s;
+      visibility: hidden;
+    }
+    .service #popup #cross,.service #popup2 #cross{
+      position: absolute;
+      top:15px;
+      right: 15px;
+      cursor:pointer ;
+      transition: all 1s ease ease;
+    }
+    .service #popup #cross .fas,.service #popup2 #cross .fas{
+      font-size: 25px;
+      color: gray;
+      -webkit-transition: 0.70s;
+      -moz-transition: 0.70s;
+      -ms-transition: 0.70s;
+      -o-transition: 0.70s;
+      transition: all 0.70s ease;
+    }
+    .service #popup #cross .fas:hover,.service #popup2 #cross .fas:hover{
+      transition: 0.70s;
+      -webkit-transition: 0.70s;
+      -moz-transition: 0.70s;
+      -ms-transition: 0.70s;
+      -o-transition: 0.70s;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .service #popup img,.service #popup2 img{
+      width: 200px;
+      height: auto;
+    }
+    .service a .fas{
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      margin-left: 20px;
+    }
+    .service-contact{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+    .use-platform-btn,.direct-btn{
+      padding: 10px;
+      color: rgb(0, 0, 0);
+      background-color: #E3D924;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .popup-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
+    }
+    #popup.active,#popup2.active{
+      visibility: visible;
+      top: 50%;
+    }
+    [class*="popup-"] {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 10px;
+    }
+    [class*="popup2-"] {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 10px;
+    }
+    [class*="popup2-"] a{
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    [class*="popup2-"] a .fab,[class*="popup2-"] a .fas{
+      color: black;
+      font-size: 20px;
+      vertical-align: top;
+    }
+    @media only screen and (max-width:600px){
+      .services-list{
+        width: 90%;
+      }
+    }
+    /*Services     End*/
+    .page-content .home-quote1 h2{
+      font-style: italic;
+      font-size: 700%;
+      font-variant: small-caps;
+      line-height: normal;
+    }
+    .page-content .home-quote1{
+      position: relative;
+    }
+    .page-content .home-quote1 img{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      height: 400px;
+      opacity: 40%;
+    }
+    @media only screen and (max-width: 890px) {
+      .page-content .home-quote1{
+        font-size:6px;
+      }
+      .page-content .home-quote1 img{
+      position: absolute;
+      left: 10px;
+      top: 25px;
+      height: 100px;
+      opacity: 40%;
+    }
+    }
+
+    .instagram-curator{
+      padding: 40px;
+      padding-bottom: 50px;
+    }
+    @media  screen and (max-width:800px) {
+      .instagram-curator{display: none;}
+    }
+    /*All in one css - Just add class name*/
+    .center-text{text-align: center;}
+    .extra-padding{padding: 200px;}
+    .extra-padding-l{padding-left: 20%;}
+    .extra-padding-l-r{
+      padding-left: 300px;
+      padding-right: 300px;}
+    .white-text{color: #ffffff;}
+    .capital{text-transform: capitalize;}
+    .smallcaps{font-variant: small-caps;}
+    .italic{font-style: italic;}
+    .uppercase{text-transform: uppercase;}
+    .font-hand-cursive{font-family: 'Comforter Brush', cursive;}
   </style>
 </head>
 <body>
-  <script src="/templates/cgrnav.js"></script>  <!--        Navbar         -->
-  <main>
-
-<script src="/templates/socialbar.js"></script>   <!--        Social Bar         -->
-  <!--               Social bar               -->
-  <!--                  My Story                      Start-->
-    <section>
-        <div class="mystory">
-            <h2 class="font">My Story<br></h2><br>
-            <hr  color=black width="8%" size=".5px" /><br><br>
-              <p>I am a Visionary. And professionally I have become many different things—Editor, Designer, Writer,
-              Marketer etc.<br>
-              I am the creator of Education Valley and Why it, and I created them with the intention to create something
-              valuable and engaging in the field of Education.
-              <br><br>
-              I am from a middle class family from India and we don’t get money to spend making content, but told to
-              just study.
-              But how could I have controlled my urge to see better quality content in the field of Education which
-              surpasses that of Entertainment.
-              There are so many different production houses for Entertainment including some giants like Marvel, Netflix
-              and HBO, and I love them;
-              but I see there is no such investment in Education, while there are so many students who need that.
-              <br><br>
-              If I simply put it, it’s 100x times more engaging to watch Netflix movies than to study, how must we
-              expect children to focus?
-              <br><br>
-              This led me to a path that has just started, but I see now that I have grown so much, I started by making
-              my YouTube channel so that I can start educating people with what I know.
-              <br><br>
-              Since I had no money, I had to start by learning what it would take to do what I wish.
-              I started learning editing, then animation.
-              <br><br>
-              I later realized that people want to look at something that looks cool.
-              But I had no money to hire a designer,<br>
-              So, I started learning illustrator and Photoshop to make cool thumbnails and cover images.
-              <br><br>
-              Then I realized that you also need to rank on pages, and again I had no money to hire a marketing agency,
-              So I started learning SEO and stuff.
-              <br><br>
-              But when I used to watch other videos where only screen recording was present, that lacked some human
-              touch. So, for recording myself,
-              I needed to lose weight, build muscles and make a studio.<br>
-              I have lost weight and I am building muscles and of course, no money for a studio, yet.<br>
-            </p><br>
-            <div class="btn">
-              <a href="/about/"><b>Read More </b><br><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div>
-        </div>
-    </section>
-    <!--                  My Story                      End-->
-
-    <!--                  Quote                      Start-->
-        <section class="Quote">
-              <hr color=black width="70%" size=".5px" />
-              <h1>You are not seperated from your goals by a number of years, but by a number of action.</h1>
-              <h3><br>— Self-Reminder —</h3>
-              <hr color=black width="70%" size=".5px" />
-        </section>
-    <!--                  Quote                      End-->
-
-    <!--                  3 MIQ's                      Start-->     
-        <section class="threemiq">
-              <h2 class="font">My 3MIQ's</h2><br>
-              <hr color=black width="8%" size=".5px" /><br><br>
-              <div>
-              <a href="/images/home/fullq/3 MIQ's.jpg" target="_blank">
-                <img src="/images/home/3 MIQ's.webp" alt="Chandra Gupta Roy's 3 Most Important Questions(Mindvalley) Image"
-                style="width: 500px; max-width: 100%; height: auto"
-                title="Click for the larger version." />
-            </a></div>
-            <div class="btn">
-            <a href="https://drive.google.com/file/d/1tZ-YSbrxXJHn6D-r4lo2tX0dU8GHrAXl/view?usp=sharing" target="_blank"> <b>Download Template</b><br><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div>
-            
-        </section>
-  <!--                  3 MIQ's                      Start-->
-
-
-  <!--           You Tube      Start        -->
-    <section class="Youtube">
-        <h1 >YOUTUBE:<br><br></h1>
-
-      <!--                                Education Valley            Start        -->
-      <div>
-        <h1>EDUCATION VALLEY:</h1>
-        <h3>Educational Videos:<br><br></h3>
-
-        <!--                            Third in Row                     -->
-        <div id="div3">    
-          <div class="embed">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/VnmOvU7o190" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <!--                            First in Row                     -->
-        <div id="div1">    
-        <div class="embed">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/c_K-O9gRVmk" title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+  <header>
+    <my-nav></my-nav>
+    <div class="header-container">
+      <div class="col-right">
+        <img src="images/cgr_blue-pointing.webp" alt="img">
+      </div>
+      <div class="col-left">
+        <h1>Hello,&nbsp; <br> <span></span></h1>
+        <h1>I am <br><span></span></h1>
+        <h1>Chandra Gupta Roy <span></span></h1>
+        <br>
+        <div class="Social-menu">
+          <ul>
+            <li><a href="https://youtube.com/c/chandraguptaroy" target="_blank"><i class="fab fa-youtube"></i> </a> </li>
+            <li><a href="https://instagram.com/chandraguptaroy/" target="_blank"><i class="fab fa-instagram"></i> </a> </li>
+            <li><a href="https://twitter.com/chandraguptaroy" target="_blank"><i class="fab fa-twitter"></i> </a> </li>
+            <li><a href="https://facebook.com/thechandraguptaroy" target="_blank"><i class="fab fa-facebook-f"></i> </a> </li>
+          </ul>
           </div>
+      </div>
+    </div>
+  </header> 
+  <div class="page-content">
+    <div class="home-intro">
+      <div class="self-defination page-color white-text">
+        <div class="self-defination-text">
+          <h3 class="left-text "><span class="font-hand-cursive">I</span>&nbsp; define myself as,</h3>
+          <h1 style="font-family: 'Montserrat';"class="left-text ">"Multi Passionate Badass Intelligent Gentleman"</h1>
         </div>
+      </div>
+    </div>
+    <div class="passions page-color">
+      <div class="p-divs-heading center-text">
+        <h1 class="italic font-hand-cursive ">My Passions:</h1>&nbsp;&nbsp;<a href="#passions-cateogries"><i class="fas fa-arrow-down"></i></a>
+      </div>
 
-        <!--                            Second in Row                     -->
-        <div id="div2">    
-          <div class="embed">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/wCUzz7qysks" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
+      <div class="graphics passions-bg p-divs" id="passions-cateogries">
+        <img style="opacity: 1;" src="/images/home/passions/graphic-design-bg.webp">
+        <p>I love Design/Aesthetics.<br>This is my most skilled passion.</p>
+        <div class="ban-label">
+          <h3>Graphic Designing</h3>
+          <a href="/passions/graphic-designing/"><i class="far fa-arrow-alt-circle-right"></i></a>
+        </div> 
+      </div>
+
+      <div class="video-editing passions-bg p-divs">
+        <p>Idk, but Editing seems exciting to me.<br>It's like creating what the World's Watching.</p>
+        <div class="ban-label">
+          <h3>Video Editing</h3>
+          <a href="/passions/video-editing/"><i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="animation passions-bg p-divs">
+        <p>If I have to select one Software,<br>It is AfterFX,❤️</p>
+        <div class="ban-label">
+          <h3>Video Animation</h3>
+          <a href="/passions/animation/"><i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="writing passions-bg p-divs">
+        <img src="/images/home/passions/writing-bg-img.webp">
+        <p>I guess that I have something to write...</p>
+        <div class="ban-label">
+          <h3>Writing > (Start)Blog</h3> 
+          <a href="/passions/writing/"><i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+      <div class="coding passions-bg p-divs">
+        <p>Code rules the world not humans.</p>
+        <div class="ban-label">
+          <h3>Coding...</h3> 
+          <a href="/passions/coding/"><i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service page-color">
+      <!-- <h1 style="font-size: 60px;" class="service-quote">"Be the change you want to see in the world"</h1>
+      <h1 style="font-weight:600;" class="center-text">So, Let's start by selling!&nbsp;<img style="height:25px;" src="/images/home/new-moon-face.webp"></h1>
+      <br><br> -->
+      <h1 class="font-hand-cursive center-text">My Services:</h1>
+      <div class="services-list">
+        <h3>Graphic Design Services:</h3>
+        <br>
+        <ul>
+          <li>Custom YouTube Thumbnail</li>
+          <li>Background Removal/Addition</li>
+          <li>Photoshop Services (Advanced)</li>
+        </ul>
+        <br>
+        <p style="text-align: right;">Starting 5$/-</p><command>
+      </div>
+      <div class="service-contact">
+        <a class="use-platform-btn" onclick="popupToggle();">3rd Party Platforms</a>
+        <a class="direct-btn"onclick="popupToggle2();">Contact Directly</a>
+      </div>
+
+      <div id="popup">
+        <div class="popup-content">
+          <div class="popup-fiverr">
+            <a href="https://www.fiverr.com/thecgr_" target="_blank"><img src="/images/pngs/fiverr_transparent.webp"></a>
+          </div>
+          <div class="popup-upwork">
+            <a href="https://www.upwork.com/freelancers/~018312e98b73398ec0?s=1017484851352698959"  target="_blank" ><img src="/images/pngs/upwork_transparent.webp"></a>
+          </div>
+          <div class="popup-legiit">
+            <a href="https://legiit.com/thecgr"  target="_blank" ><img src="/images/pngs/legiit.webp"></a>
           </div>
         </div>
-        <!--                                Education Valley            End        -->
-        
-        <br><br>
+        <a id="cross" onclick="popupToggle();"><i class="fas fa-times"></i></a>
+      </div>
+      <script>
+        function popupToggle(){
+          const popup =document.getElementById('popup');
+          popup.classList.toggle('active')
+        }
+      </script>
 
-        <!--                                Why it                     Start       -->
-        <div>
-          <h1>WHY IT:</h1>
-          <h3>Exploration of Curiosity:<br><br></h3>
-          
-          
-        <!--                            Third in Row                     -->
-          <div id="div3">    
-            <div class="embed">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NsnC3baCsvw" title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
+      <div id="popup2">
+        <div class="popup-content">
+          <div class="popup2-email">
+            <p>Email:</p>
+            <a href="mailto:cgr@thecgr.com" target="_blank"><i title="cgr@thecgr.com" class="fas fa-envelope-open-text"></i></a>
           </div>
-
-          <!--                            First in Row                     -->
-          <div id="div1">    
-          <div class="embed">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/NGLJtHOMSPk" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
+          <div class="popup2-instagram">
+            <p>Dm:</p>
+            <a href="https://instagram.com/_thecgr/"  target="_blank" ><i class="fab fa-instagram"></i></a>
           </div>
-
-          <!--                            Second in Row                     -->
-          <div id="div2">    
-            <div class="embed">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_orJRIH2Oxg" title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
+          <div class="popup2-facebook">
+            <p>Messenger:</p>
+            <a href="https://facebook.com/thechandraguptaroy"  target="_blank" ><i class="fab fa-facebook-messenger"></i></a>
           </div>
-
-          <!--                                Why it                     End       -->
-          <br><br>
-
-          <!--                                CGR                     Start       -->
-          <div>
-            <h1>CGR:</h1>
-            <h3>Vlogs:<br><br></h3>
-
-            <!--                            Third in Row                     -->  
-            <div id="div3">    
-              <div class="embed">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/7SDY12K4E44" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-
-            <!--                            First in Row                     -->
-            <div id="div1">    
-            <div class="embed">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rqz1W-IOz9U" title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-
-            <!--                            Second in Row                     -->
-            <div id="div2">    
-              <div class="embed">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/7WBEYp5w9Eo" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
+          <div class="popup2-facebook">
+            <p>Telegram:</p>
+            <a href="https://t.me/the_cgr"  target="_blank" ><i class="fab fa-telegram"></i></a>
           </div>
-          <!--                                CGR                     End       -->
-    </section>
-     <!--           You Tube   End           -->
-    <section class="person">
-      <h2><br><br>Hello, There.</h2><br>
-      <img src="/images/main/chandu.webp" width="200px" alt="Website's owner- Chandra Gupta Roy Picture Image">
-      <br>
-      <h3>It's<br>Chandra Gupta Roy<br> — CGR —</h3>
-    </section>
-  </main>
+        </div>
+        <a id="cross" onclick="popupToggle2();"><i class="fas fa-times"></i></a>
+      </div>
+      <script>
+        function popupToggle2(){
+          const popup =document.getElementById('popup2');
+          popup.classList.toggle('active')
+        }
+      </script>
+    </div>
+
+      <br><br>
+      <div class="home-quote1  page-color center-text">
+        <h2>Just Thinking before doing, is Life-Changing!</h2>
+        <img src="/images/home/quote.webp">
+      </div>
+      
+    </div>
+    <br><br><br>
+    
+    
+  </div>
+
+  <div class="instagram-curator">
+    <h1 class="center-text">My Instagram:</h1><br>
+    <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+    <script type="text/javascript">
+    (function(){
+    var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+    i.src="https://cdn.curator.io/published/5bba93b5-1b58-4f1f-b8d6-c9a39ee01a33.js";
+    e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+    })();
+    </script>
+  </div>
+
+
+  <my-m-footer></my-m-footer>
 </body>
-
- <!--                   Top button     Start        -->
-
-<script src="/templates/totop.js"></script>
-<script src="/templates/footer.js"></script>
-<div id="footer-support"></div>
-
-
- <!--                   Top button    End         -->
 </html>
