@@ -1,3 +1,38 @@
+class MyBlogCats extends HTMLElement {
+    connectedCallback(){
+        this.innerHTML= `
+        <section id="blog-cats" class="blogcats">
+            <a href="/blog/category/cgr/">
+                <div class="container cate-health">
+                <div class="blog-cate-title">—CGR's—</div>
+                </div>
+            </a>
+            <a href="/blog/category/tech/">
+                <div class="container cate-tech">
+                <div class="blog-cate-title">TECH</div>
+                </div>
+            </a>
+            <a href="/blog/category/education/">
+            <div class="container cate-edu">
+                <div class="blog-cate-title">EDUCATION</div>
+            </div>
+            </a>
+            <a href="/blog/category/logs/">
+            <div class="container cate-logs">
+                <div class="blog-cate-title">LOGS</div>
+            </div>
+            </a>
+            <a href="/blog/category/personal-growth/">
+            <div class="container cate-pg">
+                <div class="blog-cate-title">PERSONAL GROWTH</div>
+            </div>
+            </a>
+        </section>
+        `
+    }
+}
+customElements.define('my-blog-cats',MyBlogCats);
+
 class Subs2Blog extends HTMLElement {
     connectedCallback(){
         this.innerHTML= `

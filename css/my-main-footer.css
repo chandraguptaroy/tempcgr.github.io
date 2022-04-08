@@ -55,21 +55,26 @@ footer .foot-container .social-buttons li{
     margin: 0 0 0 16px;
 }
 footer .nav-footer img{
-    width: 60px;
+    width: 75px;
     height: auto;
     border-radius: 50%;
-    border: 3px solid rgb(255, 255, 255);
+    /* border: 3px solid rgb(255, 255, 255); */
+    padding: 3px;
+    /* background:linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888); */
+    background:linear-gradient(-45deg, #3ca5fc 0%, #000dff 25%, #008cff 50%, #3300ff 75%, #183cbc);
+    
 }
-footer .nav-footer .foot-image{
-    width: 67px;
-    height: 67px;
+/* footer .nav-footer .foot-image{
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    border: 3px solid rgb(0, 157, 255);
+    padding: 5px;
+    border:linear-gradient(-45deg, #3ca5fc 0%, #000dff 25%, #008cff 50%, #3300ff 75%, #183cbc);
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 .nav-footer .cgr{
     text-align: center;
 }

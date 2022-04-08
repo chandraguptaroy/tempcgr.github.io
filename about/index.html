@@ -16,22 +16,90 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />  <!--Font Awesome Icons-->
     <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
     <style>
+        .hi-hello{text-align: center;}
+        h1{
+            font-size: 32px;
+        }
         /*Nav Bar active*/
         .nav-about{
             color: rgb(0, 76, 255);
         }
-        main {
-            background-color: rgb(255, 255, 255);
-            text-align: center;
-            padding: auto;
+        .about-headline-h1{
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 15px;
+            margin-bottom: 15px;
+            
+            background-color: #008AFF;
+            color: black;
+        }
+        .readmore-section{
+            background-color: #008AFF;
+        }
+        .my-definition{
+            width: 90%;
+        }
+        .cate-lifepart-flexbox{
+            display: flex;
+            justify-content: center;
+        }
+        .cate-lifepart{
+            padding: 10px;
+            background-color: yellow;
+            margin: 5px;
+        }
+        .lifepart-more{
+            display: none;
+            background-color: white;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        /*  My Brands  Starts*/
+        
+        .my-brands{
             display: block;
             margin-left: auto;
             margin-right: auto;
-            padding: auto;
-            box-sizing:initial;
             text-align: center;
         }
-        p{text-align: left;}
+        .my-brands-box{
+            display: flex;
+            margin: 20px;
+            align-items: center;
+            padding: 5px;
+            text-align: center;
+            padding-left: 32%;
+        }
+        .my-brands-box img{
+            height: 100px;
+            width: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .my-brands-box h2{
+            vertical-align: middle;
+        }
+        /*  My Brands  Ends*/
+        .active{
+            background-color: rgb(180, 180, 0);
+        }
+        p{
+            display: inline-block;
+            text-align: left;}
+        .skillsets{
+            font-size: 14px;
+            margin-left: 10px;
+            list-style-type: circle;
+            list-style: circle;
+            padding-left: 35%;
+            padding-right: 35%;
+            text-align: left;
+
+        }
         .row{
             padding-left: 50px;
             padding-right: 50px;
@@ -49,6 +117,13 @@
         text-align: right;
         margin-right: 30%;
         }
+        .my-quotes{
+            text-align: center;
+        }
+        .my-definition img, .my-quotes img, .free a img{
+                width: 80%;
+                max-width: 80%;
+            }
         header{
             background-color: #383737;
             height: 77vh;
@@ -81,6 +156,21 @@
             .row{
                 padding: 0;
             }
+            .skillsets{
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            .my-brands-box{
+                padding-left: 0;
+            }
+            .hi-hello{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .my-definition img, .my-quotes img, .free a img{
+                width: 95%;
+                max-width: 95%;
+            }
         }
     </style>
 </head>
@@ -88,12 +178,152 @@
 <body>
     
     <my-nav></my-nav>
-    <header>
 
-    </header>
-    <h1 class="center-text">About Me</h1>
+    <br><br>
+    <h1 class="about-headline-h1 center-text">About Me</h1>
+    <br><br><br>
+    <br><br>
     <main>
-        <div class="row">
+        <div class="hi-hello">
+            <h2></h2>
+            <p style="font-size: large;">Hello there 🖐 I hope you are having a great day.<br>I define myself as a <b><i>Multi-Passionate Badass Intelligent Gentleman</i></b>.
+            <br><br>Derivation:<br><br><br></p>
+            <img class="my-definition" src="/images/main/multi-passionate-badass-intelligent-gentleman.webp">
+        </div>
+        <br><br>
+        <br>
+        <section class="readmore-section">
+            <br>
+            <h1>Pl. select the field in which you wanna know more about me! ✌</h1>
+        <br><br>
+        <div class="cate-lifepart-flexbox">
+            <div class="cate-lifepart" onclick="currentSlide(1)" id="mylifepartBtn"><p>Academics</p></div>
+            <div class="cate-lifepart" onclick="currentSlide(2)" id="mylifepartBtn"><p>Profession</p></div>
+            <div class="cate-lifepart" onclick="currentSlide(3)" id="mylifepartBtn"><p>Career</p></div>
+            <div class="cate-lifepart" onclick="currentSlide(4)" id="mylifepartBtn"><p>Personal Life</p></div>
+        </div>
+        
+        <div class="lifepart-more academics" style="display: none;"><h1>Academics</h1><br><p>I went to Kidzee for my LKG and UKG, Don Bosco Academy for 1st- 12th standard.<br>
+            And now I’m in University of Delhi for my Graduation.<br><br>
+            I don’t have much faith in academics and the traditional way of studies, life and career from around 8th standard, thus I study for basic knowledge and only what’s enough for exams! Lol…
+        <br>Computer Science is my favorite subject, as learning CS feels life fun, ig!
+            I am good at Science, Math as well as Arts. HaHa I have yet to try Commerce.<br><br>
+            And Yes, I was born and brought up in India and I still choose English over Hindi.<br>
+            Academically, I scored around 90% (yeah, not straight A student) and my highest was always in CS.<br><br>
+            
+            In future, I may opt for learning subjects like marketing, physcology, philosophy, content writing just out of curiosity not for the certificates! <br>
+            
+            Lastly, I learn daily with real education by MindValley to transform my life. <br>
+            </p></div>
+        <div class="lifepart-more Profession"><h1>Profession</h1><p><br>Professionally, I am a Graphic Designer with expert skills in Adobe Photoshop and Adobe Illustrator.<br>
+
+            I learn daily to improve at what I do and I have a great work ethic.
+            <br>
+            Hire me for Social Media Graphics Now! 
+            </p></div>
+        <div class="lifepart-more Career"><h1>Career</h1><br><p>
+            I actually have plans to do a lot with my career, basically, explore many different things that excite me at the same time find a way to make money out of some.<br>
+
+For now, you can call me a content creator who creates graphics professionally and is dribbling with other forms, haha.<br>
+
+I have this website (learning to write it and writing as well haha) and 3 YouTube channels as of now, and I try to post regularly on them to grow grow grow!<br>
+
+Some possible future endeavors:<br>
+<br>
+Writing<br>
+Filmmaking<br>
+Music Production<br>
+Organic Agriculture<br>
+Recycling<br>
+VR Gaming<br>
+
+        </p></div>
+        <div class="lifepart-more Personal Life"><h1>Personal Life</h1><br><p>Personally, I think I am a very Optimistic and Cheerful person.
+            <br>I am extroverted, however, I am happy by myself as well! So, I call thyself, Half-blood Intro/Extro Vert, 😅
+        </p></div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("lifepart-more");
+                let dots = document.getElementsByClassName("cate-lifepart");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+            </script>
+        </section>
+        <br>
+        <div class="skillsets">
+            <h1>My SkillSets</h1><br>
+            <h2>Creative- Technical</h2>
+            <ul>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Premiere Pro</li>
+                <li>Adobe AfterFX</li>
+                <li></li>
+            </ul><br>
+            <h2>Technical</h2>
+            <ul>
+                <li>Java</li>
+                <li>Py</li>
+                <li>Web Development</li>
+                <li>Web Design</li>
+                <li>Google Word/Slides/Sheets etc</li>
+            </ul><br>
+            <h2>Life Skills</h2>
+            <ul>
+                <li>Cooking</li>
+                <li>Monica Clean</li>
+                <li>Joking</li>
+            </ul><br>
+            <h2>Sports/Games</h2>
+            <ul>
+                <li>Badminton</li>
+                <li>Cricket</li>
+                <li>Chess</li>
+                <li>Carrom-Board</li>
+                <li>Clash of Clans</li>
+            </ul><br>
+        </div>
+        <div class="my-brands">
+            <h1>My Brands</h1>
+            <div class="my-brands-box">
+                <img src="/images/main/icons/eduv_logo.webp">
+                <h2>Education Valley</h2>
+            </div>
+            <div class="my-brands-box">
+                <img src="/images/main/icons/whyit_logo.webp">
+                <h2>Why it</h2>
+            </div>
+            <div class="my-brands-box">
+                <img src="/images/main/icons/cgr-music-logo.webp">
+                <h2>CGR Music</h2>
+            </div>
+            <div class="my-brands-box">
+                <img src="/images/main/icons/cgr_icon.webp">
+                <h2>Chandra Gupta Roy</h2>
+            </div>
+        </div>
+        <div class="subscribe-all">
+
+        </div>
+        <!-- <div class="row">
             <div  class="col-5 col-s-12 ">
                 <div class="imgcontainer">
                     <img src="/images/CGR-images/zoo01.webp" width="100%" alt="Chandra Gupta Roy's Image at Park">
@@ -147,8 +377,8 @@
                     <img src="/images/CGR-images/eco02.webp" alt="Chandra Gupta Roy picture" width="100%">
                 </div>
             </div>
-        </div>
-        <h1 class="center-text">My Story:</h1>
+        </div> -->
+        <!-- <h1 class="center-text">My Story:</h1>
         <section  class="mystory">
             <div class="mystory-text">
                 <p style="text-align: center;"><i>Updated (06-2021)</i>
@@ -193,7 +423,7 @@
                     touch. So, for recording myself, I needed to lose weight, build muscles and make a studio.
                     I have lost weight and I am building muscles and of course, no money for a studio.
                     <br><br>
-                    If you have checked out my latest work, (if you haven’t checked it out here- <a href="/work/">Work</a> )
+                    If you have checked out my latest work, (if you haven’t checked it out here- <a href="/services/graphic-designing/">Work</a> )
                     I am going good, but yet not monetized, as I don’t know how to. I don’t want to work as a freelancer
                     just for money but to give time to my dreams and do something with it.
                     <br><br>
@@ -230,45 +460,49 @@
                     What I have today is Courage to say that <br><span style="font-weight: bold;">—I CAN DO IT.</span>
                 </p>
             </div>
-    </section>
+    </section> -->
     <div class="my-quotes">
         <h1>My Quotes:</h1>
-        <p>(feel free to use...✌)</p>
-        <img src="">
+        <p class="center-text" style="display: block;">(feel free to use...✌)</p>
+        <img src="/images/quotes/my-quotes/biker-trust-yourself.webp">
+        <img src="/images/quotes/my-quotes/quote-darkness-and-light.webp">
+        <img src="/images/quotes/my-quotes/the-world-is-waiting-for-you.webp">
     </div>
-        <section>
+        <section class="center-text">
             <div class="free">
                 <h3>GET YOUR FREE ASSETS:</h3><br>
                 <hr color=black width="10%" size=".5px" />
                 <h3>Productive Wallpapers:</h3>
-                <a href="https://drive.google.com/uc?export=view&id=1oRsw-7T1QFOwvNGDP3L4VYW1FJBjflXw">
+                <a href="/images/quotes/background-wallpaper/just do it black striped HD.jpg" download="just-do-it-cgr.jpg"><img src="/images/quotes/background-wallpaper/justdoit-black-striped-HD.webp"></a>
+                <br><br>
+                <a href="https://drive.google.com/uc?export=view&id=1oRsw-7T1QFOwvNGDP3L4VYW1FJBjflXw" download="action satisfaction.jpg">
                     <img src="https://drive.google.com/uc?export=view&id=1oRsw-7T1QFOwvNGDP3L4VYW1FJBjflXw"
-                    style="width: 500px; max-width: 100%; height: auto"
+                    style="width: 500px; height: auto"
                     title="Click for the larger version."  alt="productive background wallpapers for download free"/><br><br>
-                <a href="https://drive.google.com/uc?export=view&id=1tOsbNGoIcw8a3ukOvc-Es_8ociXR52hT">
+                <a href="https://drive.google.com/uc?export=view&id=1tOsbNGoIcw8a3ukOvc-Es_8ociXR52hT" download="i am enough.jpg">
                     <img src="https://drive.google.com/uc?export=view&id=1tOsbNGoIcw8a3ukOvc-Es_8ociXR52hT"
-                    style="width: 500px; max-width: 100%; height: auto"
+                    style="width: 500px; height: auto"
                     title="Click for the larger version." alt="productive background wallpapers for download free" /><br><br>
-                <a href="https://drive.google.com/uc?export=view&id=1r5l7_OsgkaptmriqGcI_67sfpaMNlHdJ">
+                <a href="https://drive.google.com/uc?export=view&id=1r5l7_OsgkaptmriqGcI_67sfpaMNlHdJ" download="Low application high application.jpg">
                     <img src="https://drive.google.com/uc?export=view&id=1r5l7_OsgkaptmriqGcI_67sfpaMNlHdJ"
-                    style="width: 500px; max-width: 100%; height: auto"
+                    style="width: 500px; height: auto"
                     title="Click for the larger version."  alt="productive background wallpapers for download free"/><br><br>
-                <a href="https://drive.google.com/uc?export=view&id=1ai1y6DFk3NyMmqJPZ6sdW69iJvVVGAMl">
+                <a href="https://drive.google.com/uc?export=view&id=1ai1y6DFk3NyMmqJPZ6sdW69iJvVVGAMl" download="the right time is right now.jpg">
                     <img src="https://drive.google.com/uc?export=view&id=1ai1y6DFk3NyMmqJPZ6sdW69iJvVVGAMl"
-                    style="width: 500px; max-width: 100%; height: auto"
+                    style="width: 500px; height: auto"
                     title="Click for the larger version." alt="productive background wallpapers for download free" /><br><br>
-                    <div class="btn">
-                        <a href="https://drive.google.com/file/d/1tZ-YSbrxXJHn6D-r4lo2tX0dU8GHrAXl/view?usp=sharing"><b>Download All</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div><br><br>
+                    <!-- <div class="btn">
+                        <a href="https://drive.google.com/file/d/1tZ-YSbrxXJHn6D-r4lo2tX0dU8GHrAXl/view?usp=sharing"><b>Download All</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div><br><br> -->
                 <h3>Quote Wallpapers:</h3>
-                <a href="https://drive.google.com/uc?export=view&id=1r-_kP7Q95Nw9xNt0WMXnplxGZUSAS8w4">
+                <a href="https://drive.google.com/uc?export=view&id=1r-_kP7Q95Nw9xNt0WMXnplxGZUSAS8w4" download="samllest of implementations is worth more than grandest of intentions 5 am club.jpg">
                     <img src="https://drive.google.com/uc?export=view&id=1r-_kP7Q95Nw9xNt0WMXnplxGZUSAS8w4"
-                    style="width: 500px; max-width: 100%; height: auto"
+                    style="width: 500px; height: auto"
                     title="Click for the larger version."  alt="productive background wallpapers for download free"/><br>
-                <div class="btn">
-                    <a href="https://drive.google.com/file/d/1tZ-YSbrxXJHn6D-r4lo2tX0dU8GHrAXl/view?usp=sharing"><b>Download All</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div>
-                <br><br><h3>Focus Background Music</h3>
+                <!-- <div class="btn">
+                    <a href="https://drive.google.com/file/d/1tZ-YSbrxXJHn6D-r4lo2tX0dU8GHrAXl/view?usp=sharing"><b>Download All</b><br><hr class="transhr" color=black width="70%" size=".5px"/></a></div> -->
+                <!-- <br><br><h3>Focus Background Music</h3>
                 <br><br><h3>Eduv Wallpapers:</h3>
-                <br><br><h3>Why it Wallpapers:</h3>
+                <br><br><h3>Why it Wallpapers:</h3> -->
             </div>
         </section>
         

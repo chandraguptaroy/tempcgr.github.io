@@ -18,7 +18,7 @@ class MyNav extends HTMLElement {
                         </label>
                         <div class="dropdown-content">
                             <a href="/services/graphic-designing/">GRAPHIC DESIGN</a>
-                            <a href="/services/video-editing/">VIDEO EDITING</a>
+                            <!--<a href="/services/video-editing/">VIDEO EDITING</a>-->
                         </div>
                     </div>
                     
@@ -52,7 +52,7 @@ class MyMFoot extends HTMLElement {
                         <h5>About</h5>
                         <ul>
                             <li><a href="">Who am I?:</a></li>
-                            <li><a href="">Blog</a></li>
+                            <li><a href="/blog/">Blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,18 +61,18 @@ class MyMFoot extends HTMLElement {
                         <h5>Brands</h5>
                         <ul>
                             <li><a href="">Education Valley</a></li>
-                            <li><a href="">Why it</a></li>
+                            <li><a href="/whyit-updates/">Why it</a></li>
                             <li><a href="">CGR Music</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="foot-sections-4">
                     <div class="blogs">
-                        <h5>Blogs</h5>
+                        <h5>Recommended</h5>
                         <ul>
                             <li><a href="">CGR's -Personal</a></li>
-                            <li><a href="">Why it</a></li>
-                            <li><a href="">Education Valley</a></li>
+                            <li><a href="/blog/cgr-favourite-quotes/">Favourite Quotes</a></li>
+                            <li><a href=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -80,8 +80,9 @@ class MyMFoot extends HTMLElement {
                     <div class="services">
                         <h5>Services</h5>
                         <ul>
-                            <li><a href="">Graphic Designing</a></li>
-                            <li><a href="">Video Editing</a></li>
+                            <li><a href="/services/graphic-designing/">Graphic Designing</a></li>
+                            <!--<li><a href="">Video Editing</a></li>-->
+                            <li><a href="/services/graphic-designing/youtube-thumbnail/">YouTube Thumbnail</a></li>
                         </ul>
                     </div>
                 </div>

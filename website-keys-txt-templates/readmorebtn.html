@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chandra Gupta Roy's Graphic Design Potfolio">
+    <meta name="keywords" content="CGR Graphic Design Potfolio, Graphic Design Potfolio, CGR Potfolio">
+    <meta name="author" content="Chandra Gupta Roy">
+    <title>-Chandra Gupta Roy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />  <!--Font Awesome Icons-->
+    <link rel="shortcut icon" type="image/webp" href="/images/main/icons/cgr_icon.webp"><!--Website Logo -->
+    <link rel="stylesheet" href="/css/my-nav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="/css/my-main-footer.css">    <!--        MFooter         -->
+    <link rel="stylesheet" href="/css/all.css">    <!--        AllCss         -->
+    <link rel="stylesheet" href="/css/hirebtn.css">    <!--        Hirebtn         -->
+    <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
+    <script src="/js template/text.js"></script> <!--Text JS-->
+    <style>
+        .img-gallery{
+            text-align: center;
+        }
+        .show{display: none;}
+        .load2:hover,.load3:hover,.load4:hover
+        {
+            cursor: pointer;
+        }
+        .img-gallery{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img-gallery img{
+            width: 40%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .img-gallery-flexbox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .laod-btn{
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+            .img-gallery img{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <my-nav></my-nav>
+    <header>
+    </header>
+    <main>
+        <div class="img-gallery">
+            <br>
+            <div class="gallery-img">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_01.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_01.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_01.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_01.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_01.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_01.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_02.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_02.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_02.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_02.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_02.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_02.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                    <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                    <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var loadindex=0;
+            loadmore(loadindex);
+            function loadplus(n){
+                loadmore(loadindex +=n);
+            }
+            function loadmore(n){
+                var i;
+                var load=document.getElementsByClassName("show");
+                var loadbtn=document.getElementsByClassName("load-btn");
+                load[loadindex-1].style.display = "block";
+                    loadbtn[loadindex-1].style.display="none";
+                
+            }
+        </script>
+<br><br>
+<br>
+        <br>
+    </main>
+
+    <my-m-footer></my-m-footer>
+</body>
+</html>

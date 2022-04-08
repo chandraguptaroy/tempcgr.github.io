@@ -21,8 +21,8 @@ class Hiremern extends HTMLElement {
         </div>
         <br>
         <hr class="hr-divider">
-        <p>Email<i class="fa-solid fa-mailbox"></i>: cgr@thecgr.com</p><br>
-        <p>(Check spam/promotional for replies or mail thecgroy@gmail.com ...)</p>
+        <p>Email<i class="fa-solid fa-mailbox"></i>: cgr@thecgr.com<br>thecgroy@gmail.com</p><br>
+        <p>(Replies may land in spam/promotional...)</p>
         <a id="hire-btn-cross" onclick="hiremepopupToggle();"><i class="fas fa-times"></i></a>
     </div>
     `

@@ -1,11 +1,38 @@
+        .hireme-btn-div{
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-areas:' . left center right .';
+        }
+        .hireme-btn-div #left-arrow{
+            grid-area: left;
+            justify-self: end;
+        }
+        .hireme-btn-div #right-arrow{
+            transform: rotateY(180deg);
+            grid-area: right;
+        }
+        .hireme-btn-div img{
+            width: 200px;
+            display: inline;
+        }
+        .hire-me-btn{
+            height: max-content;
+            display: inline;
+            grid-area: center;
+            margin-top: 10px;
+            background-color: #E3D924;
+            
+        }
         .hire-me-btn{
             text-align: center;
             padding: 10px;
-            box-shadow: 0px 0 10px 0 black;
+            box-shadow: 0px 0px 10px 0px rgb(184, 184, 184);
             width: max-content;
-            display: block;
+            /* display: inline-block;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: auto; */
+            display: flex;
+            justify-self: center;
         }
         .hire-me-btn:hover{
             cursor: pointer;
@@ -49,6 +76,7 @@
         }
         [class*="hire-btn-2-social-"] a{
             margin-left: 3px;
+            margin-top: 4.5px;
         }
         .hire-btn-2 .fab{
             margin-left: 5px;
@@ -76,4 +104,22 @@
             border-color: #8a8a8a;
             border-radius: 5px;
             padding: 3px;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* Arrows */
+            .hireme-btn-div img{
+                width: 100px;
+            }
+            .hire-me-btn{
+                margin-left: 10px;
+                margin-right: 10px;
+                justify-self: center;
+                margin-top: 0;
+            }
+            .hireme-btn-div{
+                grid-template-columns:  30% 40% 30%;
+                grid-template-areas:' left center right';
+                text-align: center;
+            }
         }

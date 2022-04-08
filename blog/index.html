@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="/css/my-nav.css">    <!--        Navbar         -->
     <link rel="stylesheet" href="/css/my-main-footer.css">    <!--        M-Footer         -->
     <link rel="stylesheet" href="/css/all.css">      <!--All CSS-->
+    <link rel="stylesheet" href="/css/blogall.css">      <!--All Blog CSS-->
     <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
+    <script type="module" src="/js template/blog/blog.js"></script> <!--Template Blog JS-->
     <style>
         /*Nav Bar active*/
         .nav-blog{
@@ -29,79 +31,7 @@
         
 
         /*                        Blog  Catrogries         Start          */
-        .blogcats{ 
-            padding-top: 5%;
-            padding-bottom: 5%;
-            display: flex;
-            justify-content: space-evenly;
-            padding-left: 5%;
-            padding-right: 5%;
-            flex-wrap: wrap;
-            margin-right: auto;
-            margin-left: auto;
-            text-align: center;
-        }
-        .blogcats a img{
-            width: 256px;
-            height: 144px;
-            transform: scale();
-        }
-        .container{ 
-            width: 256px;
-            height: 144px;
-            position: relative;
-            margin-bottom: 7%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        .blog-cate-title{
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: large;
-            font-style: italic;
-            font-weight: bolder;
-            text-shadow:  2px 0 10px black;
-        }
-        @media screen and (max-width:640px) {
-            .blogcats{
-                display: block;
-                margin-right: auto;
-                margin-left: auto;
-            }
-            [class*="cate-"] {
-                margin: 0%;
-                display: block;
-                margin-left: auto;
-                margin-right:auto;
-                margin-bottom: 10px;
-            }
-        }
-        
-        .cate-health{
-            background-image: url(images/main/healthbg.webp);
-            background-size: cover;
-        }
-        .cate-tech{
-            background-image: url(images/main/techbg.webp);
-            background-size: cover;
-        }
-        .cate-edu{
-            background: linear-gradient(rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.108) 100%),  url(images/main/edubg.webp);
-            background-size: cover;
-        }
-        .cate-logs{
-            background-image: url(images/main/logsbg.webp);
-            background-size: cover;
-        }
-        .cate-pg{
-            background: linear-gradient(rgba(0, 0, 0, 0.394) 0%, rgba(0, 0, 0, 0.421) 100%),  url(images/main/personalgrowth_pexels.webp);
-            background-size: cover;
-            background-position: top left;
-        }
+
         /*                        Blog  Catrogries         End          */
         [class*="blog-latest-"]{
             width: fit-content;
@@ -236,33 +166,7 @@
         </div>
 
         <!--               Blog Topic/Sections                   -->
-        <section id="blog-cats" class="blogcats">
-            <a href="/blog/category/health/">
-            <div class="container cate-health">
-            <div class="blog-cate-title">HEALTH</div>
-            </div>
-        </a>
-        <a href="/blog/category/tech/">
-            <div class="container cate-tech">
-            <div class="blog-cate-title">TECH</div>
-            </div>
-        </a>
-            <a href="/blog/category/education/">
-            <div class="container cate-edu">
-                <div class="blog-cate-title">EDUCATION</div>
-            </div>
-            </a>
-            <a href="/blog/category/logs/">
-            <div class="container cate-logs">
-                <div class="blog-cate-title">LOGS</div>
-            </div>
-            </a>
-            <a href="/blog/category/personal-growth/">
-            <div class="container cate-pg">
-                <div class="blog-cate-title">PERSONAL GROWTH</div>
-            </div>
-            </a>
-        </section>
+        <my-blog-cats></my-blog-cats>
         <!--               Blog Topic/Sections         End          -->
         
         <!--               All    Blogs           Start          -->
@@ -309,6 +213,10 @@
         <!--               Podcasts            End   -->
 
     </main>
+    <!--        To Top Button         Start -->
+    <button onclick="topFunction()" id="toTopbtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="/js template/text.js"></script> <!--Text JS-->
+    <!--        To Top Button         End -->
     <my-m-footer></my-m-footer>
 </body>
 </html>

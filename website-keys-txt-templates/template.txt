@@ -1,0 +1,7 @@
+<!--        To Top Button         Start -->
+<button onclick="topFunction()" id="toTopbtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<script src="/js template/text.js"></script> <!--Text JS-->
+<!--        To Top Button         End -->
+
+HR
+<hr color=black width="10%" size=".5px" />

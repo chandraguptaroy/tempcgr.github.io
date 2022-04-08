@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chandra Gupta Roy's Graphic Design Potfolio">
+    <meta name="keywords" content="CGR Graphic Design Potfolio, Graphic Design Potfolio, CGR Potfolio">
+    <meta name="author" content="Chandra Gupta Roy">
+    <title>YouTube Thumbnail CGR Gig-Chandra Gupta Roy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />  <!--Font Awesome Icons-->
+    <link rel="shortcut icon" type="image/webp" href="/images/main/icons/cgr_icon.webp"><!--Website Logo -->
+    <link rel="stylesheet" href="/css/my-nav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="/css/my-main-footer.css">    <!--        MFooter         -->
+    <link rel="stylesheet" href="/css/all.css">    <!--        AllCss         -->
+    <link rel="stylesheet" href="/css/hirebtn.css">    <!--        Hirebtn         -->
+    <script type="module" src="/js template/nav_foot.js"></script> <!--Template JS-->
+    <script type="module" src="/js template/hire-btn.js"></script> <!-- Hire Btn JS-->
+    <script src="/js template/text.js"></script> <!--Template JS-->
+    <style>
+        header{
+            height: max-content;
+            /* background-image: url(/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp); */
+            background-size: cover;
+            background-position:top center;
+            background-attachment: fixed;
+        }
+        /*Slideshow container      Start*/
+        /* Slideshow container */
+        .mySlides1, .mySlides2 {display: none}
+        img {vertical-align: middle;}
+        .slideshow-container {
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin: auto;
+        }
+        .slideshow-container img{
+            height: max-content;
+            object-fit: cover;
+        }
+        /* Next & previous buttons */
+        .slideshow-container .prev,.slideshow-container .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        .slideshow-container .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .slideshow-container .prev:hover,.slideshow-container .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        /* Caption text */
+        .slideshow-container .fade .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        .slideshow-container .numbertext {
+            color: #000000;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        .dot1, .dot2 {
+            cursor: pointer;
+            height: 7px;
+            width: 7px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot1:hover,.dot2:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        /*Slideshow container      End*/
+
+        /* Testimony  Start*/
+        .testimonials-slide-block .slideshow-container{
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .testimony-paragraph{
+            padding: 50px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .testimonials-slide-block .slideshow-container .prev,.testimonials-slide-block .slideshow-container .next{
+            background-color: rgba(0,0,0,0.8);
+        }
+        /* Testimony  End*/
+
+        .contents{
+            text-align: center;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .contents a{
+            color: #595e67;
+        }
+        /* Images Gallery     Start*/
+        .img-gallery{
+            text-align: center;
+        }
+        .show{display: none;}
+        .img-gallery{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img-gallery img{
+            width: 40%;
+            height: auto;
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 10px 0px rgb(184, 184, 184);
+        }
+        .img-gallery-flexbox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .gallery-img button{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .load-btn{
+            text-align: center;
+            cursor: pointer;
+            background-color: #E3D924;
+            color: black;
+            box-shadow: 0px 0px 10px 0px rgb(184, 184, 184);
+        }
+        /* Images Gallery     End*/
+
+        #process,#pricing,#faq{
+            text-align: center;
+        }
+        .text{
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media screen and (max-width: 600px) {
+            header{
+                background-attachment: initial;
+                background-position: left;
+            }
+            .contents{
+                display: flex;
+                flex-direction: column
+            }
+            /*      Image Gallery  Start */
+            .img-gallery img{
+                width: 80%;
+            }
+            /*      Image Gallery  End */
+        }
+    </style>
+</head>
+<body>
+    <my-nav></my-nav>
+    <header>
+        <div class="slideshow-container">
+            <div class="mySlides1 fade">
+                <div class="numbertext">1 / 4</div>
+                <div class="text"></div>
+                <img src="/images/services/youtube-thumbnail/fiverr-thumbnail-thumb.webp" style="width:100%">
+            </div>
+    
+            <div class="mySlides1 fade">
+                <div class="numbertext">2 / 4</div>
+                <div class="text"></div>
+                <img src="/images/services/youtube-thumbnail/yt-thumbnail_01.webp" style="width:100%">
+            </div>
+            <div class="mySlides1 fade">
+                <div class="numbertext">3 / 4</div>
+                <div class="text"></div>
+                <img src="/images/services/youtube-thumbnail/yt-thumbnail_02.webp" style="width:100%">
+            </div>
+    
+            <div class="mySlides1 fade">
+                <div class="numbertext">4 / 4</div>
+                <div class="text"></div>
+                <img src="/images/services/youtube-thumbnail/yt-thumbnail_03.webp" style="width:100%">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+    </header>
+
+        <br>
+        <hr class="my-hr block-center" width="70%"/>
+        <br>
+        <div class="contents" style="font-size: 18px;">
+            <a href="">Why you need one? Why me?&nbsp;|&nbsp;</a>
+            <a href="#youtube-thumbanil-samples">Samples&nbsp;|&nbsp;</a>
+            <a href="#process">Process & Requirements&nbsp;|&nbsp;</a>
+            <a href="#testimonials">Testimonials&nbsp;|&nbsp;</a>
+            <a href="#pricing">Pricing&nbsp;|&nbsp;</a>
+            <a href="#">FAQ's &Hiring Info</a>
+        </div>
+        <br>
+        <hr class="my-hr block-center" width="70%"/>
+        <br>
+
+        <br><br>
+        <div class="hireme-btn-div">
+            <img id="left-arrow" src="/images/pngs/arrow-straight.webp" alt="arrow-straight-icon" title="arrow-textured">
+            <div class="hire-me-btn" onclick="hiremepopupToggle();">Hire Me</div>
+            <img id="right-arrow" src="/images/pngs/arrow-straight.webp" alt="arrow-straight-icon" title="arrow-textured">
+        </div>
+
+        <br><br>
+        <div id="why"></div>
+        <!--YouTube Thumbanil Samples Gallery-->
+        <h1>50+ Samples ↓</h1>
+        <div class="img-gallery" id="youtube-thumbanil-samples">
+            <br>
+            <div class="gallery-img" id="youtube-thumbanil-samples">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-java-2d-sorting.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-java-consonant.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-java-primeadam.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-fuckstudies.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-proj-disastermanagement.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-proj-industrial_revolutoin.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show fade">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/graphic-designs/youtube-thumbnails/blog-food-sugar-immune.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/blog-movie-13-reasons-why.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/reveal-tesla-elon_musk.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/piyushroy-rasmalai.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/yashshining-gta5-live.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-amazonscam.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show fade">
+                <div class="img-gallery-flexbox fade">
+                    <img src="/images/graphic-designs/youtube-thumbnails/finance-xrp-dogecoin1.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/finance-xrp-dogecoin2.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/finance-xrp-dogecoin3.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/finance-xrp-dogecoin4.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/finance-xrp-dogecoin5.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/finance-xrp-dogecoin6.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show fade">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/graphic-designs/youtube-thumbnails/Why-become-indistractable.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why-blue-lightfilter.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why-boredom.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why-china-covid.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why-diets-fail.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why-exercise.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show fade">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-childrens_day.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-1setup.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-parabellum.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-google-drive-file_transfer.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-greenscreen--10in1 subscribe.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-music-rockinstrumental-loop.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show fade">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why-motivational-videos.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why-rethink-marriage.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why_bluelight.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why_china_spread_coronavirus.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why_diets_fail.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why_get_bored.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show fade">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-java-anagram.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-proj-plastics.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-proj-buddhism.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-notes_redox.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-chess.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-akasht_birthday.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show fade">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-java-anagram.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-proj-plastics.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-proj-buddhism.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/eduv-notes_redox.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-chess.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/cgr-akasht_birthday.webp">
+                </div>
+                <br><button class="load-btn" onclick="loadplus(1)" id="load-more-btn">Load More</button>
+            </div>
+            <div class="gallery-img show fade">
+                <div class="img-gallery-flexbox">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why_lockdown_extends.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/sr-harrypotter book set.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why_lose_weight.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/why_podcasts.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/Why-become-indistractable.webp">
+                    <img src="/images/graphic-designs/youtube-thumbnails/whyit Racism.webp">
+                </div>
+            </div>
+            
+        </div>
+        <br><br>
+        </div>
+        <div id="process">
+            <h1>Cretive Process</h1>
+            <div class="text">
+                <ol>
+                    <li>Research</li>
+                    <p>→ I'll Research Competitor Brands YouTube Thumbnails</p>
+                    <li>CTR++</li>
+                    <p>→ Take steps to ensure thumbnail has high ctr: thumbnail text, arrows(direct viewers), color, contrast, etc.</p>
+                    <li>Time</li>
+                    <p>→ You will get your thumbnail within a day, mostly within 5-6 hours.</p>
+                    <li>Image Sourcing</li>
+                    <p>→ I'll find stock images to use.</p>
+                    <li>Add your photo(s)/logo</li>
+                    <p>→ I'll add your photos and brand logo provided.</p>
+                    <li>Creative Design</li>
+                    <p>→ Lastly, I'll design a creative youtube thumbnail for your video and will look professional.</p>
+                </ol>
+            </div>
+        </div>
+        <br><br>
+
+        <!--  Testimonial         Start-->
+        <br><br>
+        <div class="testimonials-slide-block">
+            <h1>Testimonials:</h1>
+            <div class="slideshow-container">
+            <div class="mySlides2 fade">
+                <div class="numbertext">1 / 4</div>
+                <div class="text">Caption Text</div>
+                <div class="testimony-paragraph">
+                <p> I've been a long-time client of CGR Graphics and am looking forward to staying associated. The three major highlights are an in-depth understanding of business requirements, technical expertise, and professional work ethics. 
+
+                    He has been helping two of my companies with ads graphics, logos, social media arts, etc and each one of them is designed to satisfy.
+                    
+                    Charges may look on the higher side but I've seen his ideas getting more clicks and thus it's worth it.
+                    
+                    Overall: 4.9/5 (20+ projects)
+                    <br><br>
+                    —Piyush Roy
+                    <br>Consultant (Profitable Words)
+                    </p>
+                </div>
+            </div>
+        
+            <div class="mySlides2 fade">
+                <div class="numbertext">2 / 4</div>
+                <div class="text">Caption Text</div>
+                <div class="testimony-paragraph">
+                    <p> We rely on him for our graphics, he just takes away all the stress related to our editings, from understanding whatever is on my mind to presenting professional problem-solving social media graphics, his skills are just awesome! We love him.
+                        <br><br>
+                        —SR Productions
+                        <br>Short Stories Production House
+                        </p>
+                    </div>
+            </div>
+            <div class="mySlides2 fade">
+                <div class="numbertext">3 / 4</div>
+                <div class="text">Caption Text</div>
+                <div class="testimony-paragraph">
+                    <p> I have a gaming youtube channel and I am learning to edit myself. However, often I still need professional advice/ graphics designs /edits and he is always there to help with providing cool graphics or explaining the best professional way to make something. Highly recommended.!!
+                        <br><br>
+                        —Yashshining
+                        <br>YouTuber
+                        </p>
+                    </div>
+            </div>
+        
+            <div class="mySlides2 fade">
+                <div class="numbertext">4 / 3</div>
+                <div class="text">Caption Text</div>
+                <div class="testimony-paragraph">
+                    <p>  If your business requirements revolve around attention to detail, objective drive designs, and on-time delivery, I'll definitely ask you to give it a try.
+
+                        He breaks down the business requirements and explains how graphics (photos, animation, other vectors) may help in it. 
+                        
+                        Good technical skills.
+                        
+                        His work experience is reflected in his portfolio. I first contacted him via his portfolio.
+                        
+                        <br><br>
+                        —CMO FitoMatic
+                        <br>
+                        </p>
+                    </div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide(1,1)"></span>
+                <span class="dot2" onclick="currentSlide(2,1)"></span>
+                <span class="dot2" onclick="currentSlide(3,1)"></span>
+                <span class="dot2" onclick="currentSlide(4,1)"></span>
+            </div>
+        </div>
+        <br><br>
+
+        <!--  Testimonial      End  -->
+
+        <div id="pricing">
+            <h1>Pricing</h1>
+            <div class="text">
+                <p>10$ per Thumbnail</p>
+            </div>
+        </div>
+        <br><br>
+        <div id="faq">
+            <h1>Frequently Asked Questions</h1>
+            <div class="text">
+                <ol>
+                    <li>Why are premium designs for low price?</li>
+                    <p>→ I am a new seller, looking for more testimonials to raise my prices. It will rise soon, start now!</p>
+                    <li>Which platform is best for communication?</li>
+                    <p>→ I use almost every social media platform, I check my emails/dm daily.</p>
+                    <li>Can we coduct business on Freelancing Platforms?</li>
+                    <p>→ Yes, here are links to my profiles:</p>
+                    <p>Fiverr:</p>
+                    <p>Upwork:</p>
+                    <p>Legiit:</p>
+                </ol>
+                
+            </div>
+        </div>
+        <br><br>
+        <div class="hireme-btn-div">
+            <img id="left-arrow" src="/images/pngs/arrow-straight.webp" alt="arrow-straight-icon" title="arrow-textured">
+            <div class="hire-me-btn" onclick="hiremepopupToggle();">Hire Me</div>
+            <img id="right-arrow" src="/images/pngs/arrow-straight.webp" alt="arrow-straight-icon" title="arrow-textured">
+        </div>
+        <script src="/js template/slideshow.js"></script> <!--Text JS-->
+        <script src="/js template/text.js"></script> <!--Text JS-->
+        <!--    Samples Image Gallery   Script Start  -->
+        <script>
+            var loadindex=0;
+            loadmore(loadindex);
+            function loadplus(n){
+                loadmore(loadindex +=n);
+            }
+            function loadmore(n){
+                var i;
+                var load=document.getElementsByClassName("show");
+                var loadbtn=document.getElementsByClassName("load-btn");
+                load[loadindex-1].style.display = "block";
+                loadbtn[loadindex-1].style.display="none";   
+            }
+        </script>
+        <!--    Samples Image Gallery   Script Start  -->
+        <br><br>
+        
+    <!--        To Top Button         Start -->
+    <button onclick="topFunction()" id="toTopbtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <!--        To Top Button         End -->
+    <script src="/js template/slideshow.js"></script> <!--Text JS-->
+    <script src="/js template/text.js"></script> <!--Text JS-->
+
+    
+    <hire-me></hire-me>
+    <my-m-footer></my-m-footer>
+</body>
+</html>

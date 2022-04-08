@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/all.css">    <!--        All.css         -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />  <!--Font Awesome Icons-->
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+        }
+        section:nth-child(even){
+            background-color: white;
+        }
+        #toTopbtn{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section>one</section>
+    <section>two</section>
+    <section>three</section>
+    <section>four</section>
+    <section>five</section>
+    <section>six</section>
+    
+
+    <button id="toTopbtn" title="Go to top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+    
+    <script>
+        // const myscrollbtn = document.getElementById('toTopbtn');
+
+        // window.onscroll =function(){scrollFunction()};
+        // function scrollFunction(){
+        //     if(document.body.scrollTop>100 || document.documentElement.scrollTop >100){
+        //         myscrollbtn.style.display="block";
+        //     }
+        //     else{
+        //         myscrollbtn.style.display="none"
+        //     }
+        // }
+        // //myscrollbtn.addEventListener('click', () =>{
+        //   //  window.scrollTo({top: 0, behavior: 'smooth'});
+        // //})
+
+        function scrollToTop(){
+            window.scrollTo(0,0);
+        }
+
+
+    </script>
+</body>
+</html>
