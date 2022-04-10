@@ -56,6 +56,14 @@
             background-color: white;
             margin: 50px;
             padding: 50px;
+            
+        }
+        .lifepart-more .lifepart-more-text{
+            max-width: 800px;
+            padding: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /*  My Brands  Starts*/
@@ -98,6 +106,26 @@
             padding-left: 35%;
             padding-right: 35%;
             text-align: left;
+
+        }
+        .lol1{
+            font-size: larger;
+            font-weight: bold;
+            font-variant: small-caps;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            position: relative;
+        }
+        .lol1 p{
+            z-index: 0;
+        }
+        .lol1-brushstroke{
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            top: 0;
+            z-index: -1;
 
         }
         .row{
@@ -171,6 +199,13 @@
                 width: 95%;
                 max-width: 95%;
             }
+            .lifepart-more{
+                padding: 10px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
         }
     </style>
 </head>
@@ -186,7 +221,7 @@
     <main>
         <div class="hi-hello">
             <h2></h2>
-            <p style="font-size: large;">Hello there 🖐 I hope you are having a great day.<br>I define myself as a <b><i>Multi-Passionate Badass Intelligent Gentleman</i></b>.
+            <p style="font-size: large;">Hello there 🖐 I hope you are having a great and funny day.<br>I define myself as a <b><i>Multi-Passionate Badass Intelligent Gentleman</i></b>.
             <br><br>Derivation:<br><br><br></p>
             <img class="my-definition" src="/images/main/multi-passionate-badass-intelligent-gentleman.webp">
         </div>
@@ -203,7 +238,9 @@
             <div class="cate-lifepart" onclick="currentSlide(4)" id="mylifepartBtn"><p>Personal Life</p></div>
         </div>
         
-        <div class="lifepart-more academics" style="display: none;"><h1>Academics</h1><br><p>I went to Kidzee for my LKG and UKG, Don Bosco Academy for 1st- 12th standard.<br>
+        <div class="lifepart-more academics" style="display: none;">
+            <div class="lifepart-more-text">
+            <h1>Academics</h1><br><p>I went to Kidzee for my LKG and UKG, Don Bosco Academy for 1st- 12th standard.<br>
             And now I’m in University of Delhi for my Graduation.<br><br>
             I don’t have much faith in academics and the traditional way of studies, life and career from around 8th standard, thus I study for basic knowledge and only what’s enough for exams! Lol…
         <br>Computer Science is my favorite subject, as learning CS feels life fun, ig!
@@ -215,32 +252,63 @@
             
             Lastly, I learn daily with real education by MindValley to transform my life. <br>
             </p></div>
-        <div class="lifepart-more Profession"><h1>Profession</h1><p><br>Professionally, I am a Graphic Designer with expert skills in Adobe Photoshop and Adobe Illustrator.<br>
-
+        </div>
+        <div class="lifepart-more Profession">
+            <div class="lifepart-more-text">
+            <h1>Profession</h1><p><br>Professionally, I am a Graphic Designer with expert skills in Adobe Photoshop and Adobe Illustrator.<br>
             I learn daily to improve at what I do and I have a great work ethic.
             <br>
-            Hire me for Social Media Graphics Now! 
+            Hire me for Social Media Graphics Now!
+            <a href="/services/graphic-designing/">Services Page</a>
             </p></div>
-        <div class="lifepart-more Career"><h1>Career</h1><br><p>
+        </div>
+        <div class="lifepart-more Career">
+            <div class="lifepart-more-text">
+            <h1>Career</h1><br><p>
             I actually have plans to do a lot with my career, basically, explore many different things that excite me at the same time find a way to make money out of some.<br>
-
-For now, you can call me a content creator who creates graphics professionally and is dribbling with other forms, haha.<br>
-
-I have this website (learning to write it and writing as well haha) and 3 YouTube channels as of now, and I try to post regularly on them to grow grow grow!<br>
-
-Some possible future endeavors:<br>
-<br>
-Writing<br>
-Filmmaking<br>
-Music Production<br>
-Organic Agriculture<br>
-Recycling<br>
-VR Gaming<br>
-
+            For now, you can call me a content creator who creates graphics professionally and is dribbling with other forms, haha.<br>
+            I have this website (learning to write it and writing as well haha) and 3 YouTube channels as of now, and I try to post regularly on them to grow grow grow!<br>
+            Some possible future endeavors:<br>
+            <br>
+            Writing<br>
+            Filmmaking<br>
+            Music Production<br>
+            Organic Agriculture<br>
+            Recycling<br>
+            VR Gaming<br>
         </p></div>
-        <div class="lifepart-more Personal Life"><h1>Personal Life</h1><br><p>Personally, I think I am a very Optimistic and Cheerful person.
+        </div>
+        <div class="lifepart-more Personal Life">
+            <div class="lifepart-more-text">
+            <h1>Personal Life</h1><br><p>Personally, I think I am a very Optimistic and Cheerful person.
             <br>I am extroverted, however, I am happy by myself as well! So, I call thyself, Half-blood Intro/Extro Vert, 😅
-        </p></div>
+            <br><br>
+            I want to have the most peaceful sleep possible and wildest adventures that remind me that I am really f*cking alive!<br>
+            List? 😂
+            </p>
+            <ul>
+                <li>Marry the most beautiful lady</li>
+                <li>Dancing Skydive</li>
+                <li>MTB Racing</li>
+                <li>Fast and Furious 🔥</li>
+                <li>Bungee Jump</li>
+                <li>Heli-Skiing</li>
+                <li>Sea Diving</li>
+                <li>Surfing</li>
+                <li>Get out of Earth!</li>
+                <li>Complete 7 wonders/ 7 continents</li>
+                <li>Obvio, Climb Mt. Everest</li>
+                <li>Learn Shooting</li>
+                <li>Black Belt Martial Arts</li>
+                <li>Ice Swimming</li>
+                <li>Go to Vegas</li>
+                <li>Host a huge huge huge family reunion</li>
+                <li>Burn Cash</li>
+                <li>See Marine phosphorescence</li>
+                <li>Have one night stand (I don't want that actually 🤷‍♂️😂)</li>
+            </ul>
+        </div>
+        </div>
 
         <script>
             let slideIndex = 1;
@@ -276,7 +344,7 @@ VR Gaming<br>
                 <li>Adobe Illustrator</li>
                 <li>Adobe Premiere Pro</li>
                 <li>Adobe AfterFX</li>
-                <li></li>
+                <li>Adobe Acrobat</li>
             </ul><br>
             <h2>Technical</h2>
             <ul>
@@ -284,11 +352,18 @@ VR Gaming<br>
                 <li>Py</li>
                 <li>Web Development</li>
                 <li>Web Design</li>
-                <li>Google Word/Slides/Sheets etc</li>
+                <li>Javascript</li>
+                <li>Google Suite/Microsoft Office</li>
+                <li>Typing 60+ wpm</li>
+                <li>VSCode</li>
+                <li>Github</li>
             </ul><br>
             <h2>Life Skills</h2>
             <ul>
-                <li>Cooking</li>
+                <li>Walking 😅</li>
+                <li>Conscious Eating</li>
+                <li>10x Protocal Fitness</li>
+                <li>Healthy Cooking</li>
                 <li>Monica Clean</li>
                 <li>Joking</li>
             </ul><br>
@@ -301,6 +376,7 @@ VR Gaming<br>
                 <li>Clash of Clans</li>
             </ul><br>
         </div>
+        <br><br>
         <div class="my-brands">
             <h1>My Brands</h1>
             <div class="my-brands-box">
@@ -319,6 +395,26 @@ VR Gaming<br>
                 <img src="/images/main/icons/cgr_icon.webp">
                 <h2>Chandra Gupta Roy</h2>
             </div>
+        </div>
+        <div class="lol1">
+            <br>
+            <p>If you haven't laughed yet, btw...<br>Why do pirates hate the alphabets?
+            <span style="display: none;" id="pjans"><br>Because they are always stuck at C. 😂😅 </span></p>
+            <br><p onclick="myFunction()" id="pjansbtn">Answer</p><br><br><br>
+            <img class="lol1-brushstroke" src="/images/brush-stroke-008aff.png">
+            <script>
+                function myFunction() {
+                var pjansbtn = document.getElementById("pjansbtn");
+                var pjansText = document.getElementById("pjans");
+                if (pjansbtn.style.display === "none") {
+                    pjansbtn.style.display = "inline";
+                    pjansText.style.display = "none";
+                } else {
+                    pjansbtn.style.display = "none";
+                    pjansText.style.display = "inline";
+                }
+                }
+            </script>
         </div>
         <div class="subscribe-all">
 

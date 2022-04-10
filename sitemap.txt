@@ -1,5 +1,6 @@
 https://thecgr.com/
 https://thecgr.com/sitemap.txt
+https://thecgr.com/links/
 https://thecgr.com/blog/cgr-favourite-quotes/
 https://thecgr.com/blog/cgr-favourite-movies-webseries/
 https://thecgr.com/potfolio/graphic-design-potfolio/
@@ -8,7 +9,7 @@ https://thecgr.com/services/graphic-designing/
 https://thecgr.com/services/graphic-designing/youtube-thumbnail/
 https://thecgr.com/services/video-editing/
 https://thecgr.com/passions/graphic-designing/
-https://thecgr.com/passions/video-editing/
+https://thecgr.com/passions/video-editing/  
 https://thecgr.com/passions/writing/
 https://thecgr.com/passions/coding/
 https://thecgr.com/passions/animation/

@@ -16,7 +16,7 @@ h1{
     font-family: 'Comforter Brush', cursive;
     text-align: center;
 }
-p,ul,li{
+p,ul,li,span{
     font-family: sans-serif;
     line-height: 1.65;
 }
